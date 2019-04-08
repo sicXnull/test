@@ -6,14 +6,20 @@
         <file alias="da">locale/redux_da.qm</file>
         <file alias="de">locale/redux_de.qm</file>
         <file alias="en">locale/redux_en.qm</file>
+        <file alias="en_GB">locale/redux_en_GB.qm</file>
         <file alias="en_US">locale/redux_en_US.qm</file>
+        <file alias="eo">locale/redux_eo.qm</file>
         <file alias="es">locale/redux_es.qm</file>
+        <file alias="es_ES">locale/redux_es_ES.qm</file>
         <file alias="fi">locale/redux_fi.qm</file>
         <file alias="fr_FR">locale/redux_fr_FR.qm</file>
+        <file alias="hi_IN">locale/redux_hi_IN.qm</file>
         <file alias="hr">locale/redux_hr.qm</file>
+        <file alias="hr_HR">locale/redux_hr_HR.qm</file>
         <file alias="it">locale/redux_it.qm</file>
         <file alias="ja">locale/redux_ja.qm</file>
         <file alias="ko_KR">locale/redux_ko_KR.qm</file>
+        <file alias="lt_LT">locale/redux_lt_LT.qm</file>
         <file alias="nl">locale/redux_nl.qm</file>
         <file alias="pl">locale/redux_pl.qm</file>
         <file alias="pt">locale/redux_pt.qm</file>
@@ -24,6 +30,7 @@
         <file alias="sv">locale/redux_sv.qm</file>
         <file alias="tr">locale/redux_tr.qm</file>
         <file alias="uk">locale/redux_uk.qm</file>
+        <file alias="vi">locale/redux_vi.qm</file>
         <file alias="zh_CN">locale/redux_zh_CN.qm</file>
         <file alias="zh_TW">locale/redux_zh_TW.qm</file>
     </qresource>

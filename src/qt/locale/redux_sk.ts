@@ -114,21 +114,21 @@
     </message>
 </context>
 <context>
-    <name>AskPassreduxaseDialog</name>
+    <name>AskPassphraseDialog</name>
     <message>
-        <source>Passreduxase Dialog</source>
+        <source>Passphrase Dialog</source>
         <translation>Okno prístupovej frázy</translation>
     </message>
     <message>
-        <source>Enter passreduxase</source>
+        <source>Enter passphrase</source>
         <translation>Zadajte prístupovú frázu</translation>
     </message>
     <message>
-        <source>New passreduxase</source>
+        <source>New passphrase</source>
         <translation>Nová prístupová fráza</translation>
     </message>
     <message>
-        <source>Repeat new passreduxase</source>
+        <source>Repeat new passphrase</source>
         <translation>Zopakujte prístupovú frázu</translation>
     </message>
     <message>
@@ -136,11 +136,7 @@
         <translation>Slúži na zakázanie obyčajného odoslania peňazí, v prípade, že bol OS účet kompromitovaný. Neposkytuje žiadnu skutočnú bezpečnosť.</translation>
     </message>
     <message>
-        <source>For anonymization and staking only</source>
-        <translation>Len pre anonymizáciu a staking</translation>
-    </message>
-    <message>
-        <source>Enter the new passreduxase to the wallet.&lt;br/&gt;Please use a passreduxase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
+        <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
         <translation>Zadajte novú prístupovú frázu do peňaženky. &lt;br/&gt; Použite prístupovú frázu &lt;b&gt;, ktorá má desať alebo viac náhodných znakov &lt;/ b&gt; alebo &lt;b&gt; osem alebo viac slov &lt;/ b&gt;.</translation>
     </message>
     <message>
@@ -148,7 +144,7 @@
         <translation>Šifrovať peňaženku</translation>
     </message>
     <message>
-        <source>This operation needs your wallet passreduxase to unlock the wallet.</source>
+        <source>This operation needs your wallet passphrase to unlock the wallet.</source>
         <translation>Táto operácia potrebuje prístupovú frázu peňaženky na odomknutie peňaženky.</translation>
     </message>
     <message>
@@ -156,7 +152,7 @@
         <translation>Odomknúť peňaženku</translation>
     </message>
     <message>
-        <source>This operation needs your wallet passreduxase to decrypt the wallet.</source>
+        <source>This operation needs your wallet passphrase to decrypt the wallet.</source>
         <translation>Táto operácia potrebuje prístupovú frázu peňaženky na dešifrovanie peňaženky.</translation>
     </message>
     <message>
@@ -164,11 +160,11 @@
         <translation>Dešifrovať peňaženku</translation>
     </message>
     <message>
-        <source>Change passreduxase</source>
+        <source>Change passphrase</source>
         <translation>Zmeniť prístupovú frázu</translation>
     </message>
     <message>
-        <source>Enter the old and new passreduxase to the wallet.</source>
+        <source>Enter the old and new passphrase to the wallet.</source>
         <translation>Zadajte starú a novú prístupovú frázu do peňaženky.</translation>
     </message>
     <message>
@@ -184,7 +180,7 @@
         <translation>Naozaj chcete zašifrovať svoju peňaženku?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passreduxase, you will &lt;b&gt;LOSE ALL OF YOUR REDUX&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR REDUX&lt;/b&gt;!</source>
         <translation>Upozornenie: Ak zašifrujete svoju peňaženku a stratíte svoju prístupovú frázu, &lt;b&gt; PRÍDETE O VŠETKY REDUX &lt;/ b&gt;!</translation>
     </message>
     <message>
@@ -204,7 +200,7 @@
         <translation>Šifrovanie peňaženky zlyhalo kvôli internej chybe. Vaša peňaženka nebola zašifrovaná.</translation>
     </message>
     <message>
-        <source>The supplied passreduxases do not match.</source>
+        <source>The supplied passphrases do not match.</source>
         <translation>Zadané prístupové frázy sa nezhodujú.</translation>
     </message>
     <message>
@@ -212,7 +208,7 @@
         <translation>Odomknutie peňaženky zlyhalo</translation>
     </message>
     <message>
-        <source>The passreduxase entered for the wallet decryption was incorrect.</source>
+        <source>The passphrase entered for the wallet decryption was incorrect.</source>
         <translation>Zadaná prístupová fráza pre dešifrovanie peňaženky bola nesprávna.</translation>
     </message>
     <message>
@@ -220,7 +216,7 @@
         <translation>Dešifrovanie peňaženky zlyhalo</translation>
     </message>
     <message>
-        <source>Wallet passreduxase was successfully changed.</source>
+        <source>Wallet passphrase was successfully changed.</source>
         <translation>Prístupová fráza pre peňaženku bola úspešne zmenená.</translation>
     </message>
     <message>
@@ -228,6 +224,9 @@
         <translation>Upozornenie: Tlačidlo Caps Lock je zapnuté!</translation>
     </message>
 </context>
+<context>
+    <name>BanTableModel</name>
+    </context>
 <context>
     <name>Bip38ToolDialog</name>
     <message>
@@ -239,16 +238,8 @@
         <translation>BIP 38 Šifrovanie</translation>
     </message>
     <message>
-        <source>Enter a Redux Address that you would like to encrypt using BIP 38. Enter a passreduxase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Zadajte adresu Redux, ktorú chcete zašifrovať pomocou BIP 38. Zadajte prístupovú frázu do stredného poľa. Stlačte šifrovanie na výpočet šifrovaného privátneho kľúča.</translation>
-    </message>
-    <message>
         <source>Address:</source>
         <translation>Adresa:</translation>
-    </message>
-    <message>
-        <source>The Redux address to sign the message with</source>
-        <translation>Adresa Redux, ktorou chcete správu podpísať</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -267,7 +258,7 @@
         <translation>Alt+P</translation>
     </message>
     <message>
-        <source>Passreduxase: </source>
+        <source>Passphrase: </source>
         <translation>Prístupová fráza:</translation>
     </message>
     <message>
@@ -279,16 +270,8 @@
         <translation>Skopírujte aktuálny podpis do schránky</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Redux address</source>
-        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto Redux adresy</translation>
-    </message>
-    <message>
         <source>Encrypt &amp;Key</source>
         <translation>Zašifrovať kľúč</translation>
-    </message>
-    <message>
-        <source>Reset all sign message fields</source>
-        <translation>Zmazať všetky polia správy</translation>
     </message>
     <message>
         <source>Clear &amp;All</source>
@@ -299,24 +282,12 @@
         <translation>BIP 38 dešifrovanie</translation>
     </message>
     <message>
-        <source>Enter the BIP 38 encrypted private key. Enter the passreduxase in the middle box. Click Decrypt Key to compute the private key. After the key is decrypted, clicking 'Import Address' will add this private key to the wallet.</source>
+        <source>Enter the BIP 38 encrypted private key. Enter the passphrase in the middle box. Click Decrypt Key to compute the private key. After the key is decrypted, clicking 'Import Address' will add this private key to the wallet.</source>
         <translation>Zadajte súkromný kľúč zašifrovaný BIP 38. Zadajte prístupovú frázu do stredného poľa. Kliknite na Dešifrovať kľúč, ak chcete vypočítať privátny kľúč. Po dešifrovaní kľúča pridáte do peňaženky tento súkromný kľúč kliknutím na položku 'Importovať adresu'.</translation>
-    </message>
-    <message>
-        <source>The Redux address the message was signed with</source>
-        <translation>Redux adresa, ktorou bola správa podpísaná</translation>
-    </message>
-    <message>
-        <source>Verify the message to ensure it was signed with the specified Redux address</source>
-        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou Redux adresou</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
         <translation>Dešifrovať kľúč</translation>
-    </message>
-    <message>
-        <source>Reset all verify message fields</source>
-        <translation>Zmazať všetky polia verifikácie správy</translation>
     </message>
     <message>
         <source>Decrypted Key:</source>
@@ -331,7 +302,7 @@
         <translation>Kliknite na tlačidlo "Dešifrovať kľúč" pre výpočet kľúča</translation>
     </message>
     <message>
-        <source>The entered passreduxase is invalid. </source>
+        <source>The entered passphrase is invalid. </source>
         <translation>Zadaná prístupová fráza je neplatná.</translation>
     </message>
     <message>
@@ -363,7 +334,7 @@
         <translation>Dešifrovanie zlyhalo.</translation>
     </message>
     <message>
-        <source>Please check the key and passreduxase and try again.</source>
+        <source>Please check the key and passphrase and try again.</source>
         <translation>Skontrolujte, prosím, kľúč a prístupovú frázu a skúste to znova.</translation>
     </message>
     <message>
@@ -470,11 +441,11 @@
         <translation>Zálohovať peňaženku na iné miesto</translation>
     </message>
     <message>
-        <source>&amp;Change Passreduxase...</source>
+        <source>&amp;Change Passphrase...</source>
         <translation>Zmeniť prístupovú frázu...</translation>
     </message>
     <message>
-        <source>Change the passreduxase used for wallet encryption</source>
+        <source>Change the passphrase used for wallet encryption</source>
         <translation>Zmeniť prístupovú frázu, ktorá bola použitá na šifrovanie peňaženky</translation>
     </message>
     <message>
@@ -642,7 +613,7 @@
         <translation>BIP 38 Utilita</translation>
     </message>
     <message>
-        <source>Encrypt and decrypt private keys using a passreduxase</source>
+        <source>Encrypt and decrypt private keys using a passphrase</source>
         <translation>Šifrovať a dešifrovať privátne kľúče pomocou prístupovej frázy</translation>
     </message>
     <message>
@@ -708,10 +679,6 @@
     <message>
         <source>%1 and %2</source>
         <translation>%1 a %2</translation>
-    </message>
-    <message>
-        <source>%1 behind</source>
-        <translation>%1 pozadu</translation>
     </message>
     <message>
         <source>Catching up...</source>
@@ -786,14 +753,10 @@ MultiSend: %1</translation>
         <translation>Peňaženka je &lt;b&gt;zašifrovaná&lt;/ b&gt; a momentálne je &lt;b&gt;odomknutá&lt;/ b&gt;</translation>
     </message>
     <message>
-        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt; for anonimization and staking only</source>
-        <translation>Peňaženka je &lt;b&gt;zašifrovaná&lt;/ b&gt; a momentálne &lt;b&gt;odomknutá&lt;/ b&gt; iba na anonymizáciu a staking</translation>
-    </message>
-    <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>Peňaženka je &lt;b&gt;zašifrovaná&lt;/ b&gt; a momentálne je &lt;b&gt;zamknutá&lt;/ b&gt;</translation>
     </message>
-</context>
+    </context>
 <context>
     <name>BlockExplorer</name>
     <message>
@@ -902,6 +865,9 @@ MultiSend: %1</translation>
     <name>FreespaceChecker</name>
     </context>
 <context>
+    <name>GovernancePage</name>
+    </context>
+<context>
     <name>HelpMessageDialog</name>
     <message>
         <source>Redux Core</source>
@@ -939,6 +905,17 @@ MultiSend: %1</translation>
     <message>
         <source>Address:</source>
         <translation>Adresa:</translation>
+    </message>
+    <message>
+        <source>(no label)</source>
+        <translation>(žiaden štítok)</translation>
+    </message>
+    </context>
+<context>
+    <name>MultisigDialog</name>
+    <message>
+        <source>Amount:</source>
+        <translation>Suma:</translation>
     </message>
     </context>
 <context>
@@ -990,6 +967,10 @@ MultiSend: %1</translation>
         <translation>Priorita:</translation>
     </message>
     <message>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
+    </message>
+    <message>
         <source>Fee:</source>
         <translation>Poplatok:</translation>
     </message>
@@ -1007,10 +988,17 @@ MultiSend: %1</translation>
     </message>
     </context>
 <context>
+    <name>ProposalFrame</name>
+    </context>
+<context>
     <name>QObject</name>
     <message>
         <source>Amount</source>
         <translation>Suma</translation>
+    </message>
+    <message>
+        <source>Redux Core</source>
+        <translation>Redux Core</translation>
     </message>
     </context>
 <context>
@@ -1032,6 +1020,10 @@ MultiSend: %1</translation>
     <message>
         <source>Copy amount</source>
         <translation>Skopírovať sumu</translation>
+    </message>
+    <message>
+        <source>Copy address</source>
+        <translation>Skopírovať adresu</translation>
     </message>
 </context>
 <context>
@@ -1058,6 +1050,10 @@ MultiSend: %1</translation>
     <message>
         <source>Label</source>
         <translation>Štítok</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>Adresa</translation>
     </message>
     <message>
         <source>Amount</source>
@@ -1303,7 +1299,7 @@ MultiSend: %1</translation>
     </message>
     </context>
 <context>
-    <name>ZPhrControlDialog</name>
+    <name>ZReduxControlDialog</name>
     </context>
 <context>
     <name>redux-core</name>

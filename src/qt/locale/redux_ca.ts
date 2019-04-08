@@ -114,25 +114,25 @@
     </message>
 </context>
 <context>
-    <name>AskPassreduxaseDialog</name>
+    <name>AskPassphraseDialog</name>
     <message>
-        <source>Passreduxase Dialog</source>
+        <source>Passphrase Dialog</source>
         <translation>Diàleg de contrasenya</translation>
     </message>
     <message>
-        <source>Enter passreduxase</source>
+        <source>Enter passphrase</source>
         <translation>Introduïu una contrasenya</translation>
     </message>
     <message>
-        <source>New passreduxase</source>
+        <source>New passphrase</source>
         <translation>Nova contrasenya</translation>
     </message>
     <message>
-        <source>Repeat new passreduxase</source>
+        <source>Repeat new passphrase</source>
         <translation>Repetiu la nova contrasenya</translation>
     </message>
     <message>
-        <source>Enter the new passreduxase to the wallet.&lt;br/&gt;Please use a passreduxase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
+        <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
         <translation>Introduïu la contrasenya nova al moneder. &lt;br/&gt;Utilitzeu una contrasenya de &lt;b&gt;deu o més caràcters aleatoris&lt;/b&gt;, o &lt;b&gt;vuit o més paraules&lt;/b&gt;.</translation>
     </message>
     <message>
@@ -140,7 +140,7 @@
         <translation>Encripta el moneder</translation>
     </message>
     <message>
-        <source>This operation needs your wallet passreduxase to unlock the wallet.</source>
+        <source>This operation needs your wallet passphrase to unlock the wallet.</source>
         <translation>Aquesta operació requereix la contrasenya del moneder per a desbloquejar-lo.</translation>
     </message>
     <message>
@@ -148,7 +148,7 @@
         <translation>Desbloqueja el moneder</translation>
     </message>
     <message>
-        <source>This operation needs your wallet passreduxase to decrypt the wallet.</source>
+        <source>This operation needs your wallet passphrase to decrypt the wallet.</source>
         <translation>Aquesta operació requereix la contrasenya del moneder per desencriptar-lo.</translation>
     </message>
     <message>
@@ -156,11 +156,11 @@
         <translation>Desencripta el moneder</translation>
     </message>
     <message>
-        <source>Change passreduxase</source>
+        <source>Change passphrase</source>
         <translation>Canvia la contrasenya</translation>
     </message>
     <message>
-        <source>Enter the old and new passreduxase to the wallet.</source>
+        <source>Enter the old and new passphrase to the wallet.</source>
         <translation>Introduïu la contrasenya antiga i la contrasenya nova al moneder.</translation>
     </message>
     <message>
@@ -176,7 +176,7 @@
         <translation>Estàs segur que vols encriptar el moneder?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passreduxase, you will &lt;b&gt;LOSE ALL OF YOUR REDUX&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR REDUX&lt;/b&gt;!</source>
         <translation>Avís: Si encripteu el vostre moneder i perdeu la contrasenya, &lt;b&gt;PERDREU TOTS ELS VOSTRES REDUXS&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -188,7 +188,7 @@
         <translation>L'encriptació del moneder ha fallat</translation>
     </message>
     <message>
-        <source>The supplied passreduxases do not match.</source>
+        <source>The supplied passphrases do not match.</source>
         <translation>Les contrasenyes introduïdes no coincideixen.</translation>
     </message>
     <message>
@@ -196,7 +196,7 @@
         <translation>El desbloqueig del moneder ha fallat</translation>
     </message>
     <message>
-        <source>The passreduxase entered for the wallet decryption was incorrect.</source>
+        <source>The passphrase entered for the wallet decryption was incorrect.</source>
         <translation>La contrasenya introduïda per a desencriptar el moneder és incorrecta.</translation>
     </message>
     <message>
@@ -204,9 +204,12 @@
         <translation>La desencriptació del moneder ha fallat.</translation>
     </message>
     <message>
-        <source>Wallet passreduxase was successfully changed.</source>
+        <source>Wallet passphrase was successfully changed.</source>
         <translation>La contrasenya del moneder ha estat canviada amb èxit.</translation>
     </message>
+    </context>
+<context>
+    <name>BanTableModel</name>
     </context>
 <context>
     <name>Bip38ToolDialog</name>
@@ -231,7 +234,7 @@
         <translation>Alt+P</translation>
     </message>
     <message>
-        <source>Passreduxase: </source>
+        <source>Passphrase: </source>
         <translation>Contrasenya:</translation>
     </message>
     <message>
@@ -255,7 +258,7 @@
         <translation>Importa adreça</translation>
     </message>
     <message>
-        <source>The entered passreduxase is invalid. </source>
+        <source>The entered passphrase is invalid. </source>
         <translation>La contrasenya introduïda és incorrecta.</translation>
     </message>
     <message>
@@ -342,7 +345,7 @@
         <translation>Realitza una &amp;còpia de seguretat del moneder...</translation>
     </message>
     <message>
-        <source>&amp;Change Passreduxase...</source>
+        <source>&amp;Change Passphrase...</source>
         <translation>&amp;Canvia la contrasenya...</translation>
     </message>
     <message>
@@ -461,10 +464,6 @@
         <source>Redux Core client</source>
         <translation>Client Redux core</translation>
     </message>
-    <message numerus="yes">
-        <source>%n active connection(s) to Redux network</source>
-        <translation><numerusform>%n connexió activa a la xarxa Redux</numerusform><numerusform>%n connexions actives a la xarxa Redux</numerusform></translation>
-    </message>
     <message>
         <source>Synchronizing with network...</source>
         <translation>Sinconitzant amb la xarxa...</translation>
@@ -473,25 +472,9 @@
         <source>Up to date</source>
         <translation>Actualitzat</translation>
     </message>
-    <message numerus="yes">
-        <source>%n hour(s)</source>
-        <translation><numerusform>%n hora</numerusform><numerusform>%n hores</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n day(s)</source>
-        <translation><numerusform>%n dia</numerusform><numerusform>%n dies</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n week(s)</source>
-        <translation><numerusform>%n setmana</numerusform><numerusform>%n setmanes</numerusform></translation>
-    </message>
     <message>
         <source>%1 and %2</source>
         <translation>%1 i %2</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n year(s)</source>
-        <translation><numerusform>%n any</numerusform><numerusform>%n anys</numerusform></translation>
     </message>
     <message>
         <source>Error</source>
@@ -533,7 +516,7 @@
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>El moneder està &lt;b&gt;encriptat&lt;/b&gt; i bloquejat&lt;/b&gt;</translation>
     </message>
-</context>
+    </context>
 <context>
     <name>BlockExplorer</name>
     <message>
@@ -633,6 +616,10 @@
     <message>
         <source>Received with address</source>
         <translation>Rebut amb l'adreça</translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation>Tipus</translation>
     </message>
     <message>
         <source>Date</source>
@@ -767,6 +754,10 @@
         <translation>Aquesta etiqueta es posa vermella si la prioritat és més petita que "mitjana"</translation>
     </message>
     <message>
+        <source>This label turns red, if any recipient receives an amount smaller than %1.</source>
+        <translation>Aquesta etiqueta es posa vermella si algun destinatari rep un import inferior a l' %1.</translation>
+    </message>
+    <message>
         <source>(no label)</source>
         <translation>(sense etiqueta)</translation>
     </message>
@@ -853,6 +844,17 @@
         <translation>No és possible crear una carpeta de dades aquí.</translation>
     </message>
 </context>
+<context>
+    <name>GovernancePage</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulari</translation>
+    </message>
+    <message>
+        <source>0</source>
+        <translation>0</translation>
+    </message>
+    </context>
 <context>
     <name>HelpMessageDialog</name>
     <message>
@@ -958,10 +960,6 @@
         <translation>Formulari</translation>
     </message>
     <message>
-        <source>My Masternodes</source>
-        <translation>Els meus Masternodes</translation>
-    </message>
-    <message>
         <source>Alias</source>
         <translation>Àlies</translation>
     </message>
@@ -990,7 +988,7 @@
         <translation>ClauPública</translation>
     </message>
     <message>
-        <source>Update in (sec):</source>
+        <source>Status will be updated automatically in (sec):</source>
         <translation>L'estat s'actualitzarà automàticament en (seg):</translation>
     </message>
     <message>
@@ -1093,32 +1091,29 @@
         <translation>Activa</translation>
     </message>
     <message>
-        <source>The entered address:
-</source>
-        <translation>L'adreça introduïda:
-</translation>
+        <source>(no label)</source>
+        <translation>(sense etiqueta)</translation>
     </message>
     <message>
         <source>Please Enter 1 - 100 for percent.</source>
         <translation>Si us plau introdueix 1 - 100 per al percentatge</translation>
     </message>
-    <message>
-        <source>MultiSend Vector
-</source>
-        <translation>Vector MultiSend
-</translation>
-    </message>
-    <message>
-        <source>Removed </source>
-        <translation>Eliminat</translation>
-    </message>
-    <message>
-        <source>Could not locate address
-</source>
-        <translation>No s'ha trobat l'adreça
-</translation>
-    </message>
 </context>
+<context>
+    <name>MultisigDialog</name>
+    <message>
+        <source>Status:</source>
+        <translation>Estat:</translation>
+    </message>
+    <message>
+        <source>0</source>
+        <translation>0</translation>
+    </message>
+    <message>
+        <source>Amount:</source>
+        <translation>Import:</translation>
+    </message>
+    </context>
 <context>
     <name>ObfuscationConfig</name>
     <message>
@@ -1271,18 +1266,6 @@
         <translation>Total:</translation>
     </message>
     <message>
-        <source>REDUX:</source>
-        <translation>REDUX:</translation>
-    </message>
-    <message>
-        <source>zREDUX:</source>
-        <translation>zREDUX:</translation>
-    </message>
-    <message>
-        <source>0 %</source>
-        <translation>0 %</translation>
-    </message>
-    <message>
         <source>Recent transactions</source>
         <translation>Transaccions recents</translation>
     </message>
@@ -1303,10 +1286,6 @@
 </context>
 <context>
     <name>PrivacyDialog</name>
-    <message>
-        <source>Zerocoin REDUX (zREDUX)</source>
-        <translation>Zerocoin REDUX (zREDUX)</translation>
-    </message>
     <message>
         <source>0</source>
         <translation>0</translation>
@@ -1352,6 +1331,10 @@
         <translation>Prioritat:</translation>
     </message>
     <message>
+        <source>TextLabel</source>
+        <translation>EtiquetaDeText</translation>
+    </message>
+    <message>
         <source>Fee:</source>
         <translation>Comissió:</translation>
     </message>
@@ -1379,6 +1362,9 @@
         <source>Copy amount</source>
         <translation>Copia l'import</translation>
     </message>
+    </context>
+<context>
+    <name>ProposalFrame</name>
     </context>
 <context>
     <name>QObject</name>
@@ -1410,7 +1396,11 @@
         <source>%1 ms</source>
         <translation>%1 ms</translation>
     </message>
-</context>
+    <message>
+        <source>Redux Core</source>
+        <translation>Redux Core</translation>
+    </message>
+    </context>
 <context>
     <name>QRImageWidget</name>
     <message>
@@ -1528,6 +1518,10 @@
         <translation>&amp;Missatge:</translation>
     </message>
     <message>
+        <source>A&amp;mount:</source>
+        <translation>I&amp;mport:</translation>
+    </message>
+    <message>
         <source>Remove</source>
         <translation>Elimina</translation>
     </message>
@@ -1542,6 +1536,10 @@
     <message>
         <source>Copy amount</source>
         <translation>Copia l'import</translation>
+    </message>
+    <message>
+        <source>Copy address</source>
+        <translation>Copia l'adreça</translation>
     </message>
 </context>
 <context>
@@ -1590,6 +1588,10 @@
         <translation>Missatge</translation>
     </message>
     <message>
+        <source>Address</source>
+        <translation>Adreça</translation>
+    </message>
+    <message>
         <source>Amount</source>
         <translation>Import</translation>
     </message>
@@ -1630,7 +1632,7 @@
     </message>
     <message>
         <source>After Fee:</source>
-        <translation>Després de la comissió:</translation>
+        <translation>Amb comissió:</translation>
     </message>
     <message>
         <source>Change:</source>
@@ -1892,10 +1894,6 @@
         <translation>Aquest any</translation>
     </message>
     <message>
-        <source>Obfuscated</source>
-        <translation>Ofuscat</translation>
-    </message>
-    <message>
         <source>Copy address</source>
         <translation>Copia l'adreça</translation>
     </message>
@@ -1969,7 +1967,7 @@
     </message>
     </context>
 <context>
-    <name>ZPhrControlDialog</name>
+    <name>ZReduxControlDialog</name>
     <message>
         <source>Quantity</source>
         <translation>Quantitat</translation>
@@ -1979,8 +1977,8 @@
         <translation>0</translation>
     </message>
     <message>
-        <source>zPhr</source>
-        <translation>zPhr</translation>
+        <source>zREDUX</source>
+        <translation>zREDUX</translation>
     </message>
     </context>
 <context>

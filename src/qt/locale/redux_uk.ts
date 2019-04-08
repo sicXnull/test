@@ -114,21 +114,21 @@
     </message>
 </context>
 <context>
-    <name>AskPassreduxaseDialog</name>
+    <name>AskPassphraseDialog</name>
     <message>
-        <source>Passreduxase Dialog</source>
+        <source>Passphrase Dialog</source>
         <translation>Кодове слово</translation>
     </message>
     <message>
-        <source>Enter passreduxase</source>
+        <source>Enter passphrase</source>
         <translation>Введіть кодове слово</translation>
     </message>
     <message>
-        <source>New passreduxase</source>
+        <source>New passphrase</source>
         <translation>Нове кодове слово</translation>
     </message>
     <message>
-        <source>Repeat new passreduxase</source>
+        <source>Repeat new passphrase</source>
         <translation>Повторіть кодове слово</translation>
     </message>
     <message>
@@ -136,11 +136,7 @@
         <translation>Для ввімкнення тривіальної відправки коштів при скомпрометуванні операційної системи. Не забезпечує реальної безпеки.</translation>
     </message>
     <message>
-        <source>For anonymization and staking only</source>
-        <translation>Лише для анонімності</translation>
-    </message>
-    <message>
-        <source>Enter the new passreduxase to the wallet.&lt;br/&gt;Please use a passreduxase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
+        <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
         <translation>Введіть нове кодове слово гамамнця. &lt;br/&gt;Будь ласка, використовуйте кодове слово з &lt;b&gt;десяти і більше хаотичних символів&lt;/b&gt;, або &lt;b&gt;восьми і більше слів &lt;/b&gt;.</translation>
     </message>
     <message>
@@ -148,7 +144,7 @@
         <translation>Шифрувати гаманець</translation>
     </message>
     <message>
-        <source>This operation needs your wallet passreduxase to unlock the wallet.</source>
+        <source>This operation needs your wallet passphrase to unlock the wallet.</source>
         <translation>Для розблокування гаманця потрібно його кодове слово.</translation>
     </message>
     <message>
@@ -156,7 +152,7 @@
         <translation>Розблокувати гаманець</translation>
     </message>
     <message>
-        <source>This operation needs your wallet passreduxase to decrypt the wallet.</source>
+        <source>This operation needs your wallet passphrase to decrypt the wallet.</source>
         <translation>Для розшифрування гаманція потрібно його кодове слово.</translation>
     </message>
     <message>
@@ -164,11 +160,11 @@
         <translation>Розшифрувати гаманець</translation>
     </message>
     <message>
-        <source>Change passreduxase</source>
+        <source>Change passphrase</source>
         <translation>Змінити кодове слово</translation>
     </message>
     <message>
-        <source>Enter the old and new passreduxase to the wallet.</source>
+        <source>Enter the old and new passphrase to the wallet.</source>
         <translation>Введіть попереднє і нове кодове слово гаманця.</translation>
     </message>
     <message>
@@ -184,13 +180,16 @@
         <translation>Ви впевнені, що хочете зашифрувати Ваш гаманець?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passreduxase, you will &lt;b&gt;LOSE ALL OF YOUR REDUX&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR REDUX&lt;/b&gt;!</source>
         <translation>Попередження: Якщо після шифрування гаманця Ви &lt;b&gt;загубите кодове слово, то ви втратите всі Ваші REDUX'и&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
         <translation>Гаманець зашифровано</translation>
     </message>
+    </context>
+<context>
+    <name>BanTableModel</name>
     </context>
 <context>
     <name>Bip38ToolDialog</name>
@@ -222,6 +221,9 @@
     <name>FreespaceChecker</name>
     </context>
 <context>
+    <name>GovernancePage</name>
+    </context>
+<context>
     <name>HelpMessageDialog</name>
     </context>
 <context>
@@ -236,6 +238,13 @@
     </context>
 <context>
     <name>MultiSendDialog</name>
+    <message>
+        <source>(no label)</source>
+        <translation>(без міток)</translation>
+    </message>
+    </context>
+<context>
+    <name>MultisigDialog</name>
     </context>
 <context>
     <name>ObfuscationConfig</name>
@@ -257,6 +266,9 @@
     </context>
 <context>
     <name>PrivacyDialog</name>
+    </context>
+<context>
+    <name>ProposalFrame</name>
     </context>
 <context>
     <name>QObject</name>
@@ -286,6 +298,10 @@
     <message>
         <source>Label</source>
         <translation>Мітка</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>Адреса</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -367,7 +383,7 @@
     </message>
     </context>
 <context>
-    <name>ZPhrControlDialog</name>
+    <name>ZReduxControlDialog</name>
     </context>
 <context>
     <name>redux-core</name>

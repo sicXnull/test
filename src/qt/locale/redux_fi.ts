@@ -93,7 +93,11 @@
         <source>Exporting Failed</source>
         <translation>Vienti epäonnistui</translation>
     </message>
-    </context>
+    <message>
+        <source>There was an error trying to save the address list to %1. Please try again.</source>
+        <translation>Tapahtui virhe osoitelistan tallennuksessa %1. Yritä uudestaan.</translation>
+    </message>
+</context>
 <context>
     <name>AddressTableModel</name>
     <message>
@@ -110,21 +114,21 @@
     </message>
 </context>
 <context>
-    <name>AskPassreduxaseDialog</name>
+    <name>AskPassphraseDialog</name>
     <message>
-        <source>Passreduxase Dialog</source>
+        <source>Passphrase Dialog</source>
         <translation>Salausavain dialogi</translation>
     </message>
     <message>
-        <source>Enter passreduxase</source>
+        <source>Enter passphrase</source>
         <translation>Syötä salausavaimesi</translation>
     </message>
     <message>
-        <source>New passreduxase</source>
+        <source>New passphrase</source>
         <translation>Uusi salausavain</translation>
     </message>
     <message>
-        <source>Repeat new passreduxase</source>
+        <source>Repeat new passphrase</source>
         <translation>Toista uusi salausavain</translation>
     </message>
     <message>
@@ -132,11 +136,7 @@
         <translation>Ottaa pois käytöstä tavallisen sendmoneyn kun käyttöjärjestelmä on kompromisoitu. Ei tarjoa todellista turvaa.</translation>
     </message>
     <message>
-        <source>For anonymization and staking only</source>
-        <translation>Vain anonymisointiin ja panostukseen</translation>
-    </message>
-    <message>
-        <source>Enter the new passreduxase to the wallet.&lt;br/&gt;Please use a passreduxase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
+        <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
         <translation>Syötä uusi salausavain lompakkoon &lt;br/&gt; Käytä salausavaimena &lt;b&gt;yli kymmentä satunnaista merkkiä&lt;/b&gt;, tai &lt;b&gt; kahdeksaa tai useampaa sanaa&lt;/b&gt;.</translation>
     </message>
     <message>
@@ -144,7 +144,7 @@
         <translation>Salaa lompakko</translation>
     </message>
     <message>
-        <source>This operation needs your wallet passreduxase to unlock the wallet.</source>
+        <source>This operation needs your wallet passphrase to unlock the wallet.</source>
         <translation>Tämä toiminto tarvitsee sinun salausavaimesi lompakon avaamista varten.</translation>
     </message>
     <message>
@@ -152,7 +152,7 @@
         <translation>Avaa lompakko</translation>
     </message>
     <message>
-        <source>This operation needs your wallet passreduxase to decrypt the wallet.</source>
+        <source>This operation needs your wallet passphrase to decrypt the wallet.</source>
         <translation>Tämä toiminto vaatii salausavaimen avataksesi lompakon.</translation>
     </message>
     <message>
@@ -160,11 +160,11 @@
         <translation>Pura lompakon salaus</translation>
     </message>
     <message>
-        <source>Change passreduxase</source>
+        <source>Change passphrase</source>
         <translation>Vaihda salausavain</translation>
     </message>
     <message>
-        <source>Enter the old and new passreduxase to the wallet.</source>
+        <source>Enter the old and new passphrase to the wallet.</source>
         <translation>Syötä uusi ja vanha salausavain lompakkoon.</translation>
     </message>
     <message>
@@ -180,7 +180,7 @@
         <translation>Oletko varma että tahdot salata lompakkosi?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passreduxase, you will &lt;b&gt;LOSE ALL OF YOUR REDUX&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR REDUX&lt;/b&gt;!</source>
         <translation>Varoitus: Jos salaat lompakkosi ja unohdat salausavaimesi, &lt;b&gt;menetät kaikki REDUXisi&lt;/b&gt;</translation>
     </message>
     <message>
@@ -200,7 +200,7 @@
         <translation>Lompakon salaus epäonnistui sisäisen vian vuoksi. Lompakkoa ei salattu.</translation>
     </message>
     <message>
-        <source>The supplied passreduxases do not match.</source>
+        <source>The supplied passphrases do not match.</source>
         <translation>Syötetyt salausavaimet eivät täsmää.</translation>
     </message>
     <message>
@@ -208,7 +208,7 @@
         <translation>Lompakon avaaminen epäonnistui</translation>
     </message>
     <message>
-        <source>The passreduxase entered for the wallet decryption was incorrect.</source>
+        <source>The passphrase entered for the wallet decryption was incorrect.</source>
         <translation>Syöttämäsi salausavain on väärin.</translation>
     </message>
     <message>
@@ -216,7 +216,7 @@
         <translation>Lompakon salauksen purku epäonnistui</translation>
     </message>
     <message>
-        <source>Wallet passreduxase was successfully changed.</source>
+        <source>Wallet passphrase was successfully changed.</source>
         <translation>Lompakon salausavaimen vaihto onnistui.</translation>
     </message>
     <message>
@@ -224,6 +224,9 @@
         <translation>Varoitus: Caps Lock on päällä!</translation>
     </message>
 </context>
+<context>
+    <name>BanTableModel</name>
+    </context>
 <context>
     <name>Bip38ToolDialog</name>
     <message>
@@ -235,17 +238,8 @@
         <translation>&amp;BIP 38 Salaus</translation>
     </message>
     <message>
-        <source>Enter a Redux Address that you would like to encrypt using BIP 38. Enter a passreduxase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Syötä Redux osoite, jonnka tahtoisit salata käyttäen BIP 38.
-Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityisavaimen.</translation>
-    </message>
-    <message>
         <source>Address:</source>
         <translation>Osoite:</translation>
-    </message>
-    <message>
-        <source>The Redux address to sign the message with</source>
-        <translation>Redux osoite, jolla viesti allekirjoitetaan</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -264,7 +258,7 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Alt+P</translation>
     </message>
     <message>
-        <source>Passreduxase: </source>
+        <source>Passphrase: </source>
         <translation>Salausavain:</translation>
     </message>
     <message>
@@ -276,16 +270,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Kopioi nykyinen allekirjoitus järjestelmän leikepöydälle</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Redux address</source>
-        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän Redux osoitteen</translation>
-    </message>
-    <message>
         <source>Encrypt &amp;Key</source>
         <translation>Salaus &amp;Avain</translation>
-    </message>
-    <message>
-        <source>Reset all sign message fields</source>
-        <translation>Tyhjennä kaikki allekirjoita viesti kentät</translation>
     </message>
     <message>
         <source>Clear &amp;All</source>
@@ -296,24 +282,12 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>&amp;BIP 38 salauksen avaus</translation>
     </message>
     <message>
-        <source>Enter the BIP 38 encrypted private key. Enter the passreduxase in the middle box. Click Decrypt Key to compute the private key. After the key is decrypted, clicking 'Import Address' will add this private key to the wallet.</source>
+        <source>Enter the BIP 38 encrypted private key. Enter the passphrase in the middle box. Click Decrypt Key to compute the private key. After the key is decrypted, clicking 'Import Address' will add this private key to the wallet.</source>
         <translation>Syötä BIP 38 salattu yksityisavain. Syötä salausavain laatikkoon. Paina Avaa Salaus tuottaaksesi yksityisavaimen. Kun avain on dekryptattu, painamalla "Import osoite" lisää tämän yksityisavaimen lompakkoon.</translation>
-    </message>
-    <message>
-        <source>The Redux address the message was signed with</source>
-        <translation>Redux osoite, jolla viesti allekirjoitettiin</translation>
-    </message>
-    <message>
-        <source>Verify the message to ensure it was signed with the specified Redux address</source>
-        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla Redux osoitteella.</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
         <translation>Salauksen avaus &amp;Avain</translation>
-    </message>
-    <message>
-        <source>Reset all verify message fields</source>
-        <translation>Tyhjennä kaikki vahvista viesti kentät</translation>
     </message>
     <message>
         <source>Decrypted Key:</source>
@@ -328,7 +302,7 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Paina "Salausavaimen avaus" generoidaksesi avain</translation>
     </message>
     <message>
-        <source>The entered passreduxase is invalid. </source>
+        <source>The entered passphrase is invalid. </source>
         <translation>Syötetty salausavain ei ole toimiva.</translation>
     </message>
     <message>
@@ -360,7 +334,7 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Salauksen avaus ei onnistunut.</translation>
     </message>
     <message>
-        <source>Please check the key and passreduxase and try again.</source>
+        <source>Please check the key and passphrase and try again.</source>
         <translation>Ole hyvä ja tarkista avain ja salausavain. Kokeile uudestaan.</translation>
     </message>
     <message>
@@ -467,11 +441,11 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Varmuuskopioi lompakko toiseen sijaintiin</translation>
     </message>
     <message>
-        <source>&amp;Change Passreduxase...</source>
+        <source>&amp;Change Passphrase...</source>
         <translation>&amp;Vaihda salausavain...</translation>
     </message>
     <message>
-        <source>Change the passreduxase used for wallet encryption</source>
+        <source>Change the passphrase used for wallet encryption</source>
         <translation>Vaihda salausavain, jota käytetään lompakon salaukseen</translation>
     </message>
     <message>
@@ -635,7 +609,7 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>&amp;BIP38 työkalu</translation>
     </message>
     <message>
-        <source>Encrypt and decrypt private keys using a passreduxase</source>
+        <source>Encrypt and decrypt private keys using a passphrase</source>
         <translation>Salaa ja avaa yksityisavainten salaus käyttämällä salasanaa</translation>
     </message>
     <message>
@@ -701,10 +675,6 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
     <message>
         <source>%1 and %2</source>
         <translation>%1 ja %2</translation>
-    </message>
-    <message>
-        <source>%1 behind</source>
-        <translation>%1 takana</translation>
     </message>
     <message>
         <source>Catching up...</source>
@@ -811,6 +781,10 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
     <message>
         <source>Amount</source>
         <translation>Määrä</translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation>Tyyppi</translation>
     </message>
     <message>
         <source>Date</source>
@@ -929,6 +903,17 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
     <message>
         <source>name</source>
         <translation>nimi</translation>
+    </message>
+    </context>
+<context>
+    <name>GovernancePage</name>
+    <message>
+        <source>Form</source>
+        <translation>Lomake</translation>
+    </message>
+    <message>
+        <source>0</source>
+        <translation>0</translation>
     </message>
     </context>
 <context>
@@ -1079,39 +1064,29 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Lähetä Masternode palkkioihin</translation>
     </message>
     <message>
-        <source>The entered address:
-</source>
-        <translation>Syötetty osoite:</translation>
-    </message>
-    <message>
-        <source> is invalid.
-Please check the address and try again.</source>
-        <translation>on invalidi. Ole hyvä ja tarkista osoite.</translation>
-    </message>
-    <message>
-        <source>The total amount of your MultiSend vector is over 100% of your stake reward
-</source>
-        <translation>MultiSend vektorisi kokonaismäärä on yli 100% panoksesi lohkopalkkiosta.</translation>
+        <source>(no label)</source>
+        <translation>(ei nimikettä)</translation>
     </message>
     <message>
         <source>Please Enter 1 - 100 for percent.</source>
         <translation>Syötä 1 - 100 prosenttia</translation>
     </message>
-    <message>
-        <source>MultiSend Vector
-</source>
-        <translation>MultiSend vektori</translation>
-    </message>
-    <message>
-        <source>Removed </source>
-        <translation>Poistettu</translation>
-    </message>
-    <message>
-        <source>Could not locate address
-</source>
-        <translation>Osoitetta ei löytynyt</translation>
-    </message>
 </context>
+<context>
+    <name>MultisigDialog</name>
+    <message>
+        <source>Status:</source>
+        <translation>Tila:</translation>
+    </message>
+    <message>
+        <source>0</source>
+        <translation>0</translation>
+    </message>
+    <message>
+        <source>Amount:</source>
+        <translation>Määrä:</translation>
+    </message>
+    </context>
 <context>
     <name>ObfuscationConfig</name>
     <message>
@@ -1340,7 +1315,7 @@ Please check the address and try again.</source>
         <source>The supplied proxy address is invalid.</source>
         <translation>Tarjottu proxy osoite on virheellinen.</translation>
     </message>
-</context>
+    </context>
 <context>
     <name>OverviewPage</name>
     <message>
@@ -1374,10 +1349,6 @@ Please check the address and try again.</source>
     <message>
         <source>Total:</source>
         <translation>Määrä:</translation>
-    </message>
-    <message>
-        <source>Your current total balance</source>
-        <translation>Sinun nykyinen kokonaissaldo</translation>
     </message>
     <message>
         <source>Spendable:</source>
@@ -1445,6 +1416,10 @@ Please check the address and try again.</source>
         <translation>Tärkeys:</translation>
     </message>
     <message>
+        <source>TextLabel</source>
+        <translation>TekstiNimike</translation>
+    </message>
+    <message>
         <source>Fee:</source>
         <translation>Taksa:</translation>
     </message>
@@ -1482,10 +1457,17 @@ Please check the address and try again.</source>
     </message>
     </context>
 <context>
+    <name>ProposalFrame</name>
+    </context>
+<context>
     <name>QObject</name>
     <message>
         <source>Amount</source>
         <translation>Määrä</translation>
+    </message>
+    <message>
+        <source>Redux Core</source>
+        <translation>Redux Ydin</translation>
     </message>
     </context>
 <context>
@@ -1673,10 +1655,6 @@ Please check the address and try again.</source>
         <source>Unknown</source>
         <translation>Tuntematon</translation>
     </message>
-    <message>
-        <source>Fetching...</source>
-        <translation>Haetaan...</translation>
-    </message>
 </context>
 <context>
     <name>ReceiveCoinsDialog</name>
@@ -1697,6 +1675,10 @@ Please check the address and try again.</source>
         <translation>Vaihtoehtoinen nimike uudelle vastaanottavalle osoitteelle</translation>
     </message>
     <message>
+        <source>A&amp;mount:</source>
+        <translation>M&amp;äärä:</translation>
+    </message>
+    <message>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Redux network.</source>
         <translation>Vaihtoehtoinen viesti joka liitetään maksupyyntöön, joka näytetään kun pyyntö avataan. Huomio: Viestiä ei lähetetä maksun mukana Redux verkolle.</translation>
     </message>
@@ -1715,10 +1697,6 @@ Please check the address and try again.</source>
     <message>
         <source>An optional amount to request. Leave this empty or zero to not request a specific amount.</source>
         <translation>Pyydä vaihtoehtoinen määrä. Jätä tämä tyhjäksi tai 0, jos haluat pyytää ennaltamääräämättömän summan</translation>
-    </message>
-    <message>
-        <source>&amp;Amount:</source>
-        <translation>&amp;Määrä:</translation>
     </message>
     <message>
         <source>&amp;Request payment</source>
@@ -1763,6 +1741,10 @@ Please check the address and try again.</source>
     <message>
         <source>Copy amount</source>
         <translation>Kopioi määrä</translation>
+    </message>
+    <message>
+        <source>Copy address</source>
+        <translation>Kopioi osoite</translation>
     </message>
 </context>
 <context>
@@ -1833,6 +1815,10 @@ Please check the address and try again.</source>
     <message>
         <source>Message</source>
         <translation>Viesti</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>Osoite</translation>
     </message>
     <message>
         <source>Amount</source>
@@ -1958,10 +1944,6 @@ Please check the address and try again.</source>
         <translation>Lisää &amp;Vastaanottaja</translation>
     </message>
     <message>
-        <source>SwiftTX</source>
-        <translation>SwiftTX</translation>
-    </message>
-    <message>
         <source>Balance:</source>
         <translation>Saldo:</translation>
     </message>
@@ -1976,10 +1958,6 @@ Please check the address and try again.</source>
     <message>
         <source>Copy fee</source>
         <translation>Kopioi taksa</translation>
-    </message>
-    <message>
-        <source>using</source>
-        <translation>käyttää</translation>
     </message>
     <message>
         <source>Warning: Invalid Redux address</source>
@@ -2016,6 +1994,10 @@ Please check the address and try again.</source>
     <message>
         <source>Error: The wallet was unlocked only to anonymize coins. Unlock canceled.</source>
         <translation>Virhe: Lompakko avattiin vain kolikoiden anonymisointiin. Avaus peruutettu.</translation>
+    </message>
+    <message>
+        <source>Pay only the minimum fee of %1</source>
+        <translation>Maksa vain %1 minimi taksa</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -2338,10 +2320,6 @@ Please check the address and try again.</source>
         <translation>Maksut itsellesi</translation>
     </message>
     <message>
-        <source>Minted</source>
-        <translation>Luotu</translation>
-    </message>
-    <message>
         <source>Mined</source>
         <translation>Mainattu</translation>
     </message>
@@ -2480,6 +2458,10 @@ Please check the address and try again.</source>
         <source>Exporting Successful</source>
         <translation>Vienti onnistui</translation>
     </message>
+    <message>
+        <source>The transaction history was successfully saved to %1.</source>
+        <translation>Rahansiirto historia onnistuneesti tallennettu %1</translation>
+    </message>
     </context>
 <context>
     <name>UnitDisplayStatusBarControl</name>
@@ -2524,17 +2506,9 @@ Please check the address and try again.</source>
         <source>Wallet Data (*.dat)</source>
         <translation>Lompakko Data (*.dat)</translation>
     </message>
-    <message>
-        <source>Backup Failed</source>
-        <translation>Varmuuskopiointi epäonnistui</translation>
-    </message>
-    <message>
-        <source>Backup Successful</source>
-        <translation>Varmuuskopiointi onnistui</translation>
-    </message>
-    </context>
+</context>
 <context>
-    <name>ZPhrControlDialog</name>
+    <name>ZReduxControlDialog</name>
     <message>
         <source>0</source>
         <translation>0</translation>

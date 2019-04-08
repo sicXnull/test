@@ -1,4 +1,3 @@
-<!DOCTYPE TS>
 <TS language="nl" version="2.1">
 <context>
     <name>AddressBookPage</name>
@@ -44,11 +43,11 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>Kies het adres om naar te versturen</translation>
+        <translation>Kies het adres om munten naar toe te sturen</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>Kies het adres om op te ontvangen</translation>
+        <translation>Kies het adres om munten op te ontvangen</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
@@ -64,11 +63,11 @@
     </message>
     <message>
         <source>These are your Redux addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Dit zijn uw Reduxadressen om betalingen mee te verzenden. Controleer altijd zowel het bedrag als het ontvangstadres voor het verzenden.</translation>
+        <translation>Dit zijn uw Redux adressen om betalingen mee te verzenden. Controleer altijd zowel het bedrag als het ontvangstadres voor het verzenden van geld.</translation>
     </message>
     <message>
         <source>These are your Redux addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Dit zijn uw Reduxadressen waarop betalingen kunnen worden ontvangen. Het wordt aangeraden om een nieuw ontvangstadres voor elke transactie te gebruiken.</translation>
+        <translation>Dit zijn uw Redux adressen waarop betalingen kunnen worden ontvangen. Het wordt aangeraden om een nieuw ontvangstadres voor elke transactie te gebruiken.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -96,7 +95,7 @@
     </message>
     <message>
         <source>There was an error trying to save the address list to %1. Please try again.</source>
-        <translation>Een fout is opgetreden tijdens het opslaan van deze adreslijst naar %1. Probeer het nogmaals.</translation>
+        <translation>Er was een fout opgetreden tijdens het opslaan van deze adreslijst naar %1. Probeer het nogmaals.</translation>
     </message>
 </context>
 <context>
@@ -115,33 +114,33 @@
     </message>
 </context>
 <context>
-    <name>AskPassreduxaseDialog</name>
+    <name>AskPassphraseDialog</name>
     <message>
-        <source>Passreduxase Dialog</source>
-        <translation>Wachtwoorddialoog</translation>
+        <source>Passphrase Dialog</source>
+        <translation>Wachtwoordzin dialoog</translation>
     </message>
     <message>
-        <source>Enter passreduxase</source>
-        <translation>Voer wachtwoord in</translation>
+        <source>Enter passphrase</source>
+        <translation>Voer wachtwoordzin in</translation>
     </message>
     <message>
-        <source>New passreduxase</source>
-        <translation>Nieuw wachtwoord</translation>
+        <source>New passphrase</source>
+        <translation>Nieuwe wachtwoordzin</translation>
     </message>
     <message>
-        <source>Repeat new passreduxase</source>
-        <translation>Herhaal nieuw wachtwoord</translation>
+        <source>Repeat new passphrase</source>
+        <translation>Herhaal nieuwe wachtwoordzin</translation>
     </message>
     <message>
         <source>Serves to disable the trivial sendmoney when OS account compromised. Provides no real security.</source>
         <translation>Dient om de triviale sendmoney uit te schakelen wanneer het OS account in gevaar is gebracht. Geeft geen echte veiligheid.</translation>
     </message>
     <message>
-        <source>For anonymization and staking only</source>
-        <translation>Alleen voor anonimisering en staking</translation>
+        <source>For anonymization, automint, and staking only</source>
+        <translation>Alleen voor anonimisering, automint en staking</translation>
     </message>
     <message>
-        <source>Enter the new passreduxase to the wallet.&lt;br/&gt;Please use a passreduxase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
+        <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
         <translation>Voer een nieuw wachtwoord in voor uw portemonnee.&lt;br/&gt;Gebruik een wachtwoord van &lt;b&gt;tien of meer willekeurige karakters&lt;/b&gt;, of &lt;b&gt;acht of meer woorden&lt;/b&gt;.</translation>
     </message>
     <message>
@@ -149,19 +148,15 @@
         <translation>Versleutel portemonnee</translation>
     </message>
     <message>
-        <source>This operation needs your wallet passreduxase to unlock the wallet.</source>
+        <source>This operation needs your wallet passphrase to unlock the wallet.</source>
         <translation>Deze operatie vereist uw portemonneewachtwoord om de portemonnee te openen.</translation>
-    </message>
-	    <message>
-        <source>For anonymization, automint, and staking only</source>
-        <translation>Enkel voor anonimisering, automunting en staking</translation>
     </message>
     <message>
         <source>Unlock wallet</source>
         <translation>Open portemonnee</translation>
     </message>
     <message>
-        <source>This operation needs your wallet passreduxase to decrypt the wallet.</source>
+        <source>This operation needs your wallet passphrase to decrypt the wallet.</source>
         <translation>Deze operatie vereist uw portemonneewachtwoord om de portemonnee te ontsleutelen</translation>
     </message>
     <message>
@@ -169,12 +164,12 @@
         <translation>Ontsleutel portemonnee</translation>
     </message>
     <message>
-        <source>Change passreduxase</source>
+        <source>Change passphrase</source>
         <translation>Wijzig wachtwoord</translation>
     </message>
     <message>
-        <source>Enter the old and new passreduxase to the wallet.</source>
-        <translation>Voer het oude en nieuwe wachtwoord voor uw portemonnee in.</translation>
+        <source>Enter the old and new passphrase to the wallet.</source>
+        <translation>Voer de oude en nieuwe wachtwoordzin in voor uw portemonnee.</translation>
     </message>
     <message>
         <source>Confirm wallet encryption</source>
@@ -182,14 +177,14 @@
     </message>
     <message>
         <source>Redux will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your REDUXs from being stolen by malware infecting your computer.</source>
-        <translation>Redux zal nu afsluiten om het versleutelingsproces te voltooien. Onthoud dat het versleutelen van uw portemonnee u niet volledig kan beschermen: Malware kan uw computer infecteren en uw REDUXs stelen.</translation>
+        <translation>Redux zal nu afsluiten om het versleutelingsproces te voltooien. Onthoud dat het versleutelen van uw portemonnee u niet volledig kan beschermen tegen malware infecties op uw computer die uw REDUX's kunnen stelen.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Weet u zeker dat u uw portemonnee wilt versleutelen?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passreduxase, you will &lt;b&gt;LOSE ALL OF YOUR REDUX&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR REDUX&lt;/b&gt;!</source>
         <translation>Waarschuwing: Als u uw portemonnee versleutelt en uw wachtwoord vergeet, zult u &lt;b&gt;AL UW REDUX VERLIEZEN&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -198,7 +193,7 @@
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
-        <translation>BELANGRIJK: Elke eerder gemaakte backup van uw portemonneebestand dient te worden vervangen door het nieuw gegenereerde, versleutelde portemonneebestand. Om veiligheidsredenen zullen eerdere backups van het niet-versleutelde portemonneebestand onbruikbaar worden zodra u uw nieuwe, versleutelde, portemonnee begint te gebruiken.</translation>
+        <translation>BELANGRIJK: Elke eerder gemaakte backup van uw portemonneebestand dient te worden vervangen door het nieuwe gegenereerde, versleutelde portemonneebestand. Om veiligheidsredenen zullen eerdere backups van het niet-versleutelde portemonneebestand onbruikbaar worden zodra u uw nieuwe, versleutelde, portemonnee begint te gebruiken.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -209,28 +204,39 @@
         <translation>Portemonneeversleuteling mislukt door een interne fout. Uw portemonnee is niet versleuteld.</translation>
     </message>
     <message>
-        <source>The supplied passreduxases do not match.</source>
-        <translation>De opgegeven wachtwoorden komen niet overeen.</translation>
+        <source>The supplied passphrases do not match.</source>
+        <translation>De opgegeven wachtwoordzinnen komen niet overeen.</translation>
     </message>
     <message>
         <source>Wallet unlock failed</source>
         <translation>Portemonnee openen mislukt</translation>
     </message>
     <message>
-        <source>The passreduxase entered for the wallet decryption was incorrect.</source>
-        <translation>Het opgegeven wachtwoord voor de portemonnee-ontsleuteling is niet correct.</translation>
+        <source>The passphrase entered for the wallet decryption was incorrect.</source>
+        <translation>De opgegeven wachtwoordzin voor de portemonnee ontsleuteling is niet correct.</translation>
     </message>
     <message>
         <source>Wallet decryption failed</source>
-        <translation>Portemonnee-ontsleuteling mislukt</translation>
+        <translation>Portemonnee ontsleuteling mislukt</translation>
     </message>
     <message>
-        <source>Wallet passreduxase was successfully changed.</source>
-        <translation>Portemonneewachtwoord is met succes gewijzigd.</translation>
+        <source>Wallet passphrase was successfully changed.</source>
+        <translation>Portemonnee wachtwoordzin is met succes gewijzigd.</translation>
     </message>
     <message>
         <source>Warning: The Caps Lock key is on!</source>
         <translation>Waarschuwing: De Caps-Lock-toets staat aan!</translation>
+    </message>
+</context>
+<context>
+    <name>BanTableModel</name>
+    <message>
+        <source>IP/Netmask</source>
+        <translation>IP/Netmask</translation>
+    </message>
+    <message>
+        <source>Banned Until</source>
+        <translation>Verboden tot</translation>
     </message>
 </context>
 <context>
@@ -244,16 +250,16 @@
         <translation>&amp;BIP 38 Versleuteling</translation>
     </message>
     <message>
-        <source>Enter a Redux Address that you would like to encrypt using BIP 38. Enter a passreduxase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Voer een Redux adres in dat u wilt versleutelen met BIP 38. Voer een wachtwoord in, in het middelste veld. Druk op versleutelen om de versleutelde geheime sleutel te berekenen.</translation>
-    </message>
-    <message>
         <source>Address:</source>
         <translation>Adres:</translation>
     </message>
     <message>
-        <source>The Redux address to sign the message with</source>
-        <translation>Het Redux adres om het bericht met te ondertekenen</translation>
+        <source>Enter a Redux Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Voer een Redux adres in dat u wilt coderen met BIP 38. Voer een wachtwoordzin in in het middelste vak. Druk op versleutelen om de versleutelde privé sleutel te berekenen.</translation>
+    </message>
+    <message>
+        <source>The Redux address to encrypt</source>
+        <translation>Het Redux adres om te versleutelen</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -272,7 +278,7 @@
         <translation>Alt+P</translation>
     </message>
     <message>
-        <source>Passreduxase: </source>
+        <source>Passphrase: </source>
         <translation>Wachtwoord:</translation>
     </message>
     <message>
@@ -284,16 +290,24 @@
         <translation>Kopieer de huidige handtekening naar het systeemklembord</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Redux address</source>
-        <translation>Onderteken het bericht om te bewijzen dat u het Redux adres bezit</translation>
+        <source>Encrypt the private key for this Redux address</source>
+        <translation>Versleutel de privé sleutel voor dit Redux adres</translation>
+    </message>
+    <message>
+        <source>Reset all fields</source>
+        <translation>Reset alle velden</translation>
+    </message>
+    <message>
+        <source>The encrypted private key</source>
+        <translation>De versleutelde privé sleutel</translation>
+    </message>
+    <message>
+        <source>Decrypt the entered key using the passphrase</source>
+        <translation>Decodeer de ingevoerde sleutel met behulp van de wachtwoordzin</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
         <translation>Versleutel &amp;Sleutel</translation>
-    </message>
-    <message>
-        <source>Reset all sign message fields</source>
-        <translation>Maak alle ondertekenvelden leeg</translation>
     </message>
     <message>
         <source>Clear &amp;All</source>
@@ -304,24 +318,12 @@
         <translation>&amp;BIP 38 ontsleuteling</translation>
     </message>
     <message>
-        <source>Enter the BIP 38 encrypted private key. Enter the passreduxase in the middle box. Click Decrypt Key to compute the private key. After the key is decrypted, clicking &apos;Import Address&apos; will add this private key to the wallet.</source>
-        <translation>Voer de BIP 38 versleutelde geheime sleutel in. Voer het wachtwoord in, in het middelste veld. Druk op Ontsleutelen Sleutel om de geheime sleutel te berekenen.  Nadat de geheime sleutel is ontsleuteld, zal het klikken op &apos;Adres Importerens&apos; de geheime sleutel toevoegen aan de portemonnee.</translation>
-    </message>
-    <message>
-        <source>The Redux address the message was signed with</source>
-        <translation>Het Redux adres waarmee het bericht was ondertekend</translation>
-    </message>
-    <message>
-        <source>Verify the message to ensure it was signed with the specified Redux address</source>
-        <translation>Controleer een bericht om te verifiëren dat het ondertekend is door het gespecificeerde Redux adres</translation>
+        <source>Enter the BIP 38 encrypted private key. Enter the passphrase in the middle box. Click Decrypt Key to compute the private key. After the key is decrypted, clicking 'Import Address' will add this private key to the wallet.</source>
+        <translation>Voer de BIP 38 versleutelde geheime sleutel in. Voer de wachtwoordzin in, in het middelste veld. Druk op Ontsleutel Sleutel om de privé sleutel te berekenen.  Nadat de privé sleutel is ontsleuteld, zal het klikken op 'Adres Importeren' de privé sleutel toevoegen aan de portemonnee.</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
-        <translation>Ontsleutelen Sleutel</translation>
-    </message>
-    <message>
-        <source>Reset all verify message fields</source>
-        <translation>Maak alle verifiëren van het bericht velden leeg</translation>
+        <translation>Ontsleutelen &amp;Sleutel</translation>
     </message>
     <message>
         <source>Decrypted Key:</source>
@@ -332,12 +334,12 @@
         <translation>Adres Importeren</translation>
     </message>
     <message>
-        <source>Click &quot;Decrypt Key&quot; to compute key</source>
-        <translation>Klik &quot;Ontsleutelen Sleutel&quot; om de sleutel te berekenen</translation>
+        <source>Click "Decrypt Key" to compute key</source>
+        <translation>Klik "Ontsleutelen Sleutel" om de sleutel te berekenen</translation>
     </message>
     <message>
-        <source>The entered passreduxase is invalid. </source>
-        <translation>Het ingevoerde wachtwoord is ongeldig.</translation>
+        <source>The entered passphrase is invalid. </source>
+        <translation>De ingevoerde wachtwoordzin is ongeldig.</translation>
     </message>
     <message>
         <source>Allowed: 0-9,a-z,A-Z,</source>
@@ -357,19 +359,19 @@
     </message>
     <message>
         <source>Wallet unlock was cancelled.</source>
-        <translation>Portemonnee-ontsleuteling is geannuleerd.</translation>
+        <translation>Portemonnee ontsleuteling is geannuleerd.</translation>
     </message>
     <message>
         <source>Private key for the entered address is not available.</source>
-        <translation>Geheime sleutel voor het ingevoerde adres is niet beschikbaar.</translation>
+        <translation>Privé sleutel voor het ingevoerde adres is niet beschikbaar.</translation>
     </message>
     <message>
         <source>Failed to decrypt.</source>
         <translation>Ontsleutelen mislukt.</translation>
     </message>
     <message>
-        <source>Please check the key and passreduxase and try again.</source>
-        <translation>Controleer de sleutel en het wachtwoord en probeer het opnieuw.</translation>
+        <source>Please check the key and passphrase and try again.</source>
+        <translation>Controleer de sleutel en de wachtwoordzin en probeer het opnieuw.</translation>
     </message>
     <message>
         <source>Data Not Valid.</source>
@@ -393,7 +395,7 @@
     </message>
     <message>
         <source>Successfully Added Private Key To Wallet</source>
-        <translation>De geheime sleutel is toegevoegd aan de portemonnee</translation>
+        <translation>De privé sleutel is met succes toegevoegd aan de portemonnee</translation>
     </message>
 </context>
 <context>
@@ -431,8 +433,12 @@
         <translation>Blader door transactiegescheidenis</translation>
     </message>
     <message>
+        <source>Privacy Actions for zREDUX</source>
+        <translation>Privacy Acties voor zREDUX</translation>
+    </message>
+    <message>
         <source>E&amp;xit</source>
-        <translation>&amp;Sluiten</translation>
+        <translation>S&amp;luiten</translation>
     </message>
     <message>
         <source>Quit application</source>
@@ -460,27 +466,27 @@
     </message>
     <message>
         <source>&amp;Encrypt Wallet...</source>
-        <translation>Versleutel portemonnee</translation>
+        <translation>$Versleutel portemonnee...</translation>
     </message>
     <message>
         <source>Encrypt the private keys that belong to your wallet</source>
-        <translation>Versleutel de geheime sleutels die bij uw portemonnee horen</translation>
+        <translation>Versleutel de privé sleutels die bij uw portemonnee horen</translation>
     </message>
     <message>
         <source>&amp;Backup Wallet...</source>
-        <translation>Backup Portemonnee...</translation>
+        <translation>&amp;Backup Portemonnee...</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
         <translation>Backup portemonnee naar een andere locatie</translation>
     </message>
     <message>
-        <source>&amp;Change Passreduxase...</source>
-        <translation>&amp;Wijzig Wachtwoord...</translation>
+        <source>&amp;Change Passphrase...</source>
+        <translation>&amp;Wijzig Wachtwoordzin...</translation>
     </message>
     <message>
-        <source>Change the passreduxase used for wallet encryption</source>
-        <translation>Wijzig het wachtwoord voor uw portemonneversleuteling</translation>
+        <source>Change the passphrase used for wallet encryption</source>
+        <translation>Wijzig de wachtwoordzin die gebruikt wordt voor uw portemonnee versleuteling</translation>
     </message>
     <message>
         <source>&amp;Unlock Wallet...</source>
@@ -560,7 +566,7 @@
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
-        <translation>Toon de lijst van verzendadressen en labels</translation>
+        <translation>Toon de lijst van gebruikte verzendadressen en labels</translation>
     </message>
     <message>
         <source>&amp;Receiving addresses...</source>
@@ -568,7 +574,31 @@
     </message>
     <message>
         <source>Show the list of used receiving addresses and labels</source>
-        <translation>Toon de lijst van ontvangstadressen en labels</translation>
+        <translation>Toon de lijst van gebruikte ontvangstadressen en labels</translation>
+    </message>
+    <message>
+        <source>&amp;Multisignature creation...</source>
+        <translation>&amp;Multisignature aanmaak...</translation>
+    </message>
+    <message>
+        <source>Create a new multisignature address and add it to this wallet</source>
+        <translation>Creëer een nieuw multisignature adres en voeg het toe aan deze portemonnee</translation>
+    </message>
+    <message>
+        <source>&amp;Multisignature spending...</source>
+        <translation>&amp;Multisignature spenderen...</translation>
+    </message>
+    <message>
+        <source>Spend from a multisignature address</source>
+        <translation>Besteden vanuit een multisignature adres</translation>
+    </message>
+    <message>
+        <source>&amp;Multisignature signing...</source>
+        <translation>Ondertekenen van &amp;Multisignature...</translation>
+    </message>
+    <message>
+        <source>Sign with a multisignature address</source>
+        <translation>Onderteken met een multisignature adres</translation>
     </message>
     <message>
         <source>Open &amp;URI...</source>
@@ -580,11 +610,23 @@
     </message>
     <message numerus="yes">
         <source>Processed %n blocks of transaction history.</source>
-        <translation><numerusform>%n blok van transactiegeschiedenis verwerkt.</numerusform><numerusform>%n blokken van transactiegeschiedenis verwerkt.</numerusform></translation>
+        <translation><numerusform>%n blokken verwerkt van de transactiegeschiedenis</numerusform><numerusform>%n blokken verwerkt van de transactiegeschiedenis</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing additional data: %p%</source>
         <translation>Synchroniseren aanvullende gegevens: %p%</translation>
+    </message>
+    <message>
+        <source>%1 behind. Scanning block %2</source>
+        <translation>%1 achter. Scannen van block %2</translation>
+    </message>
+    <message>
+        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt; for anonymization and staking only</source>
+        <translation>Portemonnee is &lt;b&gt;versleuteld&lt;/b&gt; en momenteel &lt;b&gt;geopend&lt;/b&gt;enkel voor anonimisering en staking</translation>
+    </message>
+    <message>
+        <source>Tor is &lt;b&gt;enabled&lt;/b&gt;: %1</source>
+        <translation>Tor is &lt;b&gt;enabled&lt;/b&gt;: %1</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -608,7 +650,7 @@
     </message>
     <message>
         <source>Redux Core</source>
-        <translation>Redux Kern</translation>
+        <translation>Redux Core</translation>
     </message>
     <message>
         <source>Send coins to a Redux address</source>
@@ -616,15 +658,11 @@
     </message>
     <message>
         <source>Request payments (generates QR codes and redux: URIs)</source>
-        <translation>Vraag betaling aan (genereert QR-codes en Redux: URI's)</translation>
+        <translation>Vraag betaling aan (genereert QR codes en Redux: URI's)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
         <translation>&amp;Privacy</translation>
-    </message>
-    <message>
-        <source>Privacy Action for zREDUX and Obfuscation</source>
-        <translation>Privacy Actie voor zREDUX en verduistering</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -636,7 +674,7 @@
     </message>
     <message>
         <source>&amp;About Redux Core</source>
-        <translation>&amp;Over Redux Kern</translation>
+        <translation>&amp;Over Redux Core</translation>
     </message>
     <message>
         <source>Show information about Redux Core</source>
@@ -648,19 +686,19 @@
     </message>
     <message>
         <source>Sign messages with your Redux addresses to prove you own them</source>
-        <translation>Onderteken berichten met uw Redux adressen om te bewijzen dat u deze adressen bezit</translation>
+        <translation>Onderteken berichten met uw Redux adressen om te bewijzen dat deze adressen in uw bezit zijn</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Redux addresses</source>
-        <translation>Controleer berichten om te verifiëren dat deze ondertekend zijn met de gespecificeerde Redux adressen</translation>
+        <translation>Controleer berichten om te verzekeren dat deze ondertekend zijn met de gespecificeerde Redux adressen</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
         <translation>&amp;BIP38 tool</translation>
     </message>
     <message>
-        <source>Encrypt and decrypt private keys using a passreduxase</source>
-        <translation>Versleutelen en ontsleutelen door middel van een wachtwoord/wachtzin</translation>
+        <source>Encrypt and decrypt private keys using a passphrase</source>
+        <translation>Versleutelen en ontsleutel privé sleutels door middel van een wachtwoordzin</translation>
     </message>
     <message>
         <source>&amp;MultiSend</source>
@@ -668,7 +706,7 @@
     </message>
     <message>
         <source>MultiSend Settings</source>
-        <translation>MultiSend intellingen</translation>
+        <translation>MultiSend instellingen</translation>
     </message>
     <message>
         <source>Open Wallet &amp;Configuration File</source>
@@ -704,7 +742,7 @@
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to Redux network</source>
-        <translation><numerusform>%n actieve verbinding naar het Redux netwerk</numerusform><numerusform>%n actieve verbinding(en) naar het Redux netwerk</numerusform></translation>
+        <translation><numerusform>%n actieve verbinding(en) naar het Redux netwerk</numerusform><numerusform>%n actieve verbinding(en) naar het Redux netwerk</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -720,32 +758,19 @@
     </message>
     <message>
         <source>No block source available...</source>
-        <translation>Geen blockbron beschikbaar</translation>
+        <translation>Geen block bron beschikbaar</translation>
     </message>
     <message>
         <source>Up to date</source>
         <translation>Bijgewerkt</translation>
     </message>
-	<message numerus="yes">
-        <source>%n hour(s)</source>
-        <translation>
-			<numerusform>%n uur</numerusform>
-			<numerusform>%n uren</numerusform>
-		</translation>
-    </message>
     <message numerus="yes">
         <source>%n day(s)</source>
-        <translation>
-			<numerusform>%n dag</numerusform>
-			<numerusform>%n dagen</numerusform>
-		</translation>
+        <translation><numerusform>%n dagen</numerusform><numerusform>%n dagen</numerusform></translation>
     </message>
     <message numerus="yes">
         <source>%n week(s)</source>
-        <translation>
-			<numerusform>%n week</numerusform>
-			<numerusform>%n weken</numerusform>
-		</translation>
+        <translation><numerusform>%n weken</numerusform><numerusform>%n weken</numerusform></translation>
     </message>
     <message>
         <source>%1 and %2</source>
@@ -753,14 +778,7 @@
     </message>
     <message numerus="yes">
         <source>%n year(s)</source>
-        <translation>
-			<numerusform>%n jaar</numerusform>
-			<numerusform>%n jaren</numerusform>
-		</translation>
-    </message>
-    <message>
-        <source>%1 behind</source>
-        <translation>%1 achter</translation>
+        <translation><numerusform>%n jaren</numerusform><numerusform>%n jaren</numerusform></translation>
     </message>
     <message>
         <source>Catching up...</source>
@@ -768,11 +786,11 @@
     </message>
     <message>
         <source>Last received block was generated %1 ago.</source>
-        <translation>Het laatst ontvangen block was %1 geleden gegenereerd.</translation>
+        <translation>Laatst ontvangen block was %1 geleden gegenereerd.</translation>
     </message>
     <message>
         <source>Transactions after this will not yet be visible.</source>
-        <translation>Transacties hierna zijn nog niet zichtbaar.</translation>
+        <translation>Transacties hierna zullen nog niet zichtbaar zijn.</translation>
     </message>
     <message>
         <source>Error</source>
@@ -796,7 +814,7 @@
     </message>
     <message>
         <source>Sent MultiSend transaction</source>
-        <translation>Verzend MultiSend transactie</translation>
+        <translation>Verzonden MultiSend transactie</translation>
     </message>
     <message>
         <source>Date: %1
@@ -831,62 +849,22 @@ Multisend: %1</translation>
 MultiSend: %1</translation>
     </message>
     <message>
+        <source>AutoMint is currently enabled and set to </source>
+        <translation>AutoMint is momenteel ingeschakeld en ingesteld op</translation>
+    </message>
+    <message>
+        <source>AutoMint is disabled</source>
+        <translation>AutoMint is uitgeschakeld</translation>
+    </message>
+    <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
         <translation>Portemonnee is &lt;b&gt;versleuteld&lt;/b&gt; en momenteel &lt;b&gt;geopend&lt;/b&gt;</translation>
     </message>
     <message>
-        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt; for anonimization and staking only</source>
-        <translation>Portemonnee is &lt;b&gt;versleuteld&lt;/b&gt; en momenteel &lt;b&gt;geopend&lt;/b&gt;alleen voor anonimiteit en staking </translation>
-    </message>
-    <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
-        <translation>Portemonnee is &lt;b&gt;geëncrypteerd &lt;/b&gt;en momentel &lt;b&gt; vergrendeld&lt;/b&gt;</translation>
+        <translation>Portemonnee is versleuteld &lt;/b&gt;en momenteel &lt;b&gt; vergrendeld&lt;/b&gt;</translation>
     </message>
-	<message>
-        <source>&amp;Privacy</source>
-        <translation>&amp;Privacy</translation>
-    </message>
-    <message>
-        <source>Privacy Actions for zREDUX</source>
-        <translation>Privacyacties voor zREDUX</translation>
-    </message>
-    <message>
-        <source>&amp;Multisignature creation...</source>
-        <translation>&amp;Multisignatuur creëren...</translation>
-    </message>
-    <message>
-        <source>Create a new multisignature address and add it to this wallet</source>
-        <translation>Maak een nieuw multisignatuur-adres en voeg het toe aan deze portemonnee</translation>
-    </message>
-    <message>
-        <source>&amp;Multisignature spending...</source>
-        <translation>&amp;Multisignatuur uitgeven...</translation>
-    </message>
-    <message>
-        <source>Spend from a multisignature address</source>
-        <translation>Besteden vanuit een multisignatuur-adres</translation>
-    </message>
-    <message>
-        <source>&amp;Multisignature signing...</source>
-        <translation>&amp;Multisignatuur ondertekenen...</translation>
-    </message>
-    <message>
-        <source>Sign with a multisignature address</source>
-        <translation>Onderteken met een multisignatuur-adres</translation>
-    </message>
-    <message>
-        <source>%1 behind. Scanning block %2</source>
-        <translation>%1 achterop. Scannen van blok %2</translation>
-    </message>
-    <message>
-        <source>A fatal error occurred. Redux can no longer continue safely and will quit.</source>
-        <translation>Er is een fatale fout opgetreden. Redux kan niet langer veilig uitgevoerd worden en zal afsluiten.</translation>
-    </message>
-    <message>
-        <source>High Sierra not supported with this build</source>
-        <translation>High Sierra wordt niet ondersteund door deze build</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>BlockExplorer</name>
     <message>
@@ -915,15 +893,11 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (redux.conf).</source>
-        <translation>Niet alle transacties worden getoond. Om alle transacties te bekijken moet u txindex=1 instellen in het configuratie bestand (redux.conf).</translation>
+        <translation>Niet alle transacties zullen worden getoond. Om alle transacties te bekijken moet u txindex=1 instellen in het configuratie bestand (redux.conf).</translation>
     </message>
 </context>
 <context>
     <name>ClientModel</name>
-	<message>
-        <source>Total: %1 (OBF compatible: %2 / Enabled: %3)</source>
-        <translation>Totaal: %1 (OBF compatibel: %2 / Ingeschakeld: %3)</translation>
-    </message>
     <message>
         <source>Total: %1 (IPv4: %2 / IPv6: %3 / Tor: %4 / Unknown: %5)</source>
         <translation>Totaal: %1 (IPv4: %2 / IPv6: %3 / Tor: %4 / Onbekend: %5)</translation>
@@ -945,7 +919,7 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>Amount:</source>
-        <translation>Hoeveelheid:</translation>
+        <translation>Bedrag:</translation>
     </message>
     <message>
         <source>Priority:</source>
@@ -953,7 +927,7 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>Fee:</source>
-        <translation>Kost:</translation>
+        <translation>Fee:</translation>
     </message>
     <message>
         <source>Coin Selection</source>
@@ -961,23 +935,23 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>Dust:</source>
-        <translation>Stof:</translation>
+        <translation>Dust:</translation>
     </message>
     <message>
         <source>After Fee:</source>
-        <translation>Na de kost:</translation>
+        <translation>Na de fee:</translation>
     </message>
     <message>
         <source>Change:</source>
-        <translation>Wijzig:</translation>
+        <translation>Wisselgeld:</translation>
     </message>
     <message>
         <source>(un)select all</source>
-        <translation>(on)selecteer alles</translation>
+        <translation>(de)selecteer alles</translation>
     </message>
     <message>
         <source>toggle lock state</source>
-        <translation>Schakel lock state</translation>
+        <translation>Schakel lock status</translation>
     </message>
     <message>
         <source>Tree mode</source>
@@ -985,15 +959,15 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>List mode</source>
-        <translation>Lijstmodus</translation>
+        <translation>Lijst modus</translation>
     </message>
     <message>
         <source>(1 locked)</source>
-        <translation>(1 opgesloten)</translation>
+        <translation>(1 locked)</translation>
     </message>
     <message>
         <source>Amount</source>
-        <translation>Hoeveelheid</translation>
+        <translation>Bedrag</translation>
     </message>
     <message>
         <source>Received with label</source>
@@ -1003,9 +977,9 @@ MultiSend: %1</translation>
         <source>Received with address</source>
         <translation>Ontvangen met adres</translation>
     </message>
-	<message>
-        <source>DS Rounds</source>
-        <translation>DS Ronden</translation>
+    <message>
+        <source>Type</source>
+        <translation>Type</translation>
     </message>
     <message>
         <source>Date</source>
@@ -1033,11 +1007,11 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>Copy amount</source>
-        <translation>Kopieer hoeveelheid</translation>
+        <translation>Kopieer bedrag</translation>
     </message>
     <message>
         <source>Copy transaction ID</source>
-        <translation>Kopier transactie ID</translation>
+        <translation>Kopieer transactie ID</translation>
     </message>
     <message>
         <source>Lock unspent</source>
@@ -1049,15 +1023,15 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>Copy quantity</source>
-        <translation>Kopieer kwanititeit</translation>
+        <translation>Kopieer kwantiteit</translation>
     </message>
     <message>
         <source>Copy fee</source>
-        <translation>Kopiëer kost</translation>
+        <translation>Kopieer fee</translation>
     </message>
     <message>
         <source>Copy after fee</source>
-        <translation>Kopiëer na kost</translation>
+        <translation>Kopieer na fee</translation>
     </message>
     <message>
         <source>Copy bytes</source>
@@ -1076,12 +1050,8 @@ MultiSend: %1</translation>
         <translation>Kopieer wisselgeld</translation>
     </message>
     <message>
-        <source>Please switch to &quot;List mode&quot; to use this function.</source>
-        <translation>Ga alsjeblieft over naar &quot;Lijst modus&quot; om deze functie te gebruiken.</translation>
-    </message>
-	 <message>
-        <source>Non-anonymized input selected. &lt;b&gt;Obfuscation will be disabled.&lt;/b&gt;&lt;br&gt;&lt;br&gt;If you still want to use Obfuscation, please deselect all non-anonymized inputs first and then check Obfuscation checkbox again.</source>
-	<translation>Niet-geanonimiseerde invoer geselecteerd. &lt;b&gt;Verduistering zal uitgeschakeld worden.&lt;/b&gt;&lt;br&gt;&lt;br&gt;Als u verduistering nog steeds wilt gebruiken, deselecteer dan eerst alle niet-geanonimiseerde invoer en vink vervolgens Verduistering nogmaals aan.</translation>
+        <source>Please switch to "List mode" to use this function.</source>
+        <translation>Schakel alsjeblieft over naar "Lijst modus" om deze functie te gebruiken.</translation>
     </message>
     <message>
         <source>highest</source>
@@ -1098,14 +1068,6 @@ MultiSend: %1</translation>
     <message>
         <source>medium-high</source>
         <translation>medium-hoog</translation>
-    </message>
-    <message>
-        <source>Can vary +/- %1 duff(s) per input.</source>
-        <translation>Kan variëren van +/-%1 duff(s) per invoer.</translation>
-    </message>
-	<message>
-        <source>n/a</source>
-        <translation>n/b</translation>
     </message>
     <message>
         <source>medium</source>
@@ -1127,7 +1089,7 @@ MultiSend: %1</translation>
         <source>lowest</source>
         <translation>laagst</translation>
     </message>
-	<message>
+    <message>
         <source>(%1 locked)</source>
         <translation>(%1 vergrendeld)</translation>
     </message>
@@ -1149,7 +1111,7 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>This means a fee of at least %1 per kB is required.</source>
-        <translation>Dit betekent dat een honorarium van minstens %1 per kB vereist is.</translation>
+        <translation>Dit betekent dat een fee van minstens %1 per kB vereist is.</translation>
     </message>
     <message>
         <source>Can vary +/- 1 byte per input.</source>
@@ -1157,15 +1119,19 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>Transactions with higher priority are more likely to get included into a block.</source>
-        <translation>Transacties met hogere prioriteit zullen waarschijnlijk in een blok opgenomen worden.</translation>
+        <translation>Transacties met hogere prioriteit zullen waarschijnlijk eerder in een blok opgenomen worden.</translation>
     </message>
     <message>
-        <source>This label turns red, if the priority is smaller than &quot;medium&quot;.</source>
-        <translation>Dit label wordt rood, als de prioriteit lager is dan &quot;medium&quot;.</translation>
+        <source>This label turns red, if the priority is smaller than "medium".</source>
+        <translation>Dit label wordt rood, als de prioriteit lager is dan "medium".</translation>
     </message>
     <message>
         <source>This label turns red, if any recipient receives an amount smaller than %1.</source>
         <translation>Dit label wordt rood, als een ontvanger een hoeveelheid kleiner dan %1 ontvangt.</translation>
+    </message>
+    <message>
+        <source>Can vary +/- %1 uredux per input.</source>
+        <translation>Kan +/-%1 uredux per invoer variëren.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1178,10 +1144,6 @@ MultiSend: %1</translation>
     <message>
         <source>(change)</source>
         <translation>(wijzig)</translation>
-    </message>
-	<message>
-        <source>Type</source>
-        <translation>Type</translation>
     </message>
 </context>
 <context>
@@ -1196,7 +1158,7 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>The label associated with this address list entry</source>
-        <translation>Het label dat geassocieerd wordt met deze adreslijstinvoer</translation>
+        <translation>Het label dat geassocieerd is met deze adreslijst invoer</translation>
     </message>
     <message>
         <source>&amp;Address</source>
@@ -1204,7 +1166,7 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>The address associated with this address list entry. This can only be modified for sending addresses.</source>
-        <translation>Het adres geassocieerd met deze adreslijst vermelding. Dit kan alleen worden gewijzigd voor het verzenden van adressen.</translation>
+        <translation>Het adres geassocieerd met deze adreslijst invoer. Dit kan alleen worden gewijzigd voor verzend adressen.</translation>
     </message>
     <message>
         <source>New receiving address</source>
@@ -1212,7 +1174,7 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>New sending address</source>
-        <translation>Nieuw verzendadres</translation>
+        <translation>Nieuw verzend adres</translation>
     </message>
     <message>
         <source>Edit receiving address</source>
@@ -1220,15 +1182,15 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>Edit sending address</source>
-        <translation>Wijzig verzendadres</translation>
+        <translation>Wijzig verzend adres</translation>
     </message>
     <message>
-        <source>The entered address &quot;%1&quot; is not a valid Redux address.</source>
-        <translation>Het ingevoerde adres: &quot;%1&quot; is geen geldig Redux adres.</translation>
+        <source>The entered address "%1" is not a valid Redux address.</source>
+        <translation>Het ingevoerde adres: "%1" is geen geldig Redux adres.</translation>
     </message>
     <message>
-        <source>The entered address &quot;%1&quot; is already in the address book.</source>
-        <translation>Het ingevoerde adres: &quot;%1&quot; staat al in uw adresboek.</translation>
+        <source>The entered address "%1" is already in the address book.</source>
+        <translation>Het ingevoerde adres: "%1" staat al in uw adresboek.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -1243,7 +1205,7 @@ MultiSend: %1</translation>
     <name>FreespaceChecker</name>
     <message>
         <source>A new data directory will be created.</source>
-        <translation>Er wordt een nieuwe data map gemaakt.</translation>
+        <translation>Een nieuwe data directory zal worden aangemaakt.</translation>
     </message>
     <message>
         <source>name</source>
@@ -1251,7 +1213,7 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>Directory already exists. Add %1 if you intend to create a new directory here.</source>
-        <translation>Map bestaat alreeds. Voeg %1 toe als je van plan bent om hier een nieuwe map te creëren.</translation>
+        <translation>Map bestaat reeds. Voeg %1 toe als je van plan bent om hier een nieuwe map te creëren.</translation>
     </message>
     <message>
         <source>Path already exists, and is not a directory.</source>
@@ -1263,6 +1225,17 @@ MultiSend: %1</translation>
     </message>
 </context>
 <context>
+    <name>GovernancePage</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulier</translation>
+    </message>
+    <message>
+        <source>0</source>
+        <translation>0</translation>
+    </message>
+    </context>
+<context>
     <name>HelpMessageDialog</name>
     <message>
         <source>version</source>
@@ -1270,7 +1243,7 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>Redux Core</source>
-        <translation>Redux Kern</translation>
+        <translation>Redux Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
@@ -1296,17 +1269,17 @@ MultiSend: %1</translation>
         <source>UI Options:</source>
         <translation>UI Opties:</translation>
     </message>
-	<message>
+    <message>
         <source>Choose data directory on startup (default: %u)</source>
-        <translation>Kies gegevensopslag bij opstartent (standaard: %u)</translation>
+        <translation>Kies data directory bij opstarten (standaard: %u)</translation>
     </message>
     <message>
         <source>Show splash screen on startup (default: %u)</source>
-        <translation>Toon welkomstscherm bij opstarten (standaard: %u)</translation>
+        <translation>Toon splash scherm bij opstarten (standaard: %u)</translation>
     </message>
     <message>
-        <source>Set language, for example &quot;de_DE&quot; (default: system locale)</source>
-        <translation>Stel taal in, bijvoorbeeld &quot;de_DE&quot; (standaard: systeem locale)</translation>
+        <source>Set language, for example "de_DE" (default: system locale)</source>
+        <translation>Stel taal in, bijvoorbeeld "de_DE" (standaard: systeem locale)</translation>
     </message>
     <message>
         <source>Start minimized</source>
@@ -1325,15 +1298,15 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>Welcome to Redux Core.</source>
-        <translation>Welkom bij Redux Core</translation>
+        <translation>Welkom bij Redux Core.</translation>
     </message>
     <message>
         <source>As this is the first time the program is launched, you can choose where Redux Core will store its data.</source>
-        <translation>Aangezien dit de eerste keer is dat het programma is gestart, kun je kiezen waar Redux Core zijn gegevens opslaat.</translation>
+        <translation>Aangezien dit de eerste keer is dat het programma is gestart, kun je kiezen waar Redux Core zijn data opslaat.</translation>
     </message>
     <message>
         <source>Redux Core will download and store a copy of the Redux block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Redux Core zal een kopie van de Redux blockchain downloaden en opslaan. Tenminste %1GB aan data zal worden opgeslagen in deze map en het zal over de tijd groeien. De portemonnee wordt ook in deze map opgeslagen.</translation>
+        <translation>Redux Core zal een kopie van de Redux blockchain downloaden en opslaan. Tenminste %1GB aan data zal worden opgeslagen in deze map en het zal over de tijd groeien. De portemonnee zal ook in deze map worden opgeslagen.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1341,15 +1314,15 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>Use a custom data directory:</source>
-        <translation>Gebruik een aangepaste datafolder:</translation>
+        <translation>Gebruik een aangepaste data directory:</translation>
     </message>
     <message>
         <source>Redux Core</source>
-        <translation>Redux Kern</translation>
+        <translation>Redux Core</translation>
     </message>
     <message>
-        <source>Error: Specified data directory &quot;%1&quot; cannot be created.</source>
-        <translation>Fout: opgegeven data directory &quot;%1&quot; kan niet worden gemaakt.</translation>
+        <source>Error: Specified data directory "%1" cannot be created.</source>
+        <translation>Fout: opgegeven data directory "%1" kan niet worden gemaakt.</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1371,12 +1344,12 @@ MultiSend: %1</translation>
         <translation>Formulier</translation>
     </message>
     <message>
-        <source>My Masternodes</source>
-        <translation>Mijn Masternodes</translation>
+        <source>MASTERNODES</source>
+        <translation>MASTERNODES</translation>
     </message>
     <message>
-        <source>Note: Status of your masternodes in local wallet can potentially be slightly incorrect.&lt;br /&gt;Always wait for wallet to sync additional data and then double check from another node&lt;br /&gt;if your node should be running but you still see &quot;MISSING&quot; in &quot;Status&quot; field.</source>
-        <translation>Opmerking: De status van uw masternodes in de lokale portemonnee kan mogelijk iets afwijken. &lt;br /&gt;Wacht altijd op de portemonnee om additionele data te synchroniseren en verifieer dit vanuit een andere node &lt;br /&gt;mocht de node nu aan het draaien zijn maar je ziet nog steeds &quot;MISSING&quot; in het veld  &quot;Status&quot;.</translation>
+        <source>Note: Status of your masternodes in local wallet can potentially be slightly incorrect.&lt;br /&gt;Always wait for wallet to sync additional data and then double check from another node&lt;br /&gt;if your node should be running but you still see "MISSING" in "Status" field.</source>
+        <translation>Opmerking: De status van uw masternodes in de lokale portemonnee kan mogelijk iets afwijken. &lt;br /&gt;Wacht altijd op de portemonnee om additionele data te synchroniseren en verifieer dit vanuit een andere node &lt;br /&gt;mocht de node nu aan het draaien zijn maar je ziet nog steeds 'MISSING' in het 'Status' veld.</translation>
     </message>
     <message>
         <source>Alias</source>
@@ -1416,14 +1389,14 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>Start &amp;MISSING</source>
-        <translation>Start &amp;ontbrekende</translation>
+        <translation>Start &amp;MISSING</translation>
     </message>
     <message>
         <source>&amp;Update status</source>
         <translation>&amp;Status bijwerken</translation>
     </message>
     <message>
-        <source>Update in (sec):</source>
+        <source>Status will be updated automatically in (sec):</source>
         <translation>Status wordt automatisch bijgewerkt in (sec):</translation>
     </message>
     <message>
@@ -1475,7 +1448,7 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>Enter whole numbers 1 - 100</source>
-        <translation>Geef volledige cijfers in 1-100</translation>
+        <translation>Geef volledige cijfers in 1 - 100</translation>
     </message>
     <message>
         <source>Enter % to Give (1-100)</source>
@@ -1483,17 +1456,17 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>Enter Address to Send to</source>
-        <translation>Vul het verzendadres in</translation>
+        <translation>Vul het adres in om naar te verzenden</translation>
     </message>
     <message>
         <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other Redux addresses after it matures.
 To Add: enter percentage to give and Redux address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>MultiSend stelt je in staat om automatisch 100% van uw inzet of masternode-beloning automatisch te verzenden naar een lijst van andere Redux adressen nadat het volwassen is. 
-Toevoegen: voer percentage in om te geven en Redux adres om toe te voegen aan de MultiSend vector.
+        <translation>MultiSend stelt je in staat om automatisch tot 100% van uw stake of masternode beloning automatisch te verzenden naar een lijst van andere Redux adressen nadat het volwassen is. 
+Toevoegen: voer het te geven percentage in en Redux adres om toe te voegen aan de MultiSend vector.
 Verwijderen: Voer adres in om te verwijderen en druk op delete.
-MultiSend wordt niet geactiveerd, tenzij je op Activeer hebt geklikt</translation>
+MultiSend zal niet worden geactiveerd tenzij je op Activeer hebt geklikt</translation>
     </message>
     <message>
         <source>Add to MultiSend Vector</source>
@@ -1513,7 +1486,7 @@ MultiSend wordt niet geactiveerd, tenzij je op Activeer hebt geklikt</translatio
     </message>
     <message>
         <source>Choose an address from the address book</source>
-        <translation>Kies een adres uit het adresgids</translation>
+        <translation>Kies een adres uit het adresboek</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -1521,7 +1494,7 @@ MultiSend wordt niet geactiveerd, tenzij je op Activeer hebt geklikt</translatio
     </message>
     <message>
         <source>Percentage of stake to send</source>
-        <translation>Stakingspercentage om te verzenden</translation>
+        <translation>Staking percentage om te verzenden</translation>
     </message>
     <message>
         <source>Percentage:</source>
@@ -1529,19 +1502,19 @@ MultiSend wordt niet geactiveerd, tenzij je op Activeer hebt geklikt</translatio
     </message>
     <message>
         <source>Address to send portion of stake to</source>
-        <translation>Adres om een ​​deel van inzet te verzenden naar</translation>
+        <translation>Adres om een ​​deel van de stake te verzenden naar</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Adres:</translation>
     </message>
-	<message>
+    <message>
         <source>Label:</source>
         <translation>Label:</translation>
     </message>
     <message>
         <source>Enter a label for this address to add it to your address book</source>
-        <translation>Voer een label in voor dit adres om het toe te voegen aan uw adresboek</translation>
+        <translation>Voer een label in voor dit adres om het toe te voegen aan jouw adresboek</translation>
     </message>
     <message>
         <source>Delete Address From MultiSend Vector</source>
@@ -1569,48 +1542,256 @@ MultiSend wordt niet geactiveerd, tenzij je op Activeer hebt geklikt</translatio
     </message>
     <message>
         <source>Send For Stakes</source>
-        <translation>Verstuur voor inzetten</translation>
+        <translation>Verstuur voor stakes</translation>
     </message>
     <message>
         <source>Send For Masternode Rewards</source>
         <translation>Verstuur voor Masternode beloningen</translation>
     </message>
     <message>
-        <source>The entered address:
-</source>
-        <translation>Het ingevoerde adres:
-</translation>
+        <source>(no label)</source>
+        <translation>(geen label)</translation>
     </message>
     <message>
-        <source> is invalid.
+        <source>MultiSend Active for Stakes and Masternode Rewards</source>
+        <translation>MultiSend Actief voor Stakes en Masternodebeloningen</translation>
+    </message>
+    <message>
+        <source>MultiSend Active for Stakes</source>
+        <translation>MultiSend Actief voor Stakes</translation>
+    </message>
+    <message>
+        <source>MultiSend Active for Masternode Rewards</source>
+        <translation>MultiSend Actief voor Masternodebeloningen</translation>
+    </message>
+    <message>
+        <source>MultiSend Not Active</source>
+        <translation>MultiSend Niet Actief</translation>
+    </message>
+    <message>
+        <source>The entered address: %1 is invalid.
 Please check the address and try again.</source>
-        <translation>is ongeldig.
-Controleer het adres alsjeblieft en probeer het opnieuw.</translation>
+        <translation>Het ingevoerde adres: %1 is ongeldig.
+Controleer het adres en probeer opnieuw.</translation>
     </message>
     <message>
-        <source>The total amount of your MultiSend vector is over 100% of your stake reward
-</source>
+        <source>The total amount of your MultiSend vector is over 100% of your stake reward</source>
         <translation>De totale hoeveelheid van je MultiSend vector is meer dan 100% van je inzet beloning</translation>
+    </message>
+    <message>
+        <source>Saved the MultiSend to memory, but failed saving properties to the database.</source>
+        <translation>De MultiSend in het geheugen opgeslagen, maar mislukt om de eigenschappen op te slaan in de database.</translation>
+    </message>
+    <message>
+        <source>MultiSend Vector</source>
+        <translation>MultiSend Vector</translation>
+    </message>
+    <message>
+        <source>Removed %1</source>
+        <translation>Verwijderd %1</translation>
+    </message>
+    <message>
+        <source>Could not locate address</source>
+        <translation>Kan het adres niet lokaliseren</translation>
+    </message>
+    <message>
+        <source>Unable to activate MultiSend, check MultiSend vector</source>
+        <translation>Onmogelijk om MultiSend te activeren, controleer MultiSend vector</translation>
+    </message>
+    <message>
+        <source>MultiSend activated but writing settings to DB failed</source>
+        <translation>MultiSend geactiveerd maar instellingen naar DB wegschrijven mislukt</translation>
+    </message>
+    <message>
+        <source>MultiSend activated</source>
+        <translation>MultiSend geactiveerd</translation>
+    </message>
+    <message>
+        <source>First Address Not Valid</source>
+        <translation>Eerste Adres Niet Gevalideerd</translation>
+    </message>
+    <message>
+        <source>MultiSend deactivated but writing settings to DB failed</source>
+        <translation>MultiSend gedeactiveerd maar instellingen naar DB wegschrijven mislukt</translation>
+    </message>
+    <message>
+        <source>MultiSend deactivated</source>
+        <translation>MultiSend gedeactiveerd</translation>
     </message>
     <message>
         <source>Please Enter 1 - 100 for percent.</source>
         <translation>Vul alsjeblieft 1 - 100 voor procent in.</translation>
     </message>
+</context>
+<context>
+    <name>MultisigDialog</name>
     <message>
-        <source>MultiSend Vector
-</source>
-        <translation>MultiSend Vector
-</translation>
+        <source>Multisignature Address Interactions</source>
+        <translation>Multisignature Adres Interacties</translation>
     </message>
     <message>
-        <source>Removed </source>
-        <translation>Verwijderd</translation>
+        <source>Create MultiSignature &amp;Address</source>
+        <translation>Creëer MultiSignature &amp;Adres</translation>
     </message>
     <message>
-        <source>Could not locate address
-</source>
-        <translation>Kan het adres niet lokaliseren
-</translation>
+        <source>How many people must sign to verify a transaction</source>
+        <translation>Hoeveel mensen moeten ondertekenen om een transactie te verifiëren</translation>
+    </message>
+    <message>
+        <source>Enter the minimum number of signatures required to sign transactions</source>
+        <translation>Voer het minimale aantal vereiste ondertekeningen in om de transacties te ondertekenen</translation>
+    </message>
+    <message>
+        <source>Address Label:</source>
+        <translation>Adreslabel:</translation>
+    </message>
+    <message>
+        <source>Add another address that could sign to verify a transaction from the multisig address.</source>
+        <translation>Voeg een ander adres toe die kan ondertekenen om een transactie vanuit het multisig adres te verifiëren.</translation>
+    </message>
+    <message>
+        <source>&amp;Add Address / Key</source>
+        <translation>&amp;Voeg Adres / Sleutel toe</translation>
+    </message>
+    <message>
+        <source>Local addresses or public keys that can sign:</source>
+        <translation>Lokale adressen of publieke sleutels die kunnen ondertekenen:</translation>
+    </message>
+    <message>
+        <source>Create a new multisig address</source>
+        <translation>Creëer een nieuw multisig adres</translation>
+    </message>
+    <message>
+        <source>C&amp;reate</source>
+        <translation>C&amp;reëer</translation>
+    </message>
+    <message>
+        <source>Status:</source>
+        <translation>Status:</translation>
+    </message>
+    <message>
+        <source>Use below to quickly import an address by its redeem. Don't forget to add a label before clicking import!
+Keep in mind, the wallet will rescan the blockchain to find transactions containing the new address.
+Please be patient after clicking import.</source>
+        <translation>Gebruik onderstaande om snel een adres te importeren door in te wisselen. Vergeet niet om een label toe te voegen voordat u op importeren klikt!
+Houd er rekening mee dat de portemonnee de blockchain opnieuw doorzoekt om transacties te vinden die het nieuwe adres bevatten.
+Waas alsjeblieft geduldig nadat u op importeren hebt geklikt.</translation>
+    </message>
+    <message>
+        <source>&amp;Import Redeem</source>
+        <translation>&amp;Importeer Inlossen</translation>
+    </message>
+    <message>
+        <source>&amp;Create MultiSignature Tx</source>
+        <translation>&amp;Creëer MultiSignature Tx</translation>
+    </message>
+    <message>
+        <source>Inputs:</source>
+        <translation>Inputs</translation>
+    </message>
+    <message>
+        <source>Coin Control</source>
+        <translation>Munt Controle</translation>
+    </message>
+    <message>
+        <source>Quantity Selected:</source>
+        <translation>Hoeveelheid geselecteerd:</translation>
+    </message>
+    <message>
+        <source>0</source>
+        <translation>0</translation>
+    </message>
+    <message>
+        <source>Amount:</source>
+        <translation>Bedrag:</translation>
+    </message>
+    <message>
+        <source>Add an input to fund the outputs</source>
+        <translation>Voeg een invoer toe om de uitvoer te financieren</translation>
+    </message>
+    <message>
+        <source>Add a Raw Input</source>
+        <translation>Voer een Raw invoer in</translation>
+    </message>
+    <message>
+        <source>Address / Amount:</source>
+        <translation>Adres / Bedrag:</translation>
+    </message>
+    <message>
+        <source>Add destinations to send REDUX to</source>
+        <translation>Voeg bestemmingen toe om REDUX naar te verzenden</translation>
+    </message>
+    <message>
+        <source>Add &amp;Destination</source>
+        <translation>Voeg &amp;Bestemming toe</translation>
+    </message>
+    <message>
+        <source>Create a transaction object using the given inputs to the given outputs</source>
+        <translation>Maak een transactie object aan met behulp van de gegeven invoer voor de gegeven uitvoer</translation>
+    </message>
+    <message>
+        <source>Cr&amp;eate</source>
+        <translation>Cr&amp;eëer</translation>
+    </message>
+    <message>
+        <source>&amp;Sign MultiSignature Tx</source>
+        <translation>&amp;Onderteken MultiSignature Tx</translation>
+    </message>
+    <message>
+        <source>Transaction Hex:</source>
+        <translation>Transactie Hex:</translation>
+    </message>
+    <message>
+        <source>Sign the transaction from this wallet or from provided private keys</source>
+        <translation>Onderteken de transactie vanuit deze portemonnee of vanuit aangeboden privésleutels</translation>
+    </message>
+    <message>
+        <source>S&amp;ign</source>
+        <translation>O&amp;nderteken</translation>
+    </message>
+    <message>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;DISABLED until transaction has been signed enough times.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;UITGESCHAKELD totdat de transactie voldoende is ondertekend.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+        <source>Co&amp;mmit</source>
+        <translation>&amp;Engageer</translation>
+    </message>
+    <message>
+        <source>Add private keys to sign the transaction with</source>
+        <translation>Voeg privésleutels toe om de transactie met te ondertekenen</translation>
+    </message>
+    <message>
+        <source>Add Private &amp;Key</source>
+        <translation>Voeg &amp;Privésleutel toe</translation>
+    </message>
+    <message>
+        <source>Sign with only private keys (Not Recommened)</source>
+        <translation>Onderteken met enkel privésleutels (Niet Aanbevolen)</translation>
+    </message>
+    <message>
+        <source>Invalid Tx Hash.</source>
+        <translation>Ongeldige Tx Hash.</translation>
+    </message>
+    <message>
+        <source>Vout position must be positive.</source>
+        <translation>Je positie moet positief zijn. </translation>
+    </message>
+    <message>
+        <source>Maximum possible addresses reached. (15)</source>
+        <translation>Maximale mogelijke adressen bereikt. (15)</translation>
+    </message>
+    <message>
+        <source>Vout Position: </source>
+        <translation>Jouw Positie:</translation>
+    </message>
+    <message>
+        <source>Amount: </source>
+        <translation>Hoeveelheid:</translation>
+    </message>
+    <message>
+        <source>Maximum (15)</source>
+        <translation>Maximum (15)</translation>
     </message>
 </context>
 <context>
@@ -1668,15 +1849,15 @@ Controleer het adres alsjeblieft en probeer het opnieuw.</translation>
         <translation>Verduistering configuratie</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Redux&apos;s configuration screen.</source>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Redux's configuration screen.</source>
         <translation>Verduistering is succesvol ingesteld op basic (%1 en 2 rondes). Je kunt dit op elk gewenst moment wijzigen door het configuratiescherm van Redux te openen.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Redux&apos;s configuration screen.</source>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Redux's configuration screen.</source>
         <translation>Verduistering is succesvol ingesteld op hoog (%1 en 8 rondes). U kunt dit op elk gewenst moment wijzigen door het configuratiescherm van Redux te openen.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Redux&apos;s configuration screen.</source>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Redux's configuration screen.</source>
         <translation>Verduistering is succesvol ingesteld op hoog (%1 en 16 rondes). U kunt dit op elk gewenst moment wijzigen door het configuratiescherm van Redux te openen.</translation>
     </message>
 </context>
@@ -1729,10 +1910,6 @@ Controleer het adres alsjeblieft en probeer het opnieuw.</translation>
         <source>(0 = auto, &lt;0 = leave that many cores free)</source>
         <translation>(0 = auto, &lt;0 = laat dat aantal cores vrij)</translation>
     </message>
-	<message>
-        <source>Enable zREDUX Automint</source>
-        <translation>zREDUX automunting inschakelen</translation>
-    </message>
     <message>
         <source>W&amp;allet</source>
         <translation>P&amp;ortemonnee</translation>
@@ -1769,25 +1946,9 @@ Controleer het adres alsjeblieft en probeer het opnieuw.</translation>
         <source>&amp;Start Redux on system login</source>
         <translation>&amp;Redux starten bij systeemlogin</translation>
     </message>
-	<message>
-        <source>This setting determines the amount of individual masternodes that an input will be anonymized through.&lt;br/&gt;More rounds of anonymization gives a higher degree of privacy, but also costs more in fees.</source>
-        <translation>Deze instelling bepaalt het aantal individuele masternodes waarmee een invoer geanonimiseerd wordt.&lt;br/&gt;Meer anonimiseringsronden geeft een hogere maat van privacy, maar kost ook meer aan vergoedingen.</translation>
-    </message>
-    <message>
-        <source>Obfuscation rounds to use</source>
-        <translation>Verduisteringsrondes om te gebruiken</translation>
-    </message>
-    <message>
-        <source>This amount acts as a threshold to turn off Obfuscation once it&apos;s reached.</source>
-        <translation>Deze hoeveelheid fungeert als een drempelwaarde om Verduistering uit te schakelen eenmaal het bereikt is.</translation>
-    </message>
-    <message>
-        <source>Amount of Redux to keep anonymized</source>
-        <translation>Amount of Redux to keep anonymized</translation>
-    </message>
     <message>
         <source>Whether to show coin control features or not.</source>
-        <translation>Of je de munteenheidsfuncties wilt tonen of niet.</translation>
+        <translation>Of je de muntcontrolefuncties wilt tonen of niet.</translation>
     </message>
     <message>
         <source>Enable coin &amp;control features</source>
@@ -1822,6 +1983,34 @@ https://www.transifex.com/redux-project/redux-project-translations</translation>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Map poort gebruikt &amp;UPnP</translation>
+    </message>
+    <message>
+        <source>Enable automatic minting of REDUX units to zREDUX</source>
+        <translation>Schakel automatisch slaan van REDUX-eenheden in op zREDUX</translation>
+    </message>
+    <message>
+        <source>Enable zREDUX Automint</source>
+        <translation>Schakel zREDUX Automint in</translation>
+    </message>
+    <message>
+        <source>Percentage of incoming REDUX which get automatically converted to zREDUX via Zerocoin Protocol (min: 10%)</source>
+        <translation>Percentage inkomende REDUX die automatisch wordt omgezet naar zREDUX via Zerocoin Protocol (min: 10%)</translation>
+    </message>
+    <message>
+        <source>Percentage of autominted zREDUX</source>
+        <translation>Percentage autominted zREDUX</translation>
+    </message>
+    <message>
+        <source>Wait with automatic conversion to Zerocoin until enough REDUX for this denomination is available</source>
+        <translation>Wacht met automatische omzetting naar Zerocoin totdat er genoeg REDUX voor deze denominatie beschikbaar is</translation>
+    </message>
+    <message>
+        <source>Preferred Automint zREDUX Denomination</source>
+        <translation>Gewenste Automint zREDUX denominatie</translation>
+    </message>
+    <message>
+        <source>Stake split threshold:</source>
+        <translation>Inzet splitdrempel:</translation>
     </message>
     <message>
         <source>Connect to the Redux network through a SOCKS5 proxy.</source>
@@ -1888,6 +2077,18 @@ https://www.transifex.com/redux-project/redux-project-translations</translation>
         <translation>Decimale cijfers</translation>
     </message>
     <message>
+        <source>Hide empty balances</source>
+        <translation>Verberg lege saldi</translation>
+    </message>
+    <message>
+        <source>Hide orphan stakes in transaction lists</source>
+        <translation>Verberg orphan stakes in transactielijsten</translation>
+    </message>
+    <message>
+        <source>Hide orphan stakes</source>
+        <translation>Verberg orphan stakes</translation>
+    </message>
+    <message>
         <source>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
         <translation>URL's van derden (bijvoorbeeld een blok verkenner) die in het tabblad transacties verschijnen als contextmenu items. %s in de URL wordt vervangen door transactie hash. Meerdere URL's worden gescheiden door verticale balk |.</translation>
     </message>
@@ -1901,7 +2102,7 @@ https://www.transifex.com/redux-project/redux-project-translations</translation>
     </message>
     <message>
         <source>Reset all client options to default.</source>
-        <translation>Reset alle client opties naar standaardinstellingen.</translation>
+        <translation>Reset alle client instellingen naar standaardinstellingen.</translation>
     </message>
     <message>
         <source>&amp;Reset Options</source>
@@ -1914,6 +2115,10 @@ https://www.transifex.com/redux-project/redux-project-translations</translation>
     <message>
         <source>&amp;Cancel</source>
         <translation>&amp;Annuleren</translation>
+    </message>
+    <message>
+        <source>Any</source>
+        <translation>een</translation>
     </message>
     <message>
         <source>default</source>
@@ -1943,33 +2148,13 @@ https://www.transifex.com/redux-project/redux-project-translations</translation>
         <source>The supplied proxy address is invalid.</source>
         <translation>Het opgegeven proxyadres is ongeldig.</translation>
     </message>
-	<message>
-        <source>Percentage of incoming REDUX which get automatically converted to zREDUX via Zerocoin Protocol (min: 10%)</source>
-        <translation>Percentage inkomende REDUX die automatisch wordt omgezet naar zREDUX via Zerocoin Protocol (min: 10%)</translation>
+    <message>
+        <source>The supplied proxy port is invalid.</source>
+        <translation>De meegeleverde proxy-poort is ongeldig.</translation>
     </message>
     <message>
-        <source>Percentage of autominted zREDUX</source>
-        <translation>Percentage autominted zREDUX</translation>
-    </message>
-    <message>
-        <source>Wait with automatic conversion to Zerocoin until enough REDUX for this denomination is available</source>
-        <translation>Wacht met automatische omzetting naar Zerocoin totdat er genoeg REDUX voor deze denominatie beschikbaar is</translation>
-    </message>
-    <message>
-        <source>Preferred Automint zREDUX Denomination</source>
-        <translation>Gewenste Automint zREDUX denominatie</translation>
-    </message>
-	    <message>
-        <source>I don&apos;t care</source>
-        <translation>Het maakt me niet uit</translation>
-    </message>
-    <message>
-        <source>Stake split threshold:</source>
-        <translation>Stake splitsingsdrempel:</translation>
-    </message>
-    <message>
-        <source>Hide empty balances</source>
-        <translation>Verberg lege saldi</translation>
+        <source>The supplied proxy settings are invalid.</source>
+        <translation>De geleverde proxy-instellingen zijn ongeldig.</translation>
     </message>
 </context>
 <context>
@@ -1978,14 +2163,6 @@ https://www.transifex.com/redux-project/redux-project-translations</translation>
         <source>Form</source>
         <translation>Formulier</translation>
     </message>
-	<message>
-        <source>Overview</source>
-        <translation>Overzicht</translation>
-    </message>
-    <message>
-        <source>REDUX Balances</source>
-        <translation>REDUX Saldi</translation>
-    </message>
     <message>
         <source>Available:</source>
         <translation>Beschikbaar:</translation>
@@ -1993,6 +2170,14 @@ https://www.transifex.com/redux-project/redux-project-translations</translation>
     <message>
         <source>Your current spendable balance</source>
         <translation>Uw huidige bestedingsruimte</translation>
+    </message>
+    <message>
+        <source>Total Balance, including all unavailable coins.</source>
+        <translation>Totaal saldo, inclusief alle niet-beschikbare munten.</translation>
+    </message>
+    <message>
+        <source>REDUX Balance</source>
+        <translation>REDUX Saldi</translation>
     </message>
     <message>
         <source>Pending:</source>
@@ -2006,17 +2191,49 @@ https://www.transifex.com/redux-project/redux-project-translations</translation>
         <source>Immature:</source>
         <translation>Immatuur:</translation>
     </message>
-	<message>
-        <source>Locked:</source>
-        <translation>Vergrendeld:</translation>
-    </message>
     <message>
         <source>Staked or masternode rewards that has not yet matured</source>
         <translation>Staked of masternode beloningen die nog niet volwassen zijn</translation>
     </message>
     <message>
+        <source>Current locked balance in watch-only addresses</source>
+        <translation>Huidige vergrendelde balans in alleen-lezen-adressen</translation>
+    </message>
+    <message>
+        <source>Your current Redux balance, unconfirmed and immature transactions included</source>
+        <translation>Uw huidige Redux-saldo, onbevestigde en onvolgroeide transacties inbegrepen</translation>
+    </message>
+    <message>
+        <source>zREDUX Balance</source>
+        <translation>zREDUX-saldo</translation>
+    </message>
+    <message>
+        <source>Mature: more than 20 confirmation and more than 1 mint of the same denomination after it was minted.
+These zREDUX are spendable.</source>
+        <translation>Volwassen: meer dan 20 bevestigingen en meer dan 1 mint van dezelfde denominatie nadat het gemint was.
+Deze zPIB zijn besteedbaar.</translation>
+    </message>
+    <message>
+        <source>Unconfirmed: less than 20 confirmations
+Immature: confirmed, but less than 1 mint of the same denomination after it was minted</source>
+        <translation>Onbevestigd: minder dan 20 bevestigingen
+Onvolwassen: bevestigd, maar minder dan 1 mint van dezelfde denominatie nadat het gemint was.</translation>
+    </message>
+    <message>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Redux network after a connection is established, but this process has not completed yet.</source>
         <translation>De weergegeven informatie kan verouderd zijn. Je portemonnee synchroniseert automatisch met het Redux netwerk nadat een verbinding is opgezet, maar dit proces is nog niet afgerond.</translation>
+    </message>
+    <message>
+        <source>OVERVIEW</source>
+        <translation>OVERZICHT</translation>
+    </message>
+    <message>
+        <source>Combined Balance (including unconfirmed and immature coins)</source>
+        <translation>Gecombineerde Saldi (inclusief onbevestigde en onvolwassen munten)</translation>
+    </message>
+    <message>
+        <source>Combined Balance</source>
+        <translation>Gecombineerde balans</translation>
     </message>
     <message>
         <source>Unconfirmed transactions to watch-only addresses</source>
@@ -2029,10 +2246,6 @@ https://www.transifex.com/redux-project/redux-project-translations</translation>
     <message>
         <source>Total:</source>
         <translation>Totaal:</translation>
-    </message>
-    <message>
-        <source>Your current total balance</source>
-        <translation>Jouw huidige balanstotaal</translation>
     </message>
     <message>
         <source>Current total balance in watch-only addresses</source>
@@ -2051,32 +2264,50 @@ https://www.transifex.com/redux-project/redux-project-translations</translation>
         <translation>Uitgeefbaar:</translation>
     </message>
     <message>
-        <source>Combined Balances (including immature coins)</source>
-        <translation>Gecombineerde Saldi (inclusief onvolwassen munten)</translation>
+        <source>Locked REDUX or Masternode collaterals. These are excluded from zREDUX minting.</source>
+        <translation>Vergrendelde REDUX of Masternode onderpanden. Deze zijn uitgesloten van de zREDUX muntage.</translation>
     </message>
     <message>
-        <source>REDUX:</source>
-        <translation>REDUX:</translation>
+        <source>Locked:</source>
+        <translation>Vergrendeld:</translation>
     </message>
     <message>
-        <source>zREDUX:</source>
-        <translation>zREDUX:</translation>
+        <source>Unconfirmed:</source>
+        <translation>Onbevestigd:</translation>
     </message>
     <message>
-        <source>0 %</source>
-        <translation>0 %</translation>
-    </message>
-    <message>
-        <source>Zerocoin Balance</source>
-        <translation>Zerocoin saldo</translation>
+        <source>Your current zREDUX balance, unconfirmed and immature zREDUX included.</source>
+        <translation>Uw huidige zREDUX-saldo, onbevestigde en onvolgroeide zREDUX inbegrepen.</translation>
     </message>
     <message>
         <source>Recent transactions</source>
         <translation>Recente transacties</translation>
     </message>
     <message>
-        <source>(out of sync)</source>
-        <translation>(niet gesynchroniseerd)</translation>
+        <source>out of sync</source>
+        <translation>niet gesynchroniseerd</translation>
+    </message>
+    <message>
+        <source>Current percentage of zREDUX.
+If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).
+</source>
+        <translation>Huidige percentage van zREDUX
+Als AutoMint ingeschakeld is zal deze percentage afhangen van de geconfigureerde AutoMint percentage (standaard = 10%).
+</translation>
+    </message>
+    <message>
+        <source>AutoMint is currently enabled and set to </source>
+        <translation>AutoMint is momenteel ingeschakeld en ingesteld op</translation>
+    </message>
+    <message>
+        <source>To disable AutoMint add 'enablezeromint=0' in redux.conf.</source>
+        <translation>Om AutoMint uit te schakelen, voeg je 'enablezeromint=0' toe aan redux.conf.</translation>
+    </message>
+    <message>
+        <source>AutoMint is currently disabled.
+To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in redux.conf</source>
+        <translation>AutoMint is momenteel uitgeschakeld.
+Om AutoMint in te schakelend verander je 'enablezeromint=0' naar 'enablezeromint=1' in redux.conf</translation>
     </message>
 </context>
 <context>
@@ -2188,24 +2419,12 @@ https://www.transifex.com/redux-project/redux-project-translations</translation>
 <context>
     <name>PrivacyDialog</name>
     <message>
-        <source>REDUX which were anonymized via Zerocin Protocol</source>
-        <translation>REDUX die via het Zerocoin Protocol geanonimiseerd werden</translation>
-    </message>
-    <message>
-        <source>Zerocoin REDUX (zREDUX)</source>
-        <translation>Zerocoin REDUX (zREDUX)</translation>
-    </message>
-    <message>
         <source>Zerocoin Actions:</source>
         <translation>Zerocoin Acties:</translation>
     </message>
     <message>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Redux network after a connection is established, but this process has not completed yet.</source>
         <translation>De weergegeven informatie kan verouderd zijn. Je portemonnee synchroniseert automatisch met het Redux netwerk nadat een verbinding is opgezet, maar dit proces is nog niet afgerond.</translation>
-    </message>
-    <message>
-        <source>Enter an amount of Phr to convert to zPhr</source>
-        <translation>Vul de hoeveleheid in om Phr te converteren naar zPhr</translation>
     </message>
     <message>
         <source>Mint Zerocoin</source>
@@ -2218,6 +2437,10 @@ https://www.transifex.com/redux-project/redux-project-translations</translation>
     <message>
         <source>zREDUX</source>
         <translation>zREDUX</translation>
+    </message>
+    <message>
+        <source>Available for minting are coins which are confirmed and not locked or Masternode collaterals.</source>
+        <translation>Beschikbaar voor muntage zijn munten die bevestigd en niet vergrendeld of Masternode onderpanden zijn.</translation>
     </message>
     <message>
         <source>Available for Minting:</source>
@@ -2245,7 +2468,7 @@ https://www.transifex.com/redux-project/redux-project-translations</translation>
     </message>
     <message>
         <source>Amount:</source>
-        <translation>Hoeveelheid:</translation>
+        <translation>Bedrag:</translation>
     </message>
     <message>
         <source>Rescan the complete blockchain for  Zerocoin mints and their meta-data.</source>
@@ -2260,12 +2483,20 @@ https://www.transifex.com/redux-project/redux-project-translations</translation>
         <translation>Status en/of Berichten van de laatste mint actie.</translation>
     </message>
     <message>
-        <source>zPhr Control</source>
-        <translation>zPhr controle</translation>
+        <source>PRIVACY</source>
+        <translation>PRIVACY</translation>
     </message>
     <message>
-        <source>zPhr Selected:</source>
-        <translation>zPhr geselecteerd:</translation>
+        <source>Enter an amount of Redux to convert to zREDUX</source>
+        <translation>Vul het aantal REDUX in om te converteren naar zREDUX</translation>
+    </message>
+    <message>
+        <source>zREDUX Control</source>
+        <translation>zREDUX Control</translation>
+    </message>
+    <message>
+        <source>zREDUX Selected:</source>
+        <translation>zREDUX geselecteerd:</translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -2280,24 +2511,24 @@ https://www.transifex.com/redux-project/redux-project-translations</translation>
         <translation>Besteed Zerocoin</translation>
     </message>
     <message>
+        <source>Available (mature and spendable) zREDUX for spending</source>
+        <translation>Beschikbare (volwassen en uitgeefbaar) zREDUX voor besteding</translation>
+    </message>
+    <message>
         <source>Available Balance:</source>
         <translation>Beschikbaar saldo:</translation>
     </message>
     <message>
+        <source>Available (mature and spendable) zREDUX for spending
+
+zREDUX are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
+        <translation>Beschikbare (volwwassen en uitgeefbaar) zREDUX voor besteding
+
+zRedux zijn volwassen wanneer zij meer dan 20 bevestigingen hebben EN meer dan 2 muntages van dezelfde denominaties nadat zij gemunt zijn.</translation>
+    </message>
+    <message>
         <source>0 zREDUX</source>
         <translation>0 zREDUX</translation>
-    </message>
-    <message>
-        <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
-        <translation>Beveiligingsniveau voor Zerocoin transacties. Meer is beter, maar heeft meer tijd en middelen nodig.</translation>
-    </message>
-    <message>
-        <source>Security Level:</source>
-        <translation>Beveiligings niveau:</translation>
-    </message>
-    <message>
-        <source>Security Level 1 - 100 (default: 42)</source>
-        <translation>Beveiligingsniveau 1 - 100 (standaard: 42)</translation>
     </message>
     <message>
         <source>Pay &amp;To:</source>
@@ -2356,12 +2587,12 @@ https://www.transifex.com/redux-project/redux-project-translations</translation>
         <translation>Zerocoin Statistieken:</translation>
     </message>
     <message>
-        <source>Available Funds</source>
-        <translation>Beschikbare Fondsen</translation>
+        <source>Total Balance including unconfirmed and immature zREDUX</source>
+        <translation>Totale Saldi, inclusief onbevestigde en onvolwassen zREDUX</translation>
     </message>
     <message>
-        <source>Available Zerocoin  Balance:</source>
-        <translation>Beschikbaar Zerocoin saldo:</translation>
+        <source>Total Zerocoin  Balance:</source>
+        <translation>Totale Zerocoin Saldi:</translation>
     </message>
     <message>
         <source>Denominations with value 1:</source>
@@ -2372,8 +2603,83 @@ https://www.transifex.com/redux-project/redux-project-translations</translation>
         <translation>Denom. met waarde 1:</translation>
     </message>
     <message>
+        <source>Unconfirmed: less than 20 confirmations
+Immature: confirmed, but less than 1 mint of the same denomination after it was minted</source>
+        <translation>Onbevestigd: minder dan 20 bevestigingen
+Onvolwassen: bevestigd, maar minder dan 1 mint van dezelfde denominatie nadat het gemint was.</translation>
+    </message>
+    <message>
+        <source>Show the current status of automatic zREDUX minting.
+
+To change the status (restart required):
+- enable: add 'enablezeromint=1' to redux.conf
+- disable: add 'enablezeromint=0' to redux.conf
+
+To change the percentage (no restart required):
+- menu Settings-&gt;Options-&gt;Percentage of autominted zREDUX
+
+</source>
+        <translation>Toon de huidige status van automatische zREDUX-markering.
+
+Om de status te wijzigen (opnieuw opstarten vereist): 
+- enable: voeg 'enablezeromint = 1' toe aan redux.conf
+- uitschakelen: voeg 'enablezeromint = 0' toe aan redux.conf
+
+Om het percentage te wijzigen (geen herstart vereist): 
+- menu Instellingen-&gt; Opties-&gt; Percentage van geautomatiseerde zREDUX
+</translation>
+    </message>
+    <message>
+        <source>AutoMint Status</source>
+        <translation>AutoMint-status</translation>
+    </message>
+    <message>
+        <source>Global Supply:</source>
+        <translation>Wereldwijde levering:</translation>
+    </message>
+    <message>
+        <source>Denom. 1:</source>
+        <translation>Denom. 1:</translation>
+    </message>
+    <message>
+        <source>Denom. 5:</source>
+        <translation>Denom. 5:</translation>
+    </message>
+    <message>
+        <source>Denom. 10:</source>
+        <translation>Denom. 10:</translation>
+    </message>
+    <message>
+        <source>Denom. 50:</source>
+        <translation>Denom. 50:</translation>
+    </message>
+    <message>
+        <source>Denom. 100:</source>
+        <translation>Denom. 100:</translation>
+    </message>
+    <message>
+        <source>Denom. 500:</source>
+        <translation>Denom. 500:</translation>
+    </message>
+    <message>
+        <source>Denom. 1000:</source>
+        <translation>Denom. 1000:</translation>
+    </message>
+    <message>
+        <source>Denom. 5000:</source>
+        <translation>Denom. 5000:</translation>
+    </message>
+    <message>
         <source>0 x</source>
         <translation> 0 x</translation>
+    </message>
+    <message>
+        <source>Show zREDUX denominations list</source>
+        <translation>Toon zREDUX denominatielijst</translation>
+    </message>
+    <message>
+        <source>Show Denominations</source>
+        <translation>Toon Denominaties</translation>
     </message>
     <message>
         <source>Denominations with value 5:</source>
@@ -2432,20 +2738,24 @@ https://www.transifex.com/redux-project/redux-project-translations</translation>
         <translation>Denom. met waarde 5000:</translation>
     </message>
     <message>
-        <source>Note: This hidden objects are used for communication between the 'Coin Control' dialog and its parent objects. We don't want to change/reimplement the existing Coin Control, so this objects must be here, even when we don't use them. No, we don't like this approach, either.</source>
-        <translation>Opmerking: Deze verborgen objecten worden gebruikt voor communicatie tussen de 'Munt Controle' dialoog en de  parent objecten. We willen de bestaande Munt Controle niet veranderen/opnieuw implementeren, dus deze objecten moeten hier zijn, zelfs als we ze niet gebruiken. Nee, we houden ook niet van deze aanpak.</translation>
+        <source>Hide Denominations</source>
+        <translation>Verberg Denominaties</translation>
     </message>
     <message>
         <source>Priority:</source>
         <translation>Prioriteit:</translation>
     </message>
     <message>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
+    </message>
+    <message>
         <source>Fee:</source>
-        <translation>Kost:</translation>
+        <translation>Fee:</translation>
     </message>
     <message>
         <source>Dust:</source>
-        <translation>Stof:</translation>
+        <translation>Dust:</translation>
     </message>
     <message>
         <source>no</source>
@@ -2485,7 +2795,7 @@ https://www.transifex.com/redux-project/redux-project-translations</translation>
     </message>
     <message>
         <source>Change:</source>
-        <translation>Wijzig:</translation>
+        <translation>Wisselgeld:</translation>
     </message>
     <message>
         <source>out of sync</source>
@@ -2497,18 +2807,122 @@ https://www.transifex.com/redux-project/redux-project-translations</translation>
     </message>
     <message>
         <source>Copy quantity</source>
-        <translation>Kopieer kwanititeit</translation>
+        <translation>Kopieer kwantiteit</translation>
     </message>
     <message>
         <source>Copy amount</source>
-        <translation>Kopieer hoeveelheid</translation>
+        <translation>Kopieer bedrag</translation>
     </message>
     <message>
-        <source>Zerocoin functionality is not enabled on the Redux network yet.</source>
-        <translation>Zerocoin functionaliteit is nog niet ingeschakeld op het Redux netwerk.</translation>
+        <source>Starting ResetMintZerocoin: rescanning complete blockchain, this will need up to 30 minutes depending on your hardware.
+Please be patient...</source>
+        <translation>Start ResetMintZerocoin: rescanning complete blockchain, dit zal tot 30 minuten nodig hebben, afhankelijk van uw hardware.
+Wees alsjeblieft geduldig...</translation>
     </message>
     <message>
-        <source>Error: Your wallet is locked. Please enter the wallet passreduxase first.</source>
+        <source>) needed.
+Maximum allowed: </source>
+        <translation>) vereist.
+Maximaal toegestaan:</translation>
+    </message>
+    <message>
+        <source>zREDUX Spend #: </source>
+        <translation>zREDUX besteed #:</translation>
+    </message>
+    <message>
+        <source>zREDUX Mint</source>
+        <translation>zREDUX mint</translation>
+    </message>
+    <message>
+        <source> &lt;b&gt;enabled&lt;/b&gt;.</source>
+        <translation>&lt;b&gt;ingeschakeld&lt;/b&gt;.</translation>
+    </message>
+    <message>
+        <source> &lt;b&gt;disabled&lt;/b&gt;.</source>
+        <translation>&lt;b&gt;invalide&lt;/b&gt;.</translation>
+    </message>
+    <message>
+        <source> Configured target percentage: &lt;b&gt;</source>
+        <translation>Geconfigureerd doelpercentage:&lt;b&gt;</translation>
+    </message>
+    <message>
+        <source>zREDUX is currently disabled due to maintenance.</source>
+        <translation>zREDUX is momenteel uitgeschakeld vanwege onderhoud.</translation>
+    </message>
+    <message>
+        <source>zREDUX is currently undergoing maintenance.</source>
+        <translation>zREDUX wordt momenteel onderhouden.</translation>
+    </message>
+    <message>
+        <source>Denom. with value &lt;b&gt;1&lt;/b&gt;:</source>
+        <translation>Denom. met waarde &lt;b&gt; 1&lt;/b&gt;:</translation>
+    </message>
+    <message>
+        <source>Denom. with value &lt;b&gt;5&lt;/b&gt;:</source>
+        <translation>Denom. met waarde &lt;b&gt;5&lt;/b&gt;:</translation>
+    </message>
+    <message>
+        <source>Denom. with value &lt;b&gt;10&lt;/b&gt;:</source>
+        <translation>Denom. met waarde &lt;b&gt;10&lt;/b&gt;:</translation>
+    </message>
+    <message>
+        <source>Denom. with value &lt;b&gt;50&lt;/b&gt;:</source>
+        <translation>Denom. met waarde &lt;b&gt;50&lt;/b&gt;:</translation>
+    </message>
+    <message>
+        <source>Denom. with value &lt;b&gt;100&lt;/b&gt;:</source>
+        <translation>Denom. met waarde &lt;b&gt; 100&lt;/b&gt;:</translation>
+    </message>
+    <message>
+        <source>Denom. with value &lt;b&gt;500&lt;/b&gt;:</source>
+        <translation>Denom. met waarde &lt;b&gt; 500&lt;/b&gt;:</translation>
+    </message>
+    <message>
+        <source>Denom. with value &lt;b&gt;1000&lt;/b&gt;:</source>
+        <translation>Denom. met waarde &lt;b&gt;1000&lt;/b&gt;:</translation>
+    </message>
+    <message>
+        <source>Denom. with value &lt;b&gt;5000&lt;/b&gt;:</source>
+        <translation>Denom. met waarde &lt;b&gt;5000&lt;/b&gt;:</translation>
+    </message>
+    <message>
+        <source>AutoMint Status:</source>
+        <translation>AutoMint-status</translation>
+    </message>
+    <message>
+        <source>Denom. &lt;b&gt;1&lt;/b&gt;:</source>
+        <translation>Denom. &lt;b&gt;1&lt;/b&gt;:</translation>
+    </message>
+    <message>
+        <source>Denom. &lt;b&gt;5&lt;/b&gt;:</source>
+        <translation>Denom. &lt;b&gt;5&lt;/b&gt;:</translation>
+    </message>
+    <message>
+        <source>Denom. &lt;b&gt;10&lt;/b&gt;:</source>
+        <translation>Denom. &lt;b&gt;10&lt;/b&gt;:</translation>
+    </message>
+    <message>
+        <source>Denom. &lt;b&gt;50&lt;/b&gt;:</source>
+        <translation>Denom. &lt;b&gt;50&lt;/b&gt;:</translation>
+    </message>
+    <message>
+        <source>Denom. &lt;b&gt;100&lt;/b&gt;:</source>
+        <translation>Denom. &lt;b&gt;100&lt;/b&gt;:</translation>
+    </message>
+    <message>
+        <source>Denom. &lt;b&gt;500&lt;/b&gt;:</source>
+        <translation>Denom. &lt;b&gt;500&lt;/b&gt;:</translation>
+    </message>
+    <message>
+        <source>Denom. &lt;b&gt;1000&lt;/b&gt;:</source>
+        <translation>Denom. &lt;b&gt;1000&lt;/b&gt;:</translation>
+    </message>
+    <message>
+        <source>Denom. &lt;b&gt;5000&lt;/b&gt;:</source>
+        <translation>Denom. &lt;b&gt;5000&lt;/b&gt;:</translation>
+    </message>
+    <message>
+        <source>Error: Your wallet is locked. Please enter the wallet passphrase first.</source>
         <translation>Fout: Je portemonnee is vergrendeld. Voer alsjeblieft de wachtwoord zin voor de portemonnee in.</translation>
     </message>
     <message>
@@ -2532,12 +2946,6 @@ https://www.transifex.com/redux-project/redux-project-translations</translation>
 </source>
         <translation>sec. gebruikte denominaties:
 </translation>
-    </message>
-    <message>
-        <source>Starting ResetMintZerocoin: rescanning complete blockchain, this will need up to 30 minutes depending on your hardware. 
-Please be patient...</source>
-        <translation>Start ResetMintZerocoin: rescanning complete blockchain, dit zal tot 30 minuten nodig hebben, afhankelijk van uw hardware.
-Wees alsjeblieft geduldig...</translation>
     </message>
     <message>
         <source>Duration: </source>
@@ -2578,33 +2986,35 @@ Wees alsjeblieft geduldig...</translation>
         <translation>naar adres</translation>
     </message>
     <message>
-        <source> to a newly generated (unused and therefor anonymous) local address &lt;br /&gt;</source>
+        <source> to a newly generated (unused and therefore anonymous) local address &lt;br /&gt;</source>
         <translation>naar een nieuw gegenereerd (ongebruikt en dus anoniem) lokaal adres&lt;br /&gt;</translation>
-    </message>
-    <message>
-        <source>with Security Level </source>
-        <translation>met beveiligingsniveau</translation>
     </message>
     <message>
         <source>Confirm send coins</source>
         <translation>Bevestig verzending coins</translation>
     </message>
     <message>
-        <source>Spending Zerocoin.
-Computationally expensive, might need several minutes depending on the selected Security Level and your hardware. 
-Please be patient...</source>
-        <translation>Zerocoin besteden.
-Computationeel duur, zou mogelijk enkele minuten nodig hebben, afhankelijk van het geselecteerde beveiligingsniveau en je 
-hardware.
-Wees alsjeblieft geduldig...</translation>
+        <source>Failed to fetch mint associated with serial hash</source>
+        <translation>Mislukt om de mint op te halen geassocieerd met de seriële hash</translation>
+    </message>
+    <message>
+        <source>Too much inputs (</source>
+        <translation>Teveel invoer (</translation>
+    </message>
+    <message>
+        <source>
+Either mint higher denominations (so fewer inputs are needed) or reduce the amount to spend.</source>
+        <translation>
+Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te besteden bedrag verminderen.</translation>
     </message>
     <message>
         <source>Spend Zerocoin failed with status = </source>
         <translation>Bestede Zerocoin mislukt met status =</translation>
     </message>
-    <message>
-        <source>zPhr Spend #: </source>
-        <translation>zPhr besteed #: </translation>
+    <message numerus="yes">
+        <source>PrivacyDialog</source>
+        <comment>Enter an amount of REDUX to convert to zREDUX</comment>
+        <translation><numerusform>PrivacyDialog</numerusform><numerusform>PrivacyDialog</numerusform></translation>
     </message>
     <message>
         <source>denomination: </source>
@@ -2627,10 +3037,6 @@ Wees alsjeblieft geduldig...</translation>
         <translation>adres:</translation>
     </message>
     <message>
-        <source>zPhr Mint</source>
-        <translation>zPhr Mint</translation>
-    </message>
-    <message>
         <source>Sending successful, return code: </source>
         <translation>Verzenden succesvol, retourcode:</translation>
     </message>
@@ -2644,21 +3050,13 @@ Wees alsjeblieft geduldig...</translation>
     </message>
 </context>
 <context>
-    <name>BanTableModel</name>
-    <message>
-        <source>IP/Netmask</source>
-        <translation>IP/Netmasker</translation>
-    </message>
-    <message>
-        <source>Banned Until</source>
-        <translation>Uitgesloten tot</translation>
-    </message>
-</context>
+    <name>ProposalFrame</name>
+    </context>
 <context>
     <name>QObject</name>
     <message>
         <source>Amount</source>
-        <translation>Hoeveelheid</translation>
+        <translation>Bedrag</translation>
     </message>
     <message>
         <source>Enter a Redux address (e.g. %1)</source>
@@ -2704,27 +3102,11 @@ Wees alsjeblieft geduldig...</translation>
         <source>%1 ms</source>
         <translation>%1 ms</translation>
     </message>
-	    <message>
-        <source>Error: Specified data directory &quot;%1&quot; does not exist.</source>
-        <translation>Error: Opgegeven gegevensfolder &quot;%1&quot; bestaat niet.</translation>
-    </message>
     <message>
-        <source>Error: Cannot parse configuration file: %1. Only use key=value syntax.</source>
-        <translation>Error: Kan het configuratiebestand niet ontleden: %1. Gebruik enkel de key=value syntax.</translation>
+        <source>Redux Core</source>
+        <translation>Redux Core</translation>
     </message>
-    <message>
-        <source>Error: Invalid combination of -regtest and -testnet.</source>
-        <translation>Error: Ongeldige combinatie van -regtest en -testnet.</translation>
-    </message>
-    <message>
-        <source>Error reading masternode configuration file: %1</source>
-        <translation>Fout bij het lezen van het masternode configuratiebestand: %1</translation>
-    </message>
-    <message>
-        <source>Redux Core didn&apos;t yet exit safely...</source>
-        <translation>Redux Core is nog niet veilig afgesloten...</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>QRImageWidget</name>
     <message>
@@ -2859,16 +3241,20 @@ Wees alsjeblieft geduldig...</translation>
         <translation>&amp;Peers</translation>
     </message>
     <message>
+        <source>Banned peers</source>
+        <translation>Verboden leeftijdsgenoten</translation>
+    </message>
+    <message>
         <source>Select a peer to view detailed information.</source>
         <translation>Selecteer een peer om gedetailleerde informatie te bekijken.</translation>
     </message>
     <message>
+        <source>Whitelisted</source>
+        <translation>Whitelisted</translation>
+    </message>
+    <message>
         <source>Direction</source>
         <translation>Richting</translation>
-    </message>
-	<message>
-        <source>Banned peers</source>
-        <translation>Verbannen peers</translation>
     </message>
     <message>
         <source>Protocol</source>
@@ -2881,14 +3267,6 @@ Wees alsjeblieft geduldig...</translation>
     <message>
         <source>Services</source>
         <translation>Diensten</translation>
-    </message>
-    <message>
-        <source>Starting Height</source>
-        <translation>Start hoogte</translation>
-    </message>
-    <message>
-        <source>Sync Height</source>
-        <translation>Sync hoogte</translation>
     </message>
     <message>
         <source>Ban Score</source>
@@ -2923,8 +3301,48 @@ Wees alsjeblieft geduldig...</translation>
         <translation>&amp;Portemonnee herstel</translation>
     </message>
     <message>
+        <source>Delete local Blockchain Folders</source>
+        <translation>Verwijder lokale Blockchain Mappen</translation>
+    </message>
+    <message>
         <source>Wallet In Use:</source>
         <translation>Portemonnee in gebruik:</translation>
+    </message>
+    <message>
+        <source>Starting Block</source>
+        <translation>Startblok</translation>
+    </message>
+    <message>
+        <source>Synced Headers</source>
+        <translation>Gesynchroniseerde headers</translation>
+    </message>
+    <message>
+        <source>Synced Blocks</source>
+        <translation>Gesynchroniseerde blokken</translation>
+    </message>
+    <message>
+        <source>The duration of a currently outstanding ping.</source>
+        <translation>De duur van een momenteel openstaande ping.</translation>
+    </message>
+    <message>
+        <source>Ping Wait</source>
+        <translation>Ping wacht</translation>
+    </message>
+    <message>
+        <source>Time Offset</source>
+        <translation>Tijdverschuiving</translation>
+    </message>
+    <message>
+        <source>Custom Backup Path:</source>
+        <translation>Aangepast back-up pad:</translation>
+    </message>
+    <message>
+        <source>Custom zREDUX Backup Path:</source>
+        <translation>Aangepast zREDUX back-up pad:</translation>
+    </message>
+    <message>
+        <source>Custom Backups Threshold:</source>
+        <translation>Aangepaste back-up drempel:</translation>
     </message>
     <message>
         <source>Salvage wallet</source>
@@ -2967,6 +3385,14 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Herstel blockchain index van huidige blk000??.dat bestanden.</translation>
     </message>
     <message>
+        <source>-resync:</source>
+        <translation>-resync:</translation>
+    </message>
+    <message>
+        <source>Deletes all local blockchain folders so the wallet synchronizes from scratch.</source>
+        <translation>Verwijder alle lokale blockchain mappen zodat de portemonnee alles opnieuw kan hersynchroniseren.</translation>
+    </message>
+    <message>
         <source>The buttons below will restart the wallet with command-line options to repair the wallet, fix issues with corrupt blockhain files or missing/obsolete transactions.</source>
         <translation>De onderstaande knoppen zullen de portemonnee opnieuw opstarten met command line opties om de portemonnee te repareren, problemen op te lossen met corrupte blockchain bestanden of ontbrekende/verouderde transacties.</translation>
     </message>
@@ -2995,8 +3421,52 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Welkom bij de Redux RPC console.</translation>
     </message>
     <message>
-        <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
-        <translation>Gebruik omhoog en omlaag pijlen om de geschiedenis te navigeren, en&lt;b&gt;Ctrl-L&lt;/b&gt;om scherm te wissen.</translation>
+        <source>&amp;Disconnect Node</source>
+        <translation>&amp; Koppel Node los</translation>
+    </message>
+    <message>
+        <source>Ban Node for</source>
+        <translation>Ban Node voor</translation>
+    </message>
+    <message>
+        <source>1 &amp;hour</source>
+        <translation>1 &amp;hour</translation>
+    </message>
+    <message>
+        <source>1 &amp;day</source>
+        <translation>1 &amp;day</translation>
+    </message>
+    <message>
+        <source>1 &amp;week</source>
+        <translation>1 &amp;week</translation>
+    </message>
+    <message>
+        <source>1 &amp;year</source>
+        <translation>1 &amp;year</translation>
+    </message>
+    <message>
+        <source>&amp;Unban Node</source>
+        <translation>&amp; Veel succes</translation>
+    </message>
+    <message>
+        <source>This will delete your local blockchain folders and the wallet will synchronize the complete Blockchain from scratch.&lt;br /&gt;&lt;br /&gt;</source>
+        <translation>Dit zal al jouw lokale blockchain mappen verwijderen en de portemonnee zal de blockchain helemaal opnieuw synchroniseren.&lt;br /&gt;&lt;br /&gt;</translation>
+    </message>
+    <message>
+        <source>This needs quite some time and downloads a lot of data.&lt;br /&gt;&lt;br /&gt;</source>
+        <translation>Dit vergt nogal wat tijd en downloadt veel data.&lt;br /&gt;&lt;br /&gt;</translation>
+    </message>
+    <message>
+        <source>Your transactions and funds will be visible again after the download has completed.&lt;br /&gt;&lt;br /&gt;</source>
+        <translation>Uw transacties en tegoeden zijn opnieuw zichtbaar nadat het downloaden is voltooid.&lt;br /&gt;&lt;br /&gt;</translation>
+    </message>
+    <message>
+        <source>Do you want to continue?.&lt;br /&gt;</source>
+        <translation>Wil je verdergaan?</translation>
+    </message>
+    <message>
+        <source>Confirm resync Blockchain</source>
+        <translation>Bevestig hersynchronisering van Blockchain</translation>
     </message>
     <message>
         <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
@@ -3019,6 +3489,10 @@ Wees alsjeblieft geduldig...</translation>
         <translation>%1 GB</translation>
     </message>
     <message>
+        <source>(node id: %1)</source>
+        <translation>(node id: %1)</translation>
+    </message>
+    <message>
         <source>via %1</source>
         <translation>via %1</translation>
     </message>
@@ -3035,44 +3509,16 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Uitgaande</translation>
     </message>
     <message>
+        <source>Yes</source>
+        <translation>ja</translation>
+    </message>
+    <message>
+        <source>No</source>
+        <translation>Nee</translation>
+    </message>
+    <message>
         <source>Unknown</source>
         <translation>Ongekend</translation>
-    </message>
-    <message>
-        <source>Fetching...</source>
-        <translation>Ophalen...</translation>
-    </message>
-	<message>
-        <source>Delete local Blockchain Folders</source>
-        <translation>Verwijder lokale Blockchain-mappen</translation>
-    </message>
-    <message>
-        <source>-resync:</source>
-        <translation>-resync:</translation>
-    </message>
-    <message>
-        <source>Deletes all local blockchain folders so the wallet synchronizes from scratch.</source>
-        <translation>Verwijdert alle lokale blockchain-mappen zodat de portemonnee opnieuw volledig gesynchroniseerd wordt.</translation>
-    </message>
-    <message>
-        <source>This will delete your local blockchain folders and the wallet will synchronize the complete Blockchain from scratch.&lt;br /&gt;&lt;br /&gt;</source>
-        <translation>Hiermee worden uw lokale blockchain-mappen verwijderd en synchroniseert de portemonnee de volledige Blockchain vanaf nul.&lt;br /&gt;&lt;br /&gt;</translation>
-    </message>
-    <message>
-        <source>This needs quite some time and downloads a lot of data.&lt;br /&gt;&lt;br /&gt;</source>
-        <translation>Dit vergt nogal wat tijd en downloadt enorm veel data.&lt;br /&gt;&lt;br /&gt;</translation>
-    </message>
-    <message>
-        <source>Your transactions and funds will be visible again after the download has completed.&lt;br /&gt;&lt;br /&gt;</source>
-        <translation>Uw transacties en saldi zijn weer zichtbaar nadat de download voltooid is.&lt;br /&gt;&lt;br /&gt;</translation>
-    </message>
-    <message>
-        <source>Do you want to continue?.&lt;br /&gt;</source>
-        <translation>Wil je verdergaan? &lt;br /&gt;</translation>
-    </message>
-    <message>
-        <source>Confirm resync Blockchain</source>
-        <translation>Bevestig hersynchronisatie van Blockchain</translation>
     </message>
 </context>
 <context>
@@ -3094,16 +3540,28 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Een optioneel label om te associëren met het nieuwe ontvangstadres.</translation>
     </message>
     <message>
+        <source>Your receiving address. You can copy and use it to receive coins on this wallet. A new one will be generated once it is used.</source>
+        <translation>Je ontvangstadres. Je kan deze kopieren en gebruiken om munten te ontvangen in deze portemonnee. Een nieuwe zal gegenereerd worden van zodra het gebruikt is.</translation>
+    </message>
+    <message>
+        <source>&amp;Address:</source>
+        <translation>&amp;Adres:</translation>
+    </message>
+    <message>
+        <source>A&amp;mount:</source>
+        <translation>&amp;Hoeveelheid:</translation>
+    </message>
+    <message>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Redux network.</source>
         <translation>Een optioneel bericht dat aan het betalingsverzoek wordt gehecht, dat wordt weergegeven wanneer het verzoek wordt geopend. Opmerking: het bericht wordt niet verzonden met de betaling via het Redux netwerk.</translation>
     </message>
     <message>
+        <source>RECEIVE</source>
+        <translation>ontvangen</translation>
+    </message>
+    <message>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Redux network.</source>
         <translation>Een optioneel bericht dat aan het betalingsverzoek wordt gehecht, dat wordt weergegeven wanneer het verzoek wordt geopend.&lt;br&gt;Opmerking: het bericht wordt niet verzonden met de betaling via het Redux netwerk.</translation>
-    </message>
-	    <message>
-        <source>An optional message to attach to the payment request.</source>
-        <translation>Een optioneel bericht om bij te voegen aan het betalingsverzoek. </translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -3118,10 +3576,6 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Een optioneel bedrag om te vragen. Laat dit leeg of vul een nul in om geen specifiek bedrag te vragen.</translation>
     </message>
     <message>
-        <source>&amp;Amount:</source>
-        <translation>&amp;Hoeveelheid:</translation>
-    </message>
-    <message>
         <source>&amp;Request payment</source>
         <translation>&amp;Verzoek betaling</translation>
     </message>
@@ -3132,6 +3586,10 @@ Wees alsjeblieft geduldig...</translation>
     <message>
         <source>Clear</source>
         <translation>Leegmaken</translation>
+    </message>
+    <message>
+        <source>Receiving Addresses</source>
+        <translation>Ontvangstadressen</translation>
     </message>
     <message>
         <source>Requested payments history</source>
@@ -3163,7 +3621,11 @@ Wees alsjeblieft geduldig...</translation>
     </message>
     <message>
         <source>Copy amount</source>
-        <translation>Kopieer hoeveelheid</translation>
+        <translation>Kopieer bedrag</translation>
+    </message>
+    <message>
+        <source>Copy address</source>
+        <translation>Kopieer adres</translation>
     </message>
 </context>
 <context>
@@ -3202,7 +3664,7 @@ Wees alsjeblieft geduldig...</translation>
     </message>
     <message>
         <source>Amount</source>
-        <translation>Hoeveelheid</translation>
+        <translation>Bedrag</translation>
     </message>
     <message>
         <source>Label</source>
@@ -3236,8 +3698,12 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Bericht</translation>
     </message>
     <message>
+        <source>Address</source>
+        <translation>Adres</translation>
+    </message>
+    <message>
         <source>Amount</source>
-        <translation>Hoeveelheid</translation>
+        <translation>Bedrag</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -3254,25 +3720,17 @@ Wees alsjeblieft geduldig...</translation>
 </context>
 <context>
     <name>SendCoinsDialog</name>
-	<message>
-        <source>Send</source>
-        <translation>Verzenden</translation>
-    </message>
     <message>
         <source>Send Coins</source>
         <translation>Verzend Munten</translation>
     </message>
     <message>
-        <source>Coin Control Features</source>
-        <translation>Munt controle kenmerken</translation>
-    </message>
-	<message>
-        <source>Inputs...</source>
-        <translation>Invoer...</translation>
+        <source>SEND</source>
+        <translation>STUREN</translation>
     </message>
     <message>
-        <source>automatically selected</source>
-        <translation>automatisch geselecteerd</translation>
+        <source>Coin Control Features</source>
+        <translation>Munt controle kenmerken</translation>
     </message>
     <message>
         <source>Insufficient funds!</source>
@@ -3288,7 +3746,7 @@ Wees alsjeblieft geduldig...</translation>
     </message>
     <message>
         <source>Amount:</source>
-        <translation>Hoeveelheid:</translation>
+        <translation>Bedrag:</translation>
     </message>
     <message>
         <source>Priority:</source>
@@ -3300,11 +3758,11 @@ Wees alsjeblieft geduldig...</translation>
     </message>
     <message>
         <source>Fee:</source>
-        <translation>Kost:</translation>
+        <translation>Fee:</translation>
     </message>
     <message>
         <source>Dust:</source>
-        <translation>Stof:</translation>
+        <translation>Dust:</translation>
     </message>
     <message>
         <source>no</source>
@@ -3312,11 +3770,11 @@ Wees alsjeblieft geduldig...</translation>
     </message>
     <message>
         <source>After Fee:</source>
-        <translation>Na de kost:</translation>
+        <translation>Na de fee:</translation>
     </message>
     <message>
         <source>Change:</source>
-        <translation>Wijzig:</translation>
+        <translation>Wisselgeld:</translation>
     </message>
     <message>
         <source>If this is activated, but the change address is empty or invalid, change will be sent to a newly generated address.</source>
@@ -3358,10 +3816,6 @@ Wees alsjeblieft geduldig...</translation>
         <source>Minimize</source>
         <translation>Minimaliseer</translation>
     </message>
-	<message>
-        <source>Obfuscation</source>
-        <translation>Verduistering</translation>
-    </message>
     <message>
         <source>per kilobyte</source>
         <translation>per kilobyte</translation>
@@ -3383,6 +3837,10 @@ Wees alsjeblieft geduldig...</translation>
         <translation>(Smart fee nog niet geïnitialiseerd. Dit duurt meestal een paar blokken ...)</translation>
     </message>
     <message>
+        <source>SwiftX</source>
+        <translation>SwiftX</translation>
+    </message>
+    <message>
         <source>Confirmation time:</source>
         <translation>Bevestigingstijd:</translation>
     </message>
@@ -3395,12 +3853,12 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Munten automatisch geselecteerd</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uREDUXs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uREDUXs in fee,&lt;br /&gt;while "at least" pays 1000 uREDUXs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Als de aangepaste vergoeding is ingesteld op 1000 uREDUXs en de transactie is slechts 250 bytes, dan betaalt per kilobyte alleen 250 uREDUX's in vergoeding,&lt;br /&gt;terwijl &quot;minstens&quot; 1000 uREDUX's betaalt. Voor transacties die groter zijn dan een kilobyte, betalen beiden per kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uREDUXs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uREDUXs in fee,&lt;br /&gt;while "at least" pays 1000 uREDUXs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Als de aangepaste vergoeding is ingesteld op 1000 uREDUXs en de transactie is slechts 250 bytes, dan betaalt per kilobyte alleen 250 uREDUX's in vergoeding,&lt;br /&gt;terwijl "minstens" 1000 uREDUX's betaalt. Voor transacties die groter zijn dan een kilobyte, betalen beiden per kilobyte.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uREDUXs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uREDUXs in fee,&lt;br /&gt;while &quot;total at least&quot; pays 1000 uREDUXs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Als de aangepaste vergoeding is ingesteld op 1000 uREDUXs en de transactie is slechts 250 bytes, dan betaalt per kilobyte alleen 250 uREDUX's in vergoeding,&lt;br /&gt;terwijl &quot;totaal minstens&quot; 1000 uREDUX's betaalt. Voor transacties die groter zijn dan een kilobyte, betalen beiden per kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uREDUXs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uREDUXs in fee,&lt;br /&gt;while "total at least" pays 1000 uREDUXs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Als de aangepaste vergoeding is ingesteld op 1000 uREDUXs en de transactie is slechts 250 bytes, dan betaalt per kilobyte alleen 250 uREDUX's in vergoeding,&lt;br /&gt;terwijl "totaal minstens" 1000 uREDUX's betaalt. Voor transacties die groter zijn dan een kilobyte, betalen beiden per kilobyte.</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Redux transactions than the network can process.</source>
@@ -3432,7 +3890,7 @@ Wees alsjeblieft geduldig...</translation>
     </message>
     <message>
         <source>S&amp;end</source>
-        <translation>V&amp;erzonden</translation>
+        <translation>V&amp;erzenden</translation>
     </message>
     <message>
         <source>Clear all fields of the form.</source>
@@ -3455,28 +3913,24 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Geanonimiseerde REDUX</translation>
     </message>
     <message>
-        <source>SwiftTX</source>
-        <translation>SwiftTX</translation>
-    </message>
-    <message>
         <source>Balance:</source>
         <translation>Balans:</translation>
     </message>
     <message>
         <source>Copy quantity</source>
-        <translation>Kopieer kwanititeit</translation>
+        <translation>Kopieer kwantiteit</translation>
     </message>
     <message>
         <source>Copy amount</source>
-        <translation>Kopieer hoeveelheid</translation>
+        <translation>Kopieer bedrag</translation>
     </message>
     <message>
         <source>Copy fee</source>
-        <translation>Kopiëer kost</translation>
+        <translation>Kopieer fee</translation>
     </message>
     <message>
         <source>Copy after fee</source>
-        <translation>Kopiëer na kost</translation>
+        <translation>Kopieer na fee</translation>
     </message>
     <message>
         <source>Copy bytes</source>
@@ -3503,24 +3957,8 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Het split block tool werkt niet met meerdere adressen. Probeer het nog eens.</translation>
     </message>
     <message>
-        <source>using</source>
-        <translation>gebruikt</translation>
-    </message>
-    <message>
-        <source>anonymous funds</source>
-        <translation>anonieme financiën</translation>
-    </message>
-    <message>
         <source>Warning: Invalid Redux address</source>
         <translation>Waarschuwing: Ongeldig Redux adres</translation>
-    </message>
-    <message>
-        <source>any available funds (not recommended)</source>
-        <translation>elke beschikbare fonds (niet aanbevolen)</translation>
-    </message>
-    <message>
-        <source>and SwiftTX</source>
-        <translation>en SwiftTX</translation>
     </message>
     <message>
         <source>%1 to %2</source>
@@ -3548,18 +3986,15 @@ Wees alsjeblieft geduldig...</translation>
     </message>
     <message numerus="yes">
         <source>Estimated to begin confirmation within %n block(s).</source>
-        <translation>
-			<numerusform>Schatting om te beginnen met bevestiging in %n blok.</numerusform>
-			<numerusform>Schatting om te beginnen met bevestiging in %n blokken.</numerusform>
-		</translation>
+        <translation><numerusform>Schatting om te beginnen met bevestiging in %n blokken.</numerusform><numerusform>Schatting om te beginnen met bevestiging in %n blokken.</numerusform></translation>
     </message>
     <message>
         <source>The recipient address is not valid, please recheck.</source>
         <translation>Het ontvangstadres is niet geldig, controleer deze.</translation>
     </message>
-	<message>
-        <source>(obfuscation requires this amount to be rounded up to the nearest %1).</source>
-        <translation>(verduistering vereist dit bedrag wordt afgerond naar de dichtsbijzijnde %1).</translation>
+    <message>
+        <source>using SwiftX</source>
+        <translation>met SwiftX</translation>
     </message>
     <message>
         <source> split into %1 outputs using the UTXO splitter.</source>
@@ -3787,8 +4222,8 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Maak alle verifiëren van het bericht velden leeg</translation>
     </message>
     <message>
-        <source>Click &quot;Sign Message&quot; to generate signature</source>
-        <translation>Klik op &quot;Onderteken Bericht&quot; om een handtekening te genereren</translation>
+        <source>Click "Sign Message" to generate signature</source>
+        <translation>Klik op "Onderteken Bericht" om een handtekening te genereren</translation>
     </message>
     <message>
         <source>The entered address is invalid.</source>
@@ -3804,11 +4239,11 @@ Wees alsjeblieft geduldig...</translation>
     </message>
     <message>
         <source>Wallet unlock was cancelled.</source>
-        <translation>Portemonnee-ontsleuteling is geannuleerd.</translation>
+        <translation>Portemonnee ontsleuteling is geannuleerd.</translation>
     </message>
     <message>
         <source>Private key for the entered address is not available.</source>
-        <translation>Geheime sleutel voor het ingevoerde adres is niet beschikbaar.</translation>
+        <translation>Privé sleutel voor het ingevoerde adres is niet beschikbaar.</translation>
     </message>
     <message>
         <source>Message signing failed.</source>
@@ -3843,7 +4278,7 @@ Wees alsjeblieft geduldig...</translation>
     <name>SplashScreen</name>
     <message>
         <source>Redux Core</source>
-        <translation>Redux Kern</translation>
+        <translation>Redux Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -3865,10 +4300,6 @@ Wees alsjeblieft geduldig...</translation>
         <source>[testnet]</source>
         <translation>[testnet]</translation>
     </message>
-	<message>
-        <source>The PIVX Core developers</source>
-        <translation>De PIVX Kernontwikkelaars</translation>
-    </message>
 </context>
 <context>
     <name>TrafficGraphWidget</name>
@@ -3881,7 +4312,7 @@ Wees alsjeblieft geduldig...</translation>
     <name>TransactionDesc</name>
     <message numerus="yes">
         <source>Open for %n more block(s)</source>
-        <translation><numerusform>Klaar voor %n blok extra</numerusform><numerusform>Klaar voor %n meer blokken</numerusform></translation>
+        <translation><numerusform>Klaar voor %n meer blokken</numerusform><numerusform>Klaar voor %n meer blokken</numerusform></translation>
     </message>
     <message>
         <source>Open until %1</source>
@@ -3892,12 +4323,60 @@ Wees alsjeblieft geduldig...</translation>
         <translation>conflicteert</translation>
     </message>
     <message>
+        <source>%1/offline</source>
+        <translation>%1/offline</translation>
+    </message>
+    <message>
+        <source>%1/unconfirmed</source>
+        <translation>%1/onbevestigd</translation>
+    </message>
+    <message>
+        <source>%1 confirmations</source>
+        <translation>%1 bevestigingen</translation>
+    </message>
+    <message>
+        <source>%1/offline (verified via SwiftX)</source>
+        <translation>%1/offline (gecontroleerd via SwiftX)</translation>
+    </message>
+    <message>
+        <source>%1/confirmed (verified via SwiftX)</source>
+        <translation>%1/bevestigd (gecontroleerd via swifttx)</translation>
+    </message>
+    <message>
+        <source>%1 confirmations (verified via SwiftX)</source>
+        <translation>%1 bevestigingen (gecontroleerd via swifttx)</translation>
+    </message>
+    <message>
+        <source>%1/offline (SwiftX verification in progress - %2 of %3 signatures)</source>
+        <translation>%1/offline (SwiftTX controle in uitvoering - %2 van %3 handtekeningen)</translation>
+    </message>
+    <message>
+        <source>%1/confirmed (SwiftX verification in progress - %2 of %3 signatures )</source>
+        <translation>%1/bevestigd (SwiftTX controle in uitvoering - %2 van %3 handtekeningen)</translation>
+    </message>
+    <message>
+        <source>%1 confirmations (SwiftX verification in progress - %2 of %3 signatures)</source>
+        <translation>%1 bevestigingen (SwiftTX controle in uitvoering -%2 van %3 handtekeningen)</translation>
+    </message>
+    <message>
+        <source>%1/offline (SwiftX verification failed)</source>
+        <translation>%1/offline (SwiftTX verificatie mislukt)</translation>
+    </message>
+    <message>
+        <source>%1/confirmed (SwiftX verification failed)</source>
+        <translation>%1/bevestigd (SwiftTX verificatie mislukt)</translation>
+    </message>
+    <message>
         <source>Status</source>
         <translation>Status</translation>
     </message>
     <message>
         <source>, has not been successfully broadcast yet</source>
         <translation>, is nog niet succesvol uitgezonden</translation>
+    </message>
+    <message numerus="yes">
+        <source>, broadcast through %n node(s)</source>
+        <translation><numerusform>, uitgezonden via %n nodes</numerusform><numerusform>, uitgezonden via %n nodes</numerusform></translation>
     </message>
     <message>
         <source>Date</source>
@@ -3941,10 +4420,7 @@ Wees alsjeblieft geduldig...</translation>
     </message>
     <message numerus="yes">
         <source>matures in %n more block(s)</source>
-        <translation>
-		<numerusform>maturiteit in %n blok meer</numerusform>
-		<numerusform>maturiteit in %n meer blokken</numerusform>
-		</translation>
+        <translation><numerusform>maturiteit in %n meer blokken</numerusform><numerusform>maturiteit in %n meer blokken</numerusform></translation>
     </message>
     <message>
         <source>not accepted</source>
@@ -3991,8 +4467,8 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Winkelier</translation>
     </message>
     <message>
-        <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Gegenereerde munten moeten %1 blokken rijpen voordat ze kunnen worden uitgegeven. Wanneer je dit blok hebt gegenereerd, wordt het naar het netwerk uitgezonden om aan de blockchain toegevoegd te worden. Als het niet in de keten komt, verandert de staat in &quot;niet geaccepteerd&quot; en zal het niet uitgeefbaar worden. Dit kan af en toe gebeuren als een andere node binnen een paar seconden van u een blok genereert.</translation>
+        <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to "not accepted" and it won't be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
+        <translation>Gegenereerde munten moeten %1 blokken rijpen voordat ze kunnen worden uitgegeven. Wanneer je dit blok hebt gegenereerd, wordt het naar het netwerk uitgezonden om aan de blockchain toegevoegd te worden. Als het niet in de keten komt, verandert de staat in "niet geaccepteerd" en zal het niet uitgeefbaar worden. Dit kan af en toe gebeuren als een andere node binnen een paar seconden van u een blok genereert.</translation>
     </message>
     <message>
         <source>Debug information</source>
@@ -4008,7 +4484,7 @@ Wees alsjeblieft geduldig...</translation>
     </message>
     <message>
         <source>Amount</source>
-        <translation>Hoeveelheid</translation>
+        <translation>Bedrag</translation>
     </message>
     <message>
         <source>true</source>
@@ -4017,53 +4493,6 @@ Wees alsjeblieft geduldig...</translation>
     <message>
         <source>false</source>
         <translation>onwaar</translation>
-    </message>
-	    <message>
-        <source>%1/offline (verified via swifttx)</source>
-        <translation>%1/offline (geverifieerd via swifttx)</translation>
-    </message>
-    <message>
-        <source>%1/confirmed (verified via swifttx)</source>
-        <translation>%1/bevestigd (geverifieerd via swifttx)</translation>
-    </message>
-    <message>
-        <source>%1 confirmations (verified via swifttx)</source>
-        <translation>%1 confirmaties (geverifieerd via swifttx)</translation>
-    </message>
-    <message>
-        <source>%1/offline</source>
-        <translation>%1/offline</translation>
-    </message>
-    <message>
-        <source>%1/unconfirmed</source>
-        <translation>%1/onbevestigd</translation>
-    </message>
-    <message>
-        <source>%1 confirmations</source>
-        <translation>%1 bevestigingen</translation>
-    </message>
-    <message>
-        <source>%1/confirmed (SwiftTX verification in progress - %2 of %3 signatures )</source>
-        <translation>%1/bevestigd (SwiftTX verificatie in uitvoering - %2 van %3 handtekeningen)</translation>
-    </message>
-    <message>
-        <source>%1 confirmations (SwiftTX verification in progress - %2 of %3 signatures)</source>
-        <translation>%1 bevestigingen (SwiftTX verificatie in uitvoering - %2 van %3 handtekeningen)</translation>
-    </message>
-    <message>
-        <source>%1/offline (SwiftTX verification failed)</source>
-        <translation>%1/offline (SwiftTX verificatie mislukt)</translation>
-    </message>
-    <message>
-        <source>%1/confirmed (SwiftTX verification failed)</source>
-        <translation>%1/bevestigd (SwiftTX verificatie mislukt)</translation>
-    </message>
-	    <message numerus="yes">
-        <source>, broadcast through %n node(s)</source>
-        <translation>
-			<numerusform>, uitgezonden via %n node</numerusform>
-			<numerusform>, uitgezonden via %n nodes</numerusform>
-		</translation>
     </message>
 </context>
 <context>
@@ -4093,10 +4522,7 @@ Wees alsjeblieft geduldig...</translation>
     </message>
     <message numerus="yes">
         <source>Open for %n more block(s)</source>
-        <translation>
-			<numerusform>Klaar voor %n blok extra</numerusform>
-			<numerusform>Klaar voor %n meer blokken</numerusform>
-		</translation>
+        <translation><numerusform>Klaar voor %n meer blokken</numerusform><numerusform>Klaar voor %n meer blokken</numerusform></translation>
     </message>
     <message>
         <source>Open until %1</source>
@@ -4147,6 +4573,14 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Verkregen via verduistering</translation>
     </message>
     <message>
+        <source>REDUX Stake</source>
+        <translation>REDUX Stake</translation>
+    </message>
+    <message>
+        <source>zREDUX Stake</source>
+        <translation>zREDUX Stake</translation>
+    </message>
+    <message>
         <source>Obfuscation Denominate</source>
         <translation>Verduistering denominatie</translation>
     </message>
@@ -4163,6 +4597,34 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Verduistering creëert denominaties</translation>
     </message>
     <message>
+        <source>Converted REDUX to zREDUX</source>
+        <translation>Geconverteerde REDUX naar zREDUX</translation>
+    </message>
+    <message>
+        <source>Spent zREDUX</source>
+        <translation>Bestede zREDUX</translation>
+    </message>
+    <message>
+        <source>Received REDUX from zREDUX</source>
+        <translation>Ontvangen REDUX van zREDUX</translation>
+    </message>
+    <message>
+        <source>Minted Change as zREDUX from zREDUX Spend</source>
+        <translation>Gemint wisselgeld als zREDUX van bestede zREDUX</translation>
+    </message>
+    <message>
+        <source>Converted zREDUX to REDUX</source>
+        <translation>Geconverteerde zREDUX naar REDUX</translation>
+    </message>
+    <message>
+        <source>Anonymous (zREDUX Transaction)</source>
+        <translation>Anonieme (zREDUX transactie)</translation>
+    </message>
+    <message>
+        <source>Anonymous (zREDUX Stake)</source>
+        <translation>Anonieme (zREDUX stake)</translation>
+    </message>
+    <message>
         <source>Sent to</source>
         <translation>Verzenden naar</translation>
     </message>
@@ -4175,10 +4637,6 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Betaling naar jezelf</translation>
     </message>
     <message>
-        <source>Minted</source>
-        <translation>Minted</translation>
-    </message>
-    <message>
         <source>Mined</source>
         <translation>Mined</translation>
     </message>
@@ -4186,37 +4644,9 @@ Wees alsjeblieft geduldig...</translation>
         <source>Obfuscated</source>
         <translation>Verduisterd</translation>
     </message>
-	<message>
-        <source>watch-only</source>
-        <translation>watch-only</translation>
-    </message>
-    <message>
-        <source>Converted Phr to zPhr</source>
-        <translation>Geconverteerde Phr naar zPhr</translation>
-    </message>
-    <message>
-        <source>Spent zPhr</source>
-        <translation>Uitgegeven zPhr</translation>
-    </message>
-    <message>
-        <source>Received Phr from zPhr</source>
-        <translation>Verkregen Phr van zPhr</translation>
-    </message>
-    <message>
-        <source>Minted Change as zPhr from zPhr Spend</source>
-        <translation>Minted wisselgeld als zPhr van uitgegeven zPhr</translation>
-    </message>
-    <message>
-        <source>Converted zPhr to Phr</source>
-        <translation>Geconverteerde zPhr naar Phr</translation>
-    </message>
     <message>
         <source>watch-only</source>
         <translation>watch-only</translation>
-    </message>
-    <message>
-        <source>zPhr Accumulator</source>
-        <translation>zPhr Accumulator</translation>
     </message>
     <message>
         <source>(n/a)</source>
@@ -4290,26 +4720,6 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Verzenden naar</translation>
     </message>
     <message>
-        <source>Obfuscated</source>
-        <translation>Verduisterd</translation>
-    </message>
-    <message>
-        <source>Obfuscation Make Collateral Inputs</source>
-        <translation>Verduistering maakt zijdelingse inputs</translation>
-    </message>
-    <message>
-        <source>Obfuscation Create Denominations</source>
-        <translation>Verduistering creëert denominaties</translation>
-    </message>
-    <message>
-        <source>Obfuscation Denominate</source>
-        <translation>Verduistering denominatie</translation>
-    </message>
-    <message>
-        <source>Obfuscation Collateral Payment</source>
-        <translation>Verduistering zijdelingse betaling</translation>
-    </message>
-    <message>
         <source>To yourself</source>
         <translation>Naar jezelf</translation>
     </message>
@@ -4326,20 +4736,12 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Masternode beloning</translation>
     </message>
     <message>
-        <source>Received Phr from zPhr</source>
-        <translation>Verkregen Phr van zPhr</translation>
-    </message>
-    <message>
         <source>Zerocoin Mint</source>
         <translation>Zerocoin Mint</translation>
     </message>
     <message>
         <source>Zerocoin Spend</source>
         <translation>Zerocoin uitgegeven</translation>
-    </message>
-    <message>
-        <source>Zerocoin Spend, Change in zPhr</source>
-        <translation>Zerocoin uitgegeven, wisselgeld in zPhr</translation>
     </message>
     <message>
         <source>Zerocoin Spend to Self</source>
@@ -4367,11 +4769,11 @@ Wees alsjeblieft geduldig...</translation>
     </message>
     <message>
         <source>Copy amount</source>
-        <translation>Kopieer hoeveelheid</translation>
+        <translation>Kopieer bedrag</translation>
     </message>
     <message>
         <source>Copy transaction ID</source>
-        <translation>Kopier transactie ID</translation>
+        <translation>Kopieer transactie ID</translation>
     </message>
     <message>
         <source>Edit label</source>
@@ -4380,6 +4782,10 @@ Wees alsjeblieft geduldig...</translation>
     <message>
         <source>Show transaction details</source>
         <translation>Bekijk transactiedetails</translation>
+    </message>
+    <message>
+        <source>Hide orphan stakes</source>
+        <translation>Verberg orphan stakes</translation>
     </message>
     <message>
         <source>Export Transaction History</source>
@@ -4430,6 +4836,14 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Exporteren succesvol</translation>
     </message>
     <message>
+        <source>Received REDUX from zREDUX</source>
+        <translation>Ontvangen REDUX van zREDUX</translation>
+    </message>
+    <message>
+        <source>Zerocoin Spend, Change in zREDUX</source>
+        <translation>Zerocoin besteed, wisselgeld in zREDUX</translation>
+    </message>
+    <message>
         <source>The transaction history was successfully saved to %1.</source>
         <translation>De transactiegeschiedenis is succesvol bewaard in %1.</translation>
     </message>
@@ -4463,15 +4877,15 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Verzend Munten</translation>
     </message>
     <message>
-        <source>SwiftTX doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 REDUX.</source>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 REDUX.</source>
         <translation>SwiftTX ondersteunt geen verzendwaarden die zo hoog zijn. Transacties zijn momenteel beperkt tot %1 REDUX.</translation>
     </message>
 </context>
 <context>
     <name>WalletView</name>
-	<message>
-        <source>Transactions</source>
-        <translation>Transacties</translation>
+    <message>
+        <source>HISTORY</source>
+        <translation>GESCHIEDENIS</translation>
     </message>
     <message>
         <source>&amp;Export</source>
@@ -4493,28 +4907,12 @@ Wees alsjeblieft geduldig...</translation>
         <source>Wallet Data (*.dat)</source>
         <translation>Portemonneegegevens (*.dat)</translation>
     </message>
-    <message>
-        <source>Backup Failed</source>
-        <translation>Backup mislukt</translation>
-    </message>
-    <message>
-        <source>There was an error trying to save the wallet data to %1.</source>
-        <translation>Er is een fout opgetreden om de portemonnee data op te slaan naar %1.</translation>
-    </message>
-    <message>
-        <source>Backup Successful</source>
-        <translation>Backup Succesvol</translation>
-    </message>
-    <message>
-        <source>The wallet data was successfully saved to %1.</source>
-        <translation>De portemonneegegevens zijn succesvol opgeslagen op %1.</translation>
-    </message>
 </context>
 <context>
-    <name>ZPhrControlDialog</name>
+    <name>ZReduxControlDialog</name>
     <message>
-        <source>Select zPhr to Spend</source>
-        <translation>Selecteer zPhr om te spenderen</translation>
+        <source>Select zREDUX to Spend</source>
+        <translation>Selecteer zREDUX om te besteden</translation>
     </message>
     <message>
         <source>Quantity</source>
@@ -4525,18 +4923,14 @@ Wees alsjeblieft geduldig...</translation>
         <translation>0</translation>
     </message>
     <message>
-        <source>zPhr</source>
-        <translation>zPhr</translation>
+        <source>zREDUX</source>
+        <translation>zREDUX</translation>
     </message>
     <message>
         <source>Select/Deselect All</source>
         <translation>Selecteer/Deselecteer Alles</translation>
     </message>
-    <message>
-        <source>Is Spendable</source>
-        <translation>Is Uitgeefbaar</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>redux-core</name>
     <message>
@@ -4546,10 +4940,6 @@ Wees alsjeblieft geduldig...</translation>
     <message>
         <source>Allow JSON-RPC connections from specified source. Valid for &lt;ip&gt; are a single IP (e.g. 1.2.3.4), a network/netmask (e.g. 1.2.3.4/255.255.255.0) or a network/CIDR (e.g. 1.2.3.4/24). This option can be specified multiple times</source>
         <translation>Sta JSON-RPC connecties toe van de opgegeven bron. Geldig voor&lt;ip&gt;zijn een enkel IP (bijvoorbeeld 1.2.3.4), een netwerk/netmask (bijvoorbeeld 1.2.3.4/255.255.255.0) of een netwerk/CIDR (bijvoorbeeld 1.2.3.4/24). Deze optie kan meerdere keren worden opgegeven</translation>
-    </message>
-    <message>
-        <source>An error occurred while setting up the RPC address %s port %u for listening: %s</source>
-        <translation>Er is een fout opgetreden tijdens het instellen van het RPC adres %s poort %u voor het luisteren: %s</translation>
     </message>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
@@ -4562,6 +4952,10 @@ Wees alsjeblieft geduldig...</translation>
     <message>
         <source>Bind to given address to listen for JSON-RPC connections. Use [host]:port notation for IPv6. This option can be specified multiple times (default: bind to all interfaces)</source>
         <translation>Bind naar het opgegeven adres om te luisteren naar JSON-RPC verbindingen. Gebruik [host]:poort notatie voor IPv6. Deze optie kan meerdere keren worden opgegeven (standaard: bind aan alle interfaces)</translation>
+    </message>
+    <message>
+        <source>Calculated accumulator checkpoint is not what is recorded by block index</source>
+        <translation>Het berekende accumulatie controlepunt is niet wat wordt geregistreerd door de blokindex</translation>
     </message>
     <message>
         <source>Cannot obtain a lock on data directory %s. Redux Core is probably already running.</source>
@@ -4584,20 +4978,28 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Verwijder alle portemonnee transacties en herstel alleen die delen van de blockchain via -rescan bij opstarten</translation>
     </message>
     <message>
+        <source>Delete all zerocoin spends and mints that have been recorded to the blockchain database and reindex them (0-1, default: %u)</source>
+        <translation>Verwijder alle bestede Zerocoin en mints die zijn geregistreerd in de blockchain database en her-indexeer ze (0-1, standaard: %u)</translation>
+    </message>
+    <message>
         <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
         <translation>Gedistribueerd onder de MIT software licentie, zie het bijgevoegde bestand COPYING of &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
     </message>
     <message>
-        <source>Enable spork administration functionality with the appropriate private key.</source>
-        <translation>Activeer de spork administratie functionaliteit met de juiste private sleutel.</translation>
+        <source>Enable automatic wallet backups triggered after each zREDUX minting (0-1, default: %u)</source>
+        <translation>Schakel automatische portemonnee back-ups in geactiveerd na elke geminte zREDUX (0-1, standaard: %u)</translation>
     </message>
     <message>
-        <source>Enable swifttx, show confirmations for locked transactions (bool, default: %s)</source>
-        <translation>Schakel swifttx in, laat bevestigingen zien voor gesloten transacties (bool, standaard: %s)</translation>
+        <source>Enable or disable staking functionality for REDUX inputs (0-1, default: %u)</source>
+        <translation>In- of uitschakelen staking functionaliteit voor REDUX inputs (0-1, standaard: %u)</translation>
     </message>
-	<message>
-        <source>Enable use of automated obfuscation for funds stored in this wallet (0-1, default: %u)</source>
-        <translation>Schakel het gebruik van automatische verduistering voor fondsen die opgeslagen zijn in deze portemonnee in (0-1, standaard %u)</translation>
+    <message>
+        <source>Enable or disable staking functionality for zREDUX inputs (0-1, default: %u)</source>
+        <translation>In- of uitschakelen staking functionaliteit voor zREDUX inputs (0-1, standaard: %u)</translation>
+    </message>
+    <message>
+        <source>Enable spork administration functionality with the appropriate private key.</source>
+        <translation>Activeer de spork administratie functionaliteit met de juiste private sleutel.</translation>
     </message>
     <message>
         <source>Enter regression test mode, which uses a special chain in which blocks can be solved instantly.</source>
@@ -4608,7 +5010,11 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Fout: het luisteren naar inkomende verbindingen is mislukt (luister terug fout %s)</translation>
     </message>
     <message>
-        <source>Error: Unsupported argument -socks found. Setting SOCKS version isn&apos;t possible anymore, only SOCKS5 proxies are supported.</source>
+        <source>Error: The transaction is larger than the maximum allowed transaction size!</source>
+        <translation>Fout: de transactie is groter dan de maximaal toegestane transactiegrootte!</translation>
+    </message>
+    <message>
+        <source>Error: Unsupported argument -socks found. Setting SOCKS version isn't possible anymore, only SOCKS5 proxies are supported.</source>
         <translation>Fout: Niet ondersteund argument -socks gevonden. Het instellen van SOCKS versie is niet meer mogelijk, alleen SOCKS5 proxy's worden ondersteund.</translation>
     </message>
     <message>
@@ -4639,10 +5045,6 @@ Wees alsjeblieft geduldig...</translation>
         <source>Found unconfirmed denominated outputs, will wait till they confirm to continue.</source>
         <translation>Gevonden onbevestigde gedenomineerde outputs, wachten tot ze bevestigd zijn om verder te gaan.</translation>
     </message>
-	<message>
-        <source>How thorough the block verification of -checkblocks is (0-4, default: %u)</source>
-        <translation>Hoe grondig de blokverificatie van -checkblocks is (0-4, standaard: %u)</translation>
-    </message>
     <message>
         <source>If paytxfee is not set, include enough fee so transactions begin confirmation on average within n blocks (default: %u)</source>
         <translation>Als paytxfee niet is ingesteld, sluit voldoende kosten in, zodat transacties beginnen te confirmeren binnen gemiddeld n blokken (standaard: %u)</translation>
@@ -4652,7 +5054,11 @@ Wees alsjeblieft geduldig...</translation>
         <translation>In deze modus controleert -genproclimit hoeveel blokken er onmiddellijk worden gegenereerd.</translation>
     </message>
     <message>
-        <source>Invalid amount for -maxtxfee=&lt;amount&gt;: &apos;%s&apos; (must be at least the minrelay fee of %s to prevent stuck transactions)</source>
+        <source>Insufficient or insufficient confirmed funds, you might need to wait a few minutes and try again.</source>
+        <translation>Onvoldoende of onvoldoende bevestigd geld, u moet mogelijk een paar minuten wachten en het opnieuw proberen.</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s' (must be at least the minrelay fee of %s to prevent stuck transactions)</source>
         <translation>Ongeldige hoeveelheid voor -maxtxfee=&lt;amount&gt;: '%s' (moet ten minste de minimale vergoeding van %s zijn om hangende transacties te voorkomen)</translation>
     </message>
     <message>
@@ -4673,7 +5079,7 @@ Wees alsjeblieft geduldig...</translation>
     </message>
     <message>
         <source>Maximum total fees to use in a single wallet transaction, setting too low may abort large transactions (default: %s)</source>
-        <translation>Maximale totale kosten die in één enkele portemonnee kunnen worden gebruikt, een te lage instelling kan grote transacties afbreken (standaard: %s)</translation>
+        <translation>Maximale totale kosten die in een enkele portefeuille kunnen worden gebruikt, een te lage instelling kan grote transacties afbreken (standaard: %s)</translation>
     </message>
     <message>
         <source>Number of seconds to keep misbehaving peers from reconnecting (default: %u)</source>
@@ -4687,13 +5093,13 @@ Wees alsjeblieft geduldig...</translation>
         <source>Output debugging information (default: %u, supplying &lt;category&gt; is optional)</source>
         <translation>Output debugging informatie (default: %u, verschaffen &lt;category&gt; is optioneel)</translation>
     </message>
-	<message>
-        <source>Provide liquidity to Obfuscation by infrequently mixing coins on a continual basis (0-100, default: %u, 1=very frequent, high fees, 100=very infrequent, low fees)</source>
-        <translation>Voorzie liquiditeit voor Verduistering door sporadisch munten te mengen op een continue basis (0-100, standaard: %u, 1=zeer frequent, hoge kosten, 100=zeer sporadisch, lage kosten)</translation>
-    </message>
     <message>
         <source>Query for peer addresses via DNS lookup, if low on addresses (default: 1 unless -connect)</source>
         <translation>Query voor peer adressen via DNS lookup, als er weinig adressen zijn (standaard: 1 tenzij -connect)</translation>
+    </message>
+    <message>
+        <source>Randomize credentials for every proxy connection. This enables Tor stream isolation (default: %u)</source>
+        <translation>Willekeurige credentials voor elke proxy verbinding. Dit stelt Tor stream isolatie in staat (standaard: %u)</translation>
     </message>
     <message>
         <source>Require high priority for relaying free or low-fee transactions (default:%u)</source>
@@ -4722,10 +5128,6 @@ Wees alsjeblieft geduldig...</translation>
     <message>
         <source>Support filtering of blocks and transaction with bloom filters (default: %u)</source>
         <translation>Ondersteun filteren van blokken en transactie met bloom filters (standaard: %u)</translation>
-    </message>
-    <message>
-        <source>SwiftTX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
-        <translation>SwiftTX vereist inputs met tenminste 6 bevestigingen, je dient wellicht een paar minuten te wachten en probeer het opnieuw.</translation>
     </message>
     <message>
         <source>This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit &lt;https://www.openssl.org/&gt; and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard.</source>
@@ -4760,7 +5162,7 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Waarschuwing: -paytxfee is zeer hoog ingesteld! Dit zijn de transactie kosten die je betaalt als je een transactie verstuurt.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Redux Core will not work properly.</source>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Redux Core will not work properly.</source>
         <translation>Waarschuwing: Controleer of de datum en tijd van je computer juist zijn! Als je klok verkeerd staat, werkt Redux Core niet goed.</translation>
     </message>
     <message>
@@ -4792,8 +5194,8 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Je moet een masternodeprivkey opgeven in de configuratie. Raadpleeg de documentatie voor hulp.</translation>
     </message>
     <message>
-        <source>(16610 could be used only on mainnet)</source>
-        <translation>(16610 kan alleen op mainnet worden gebruikt)</translation>
+        <source>(51472 could be used only on mainnet)</source>
+        <translation>(51472 kan alleen op mainnet worden gebruikt)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -4804,8 +5206,8 @@ Wees alsjeblieft geduldig...</translation>
         <translation>(standaard: 1)</translation>
     </message>
     <message>
-        <source>(must be 16610 for mainnet)</source>
-        <translation>(moet 16610 voor mainnet zijn)</translation>
+        <source>(must be 51472 for mainnet)</source>
+        <translation>(moet 51472 voor mainnet zijn)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>
@@ -4818,10 +5220,6 @@ Wees alsjeblieft geduldig...</translation>
     <message>
         <source>Accept public REST requests (default: %u)</source>
         <translation>Accepteer publieke REST verzoeken (standaard: %u)</translation>
-    </message>
-    <message>
-        <source>Acceptable ciphers (default: %s)</source>
-        <translation>Acceptabele ciphers (standaard: %s)</translation>
     </message>
     <message>
         <source>Add a node to connect to and attempt to keep the connection open</source>
@@ -4840,27 +5238,35 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Vraag altijd naar peer adressen via DNS lookup (standaard: %u)</translation>
     </message>
     <message>
+        <source>Append comment to the user agent string</source>
+        <translation>Voeg opmerking toe aan de user agent string</translation>
+    </message>
+    <message>
         <source>Attempt to recover private keys from a corrupt wallet.dat</source>
         <translation>Poog om privé sleutels te herstellen van een corrupte wallet.dat</translation>
     </message>
     <message>
+        <source>Automatically create Tor hidden service (default: %d)</source>
+        <translation>Creëer automatisch de Tor verborgen service (standaard: %d)</translation>
+    </message>
+    <message>
         <source>Block creation options:</source>
-        <translation>Blokcreatie opties:</translation> 
+        <translation>Block creatie opties:</translation>
     </message>
     <message>
         <source>Calculating missing accumulators...</source>
         <translation>Calculeren van ontbrekende accumulators...</translation>
     </message>
     <message>
-        <source>Can&apos;t denominate: no compatible inputs left.</source>
+        <source>Can't denominate: no compatible inputs left.</source>
         <translation>Kan niet denomineren: er zijn geen compatibele inputs over.</translation>
     </message>
     <message>
-        <source>Can&apos;t find random Masternode.</source>
+        <source>Can't find random Masternode.</source>
         <translation>Kan geen willekeurige Masternode vinden.</translation>
     </message>
     <message>
-        <source>Can&apos;t mix while sync in progress.</source>
+        <source>Can't mix while sync in progress.</source>
         <translation>Kan niet mixen terwijl synchronisatie wordt uitgevoerd.</translation>
     </message>
     <message>
@@ -4868,16 +5274,16 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Kan de portemonnee niet downgraden</translation>
     </message>
     <message>
-        <source>Cannot resolve -bind address: &apos;%s&apos;</source>
-        <translation>Kan -bind adres niet oplossen: &apos;%s&apos;</translation>
+        <source>Cannot resolve -bind address: '%s'</source>
+        <translation>Kan -bind adres niet oplossen: '%s'</translation>
     </message>
     <message>
-        <source>Cannot resolve -externalip address: &apos;%s&apos;</source>
-        <translation>Kan -externalip adres niet oplossen: &apos;%s&apos;</translation>
+        <source>Cannot resolve -externalip address: '%s'</source>
+        <translation>Kan -externalip adres niet oplossen: '%s'</translation>
     </message>
     <message>
-        <source>Cannot resolve -whitebind address: &apos;%s&apos;</source>
-        <translation>Kan -whitebind adres niet oplossen: &apos;%s&apos;</translation>
+        <source>Cannot resolve -whitebind address: '%s'</source>
+        <translation>Kan -whitebind adres niet oplossen: '%s'</translation>
     </message>
     <message>
         <source>Cannot write default address</source>
@@ -4904,12 +5310,20 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Connectie opties:</translation>
     </message>
     <message>
-        <source>Corrupted block database detected</source>
-        <translation>Corrupte block database gedetecteerd</translation>
+        <source>Copyright (C) 2009-%i The Bitcoin Core Developers</source>
+        <translation>Copyright (C) 2009-%i The Bitcoin Kernontwikkelaars</translation>
     </message>
     <message>
-        <source>Could not parse -rpcbind value %s as network address</source>
-        <translation>Kan -rpcbind value %s niet parsen als een netwerk adres</translation>
+        <source>Copyright (C) 2014-%i The Dash Core Developers</source>
+        <translation>Copyright (C) 2014-%i The Dash Kernontwikkelaars</translation>
+    </message>
+    <message>
+        <source>Copyright (C) 2015-%i The Redux Core Developers</source>
+        <translation>Copyright (C) 2015-%i The Redux Kernontwikkelaars</translation>
+    </message>
+    <message>
+        <source>Corrupted block database detected</source>
+        <translation>Corrupte block database gedetecteerd</translation>
     </message>
     <message>
         <source>Could not parse masternode.conf</source>
@@ -4918,6 +5332,10 @@ Wees alsjeblieft geduldig...</translation>
     <message>
         <source>Debugging/Testing options:</source>
         <translation>Debugging/Test opties:</translation>
+    </message>
+    <message>
+        <source>Delete blockchain folders and resync from scratch</source>
+        <translation>Verwijder blockchain mappen en hersynchroniseer alles opnieuw</translation>
     </message>
     <message>
         <source>Disable OS notifications for incoming transactions (default: %u)</source>
@@ -4946,6 +5364,14 @@ Wees alsjeblieft geduldig...</translation>
     <message>
         <source>Enable automatic Zerocoin minting (0-1, default: %u)</source>
         <translation>Zet automatische Zerocoin minting aan (0-1, standaard: %u)</translation>
+    </message>
+    <message>
+        <source>Enable publish hash transaction (locked via SwiftX) in &lt;address&gt;</source>
+        <translation>Activeer publicatie hash transactie (vergrendeld via SwiftTX) in &lt;address&gt;</translation>
+    </message>
+    <message>
+        <source>Enable publish raw transaction (locked via SwiftX) in &lt;address&gt;</source>
+        <translation>Activeer publicatie raw transactie (vergrendeld via SwiftTX) in &lt;address&gt;</translation>
     </message>
     <message>
         <source>Enable the client to act as a masternode (0-1, default: %u)</source>
@@ -4996,6 +5422,10 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Fout bij het herstellen van de publieke sleutel.</translation>
     </message>
     <message>
+        <source>Error writing zerocoinDB to disk</source>
+        <translation>Fout bij het schrijven van zerocoinDB naar schijf</translation>
+    </message>
+    <message>
         <source>Error</source>
         <translation>Error</translation>
     </message>
@@ -5004,7 +5434,7 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Fout: Er is een fatale interne fout opgetreden, zie debug.log voor details</translation>
     </message>
     <message>
-        <source>Error: Can&apos;t select current denominated inputs</source>
+        <source>Error: Can't select current denominated inputs</source>
         <translation>Fout: Kan de huidige gedenomineerde inputs niet selecteren</translation>
     </message>
     <message>
@@ -5024,8 +5454,16 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Fout: U heeft al entries in afwachting in de verduistering pool</translation>
     </message>
     <message>
+        <source>Failed to calculate accumulator checkpoint</source>
+        <translation>Kon het controlepunt van de accumulator niet berekenen</translation>
+    </message>
+    <message>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
         <translation>Niet gelukt om te luisteren op een poort. Gebruik -listen=0 als je dit wilt.</translation>
+    </message>
+    <message>
+        <source>Failed to parse host:port string</source>
+        <translation>Kan host: poortreeks niet parseren</translation>
     </message>
     <message>
         <source>Failed to read block</source>
@@ -5108,36 +5546,44 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Onvoldoende saldo.</translation>
     </message>
     <message>
-        <source>Invalid amount for -maxtxfee=&lt;amount&gt;: &apos;%s&apos;</source>
-        <translation>Ongeldige hoeveelheid voor -maxtxfee=&lt;amount&gt;: &apos;%s&apos;</translation>
+        <source>Invalid -onion address or hostname: '%s'</source>
+        <translation>Ongeldig -onion adres of hostnaam: '%s'</translation>
     </message>
     <message>
-        <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
+        <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s'</source>
+        <translation>Ongeldige hoeveelheid voor -maxtxfee=&lt;amount&gt;: '%s'</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: '%s'</source>
         <translation>Ongeldige hoeveelheid voor -minrelaytxfee=&lt;amount&gt;: '%s'</translation>
     </message>
     <message>
-        <source>Invalid amount for -mintxfee=&lt;amount&gt;: &apos;%s&apos;</source>
-        <translation>Ongeldige hoeveelheid voor -mintxfee=&lt;amount&gt;: &apos;%s&apos;</translation>
+        <source>Invalid amount for -mintxfee=&lt;amount&gt;: '%s'</source>
+        <translation>Ongeldige hoeveelheid voor -mintxfee=&lt;amount&gt;: '%s'</translation>
     </message>
     <message>
-        <source>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos; (must be at least %s)</source>
-        <translation>Ongeldige hoeveelheid voor -paytxfee=&lt;amount&gt;: &apos;%s&apos; (moet tenminste %s zijn)</translation>
+        <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s' (must be at least %s)</source>
+        <translation>Ongeldige hoeveelheid voor -paytxfee=&lt;amount&gt;: '%s' (moet tenminste %s zijn)</translation>
     </message>
     <message>
-        <source>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
-        <translation>Ongeldige hoeveelheid voor -paytxfee=&lt;amount&gt;: &apos;%s&apos;</translation>
+        <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s'</source>
+        <translation>Ongeldige hoeveelheid voor -paytxfee=&lt;amount&gt;: '%s'</translation>
     </message>
     <message>
         <source>Invalid amount for -reservebalance=&lt;amount&gt;</source>
         <translation>Ongeldige hoeveelheid voor -reservebalance=&lt;amount&gt;</translation>
     </message>
     <message>
+        <source>Invalid amount</source>
+        <translation>Ongeldige hoeveelheid</translation>
+    </message>
+    <message>
         <source>Invalid masternodeprivkey. Please see documenation.</source>
         <translation>Ongeldige masternodeprivkey. Zie documentatie.</translation>
     </message>
     <message>
-        <source>Invalid netmask specified in -whitelist: &apos;%s&apos;</source>
-        <translation>Ongeldige netmask opgegeven in -whitelist: &apos;%s&apos;</translation>
+        <source>Invalid netmask specified in -whitelist: '%s'</source>
+        <translation>Ongeldige netmask opgegeven in -whitelist: '%s'</translation>
     </message>
     <message>
         <source>Invalid port detected in masternode.conf</source>
@@ -5150,6 +5596,30 @@ Wees alsjeblieft geduldig...</translation>
     <message>
         <source>Invalid script detected.</source>
         <translation>Ongeldige script gedetecteerd.</translation>
+    </message>
+    <message>
+        <source>Percentage of automatically minted Zerocoin  (1-100, default: %u)</source>
+        <translation>Percentage automatisch geminte Zerocoin (10-100, standaard: %u)</translation>
+    </message>
+    <message>
+        <source>Reindex the REDUX and zREDUX money supply statistics</source>
+        <translation>Indexeer de REDUX- en zREDUX-geldvoorraadstatistieken opnieuw</translation>
+    </message>
+    <message>
+        <source>Reindexing zerocoin database...</source>
+        <translation>Her-indexeren Zerocoin database...</translation>
+    </message>
+    <message>
+        <source>Reindexing zerocoin failed</source>
+        <translation>Her-indexeren Zerocoin database mislukt</translation>
+    </message>
+    <message>
+        <source>Selected coins value is less than payment target</source>
+        <translation>Geselecteerde munt waarde is minder dan het betalingsdoel</translation>
+    </message>
+    <message>
+        <source>SwiftX options:</source>
+        <translation>SwiftTX opties:</translation>
     </message>
     <message>
         <source>This is a pre-release test build - use at your own risk - do not use for staking or merchant applications!</source>
@@ -5166,12 +5636,70 @@ Wees alsjeblieft geduldig...</translation>
         <translation>mints bijgewerkt,</translation>
     </message>
     <message>
+        <source> unconfirmed transactions removed
+</source>
+        <translation>onbevestigde transacties verwijderd
+</translation>
+    </message>
+    <message>
+        <source>Disable all Redux specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
+        <translation>Schakel alle specifieke Redux functionaliteit uit (Masternodes, Zerocoin, SwiftTX, Budgeting) (0-1, standaard: %u)</translation>
+    </message>
+    <message>
+        <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
+        <translation>Schakel SwiftX in, toon bevestigingen voor vergrendelde transacties (bool, standaard: %s)</translation>
+    </message>
+    <message>
+        <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
+        <translation>Fout: De transactie is afgewezen! Dit kan gebeuren als sommige munten in je portemonnee al waren uitgegeven, bijvoorbeeld als je een kopie van wallet.dat gebruikt en munten in de kopie waren besteed maar hier niet als zodanig gemarkeerd.</translation>
+    </message>
+    <message>
+        <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
+        <translation>Fout: Deze transactie vereist transactiekosten van ten minste %s vanwege de hoeveelheid, de complexiteit of het gebruik van recent ontvangen fondsen!</translation>
+    </message>
+    <message>
+        <source>Error: Unsupported argument -checklevel found. Checklevel must be level 4.</source>
+        <translation>Fout: Niet ondersteund argument -checklevel gevonden. Checklevel moet niveau 4 zijn.</translation>
+    </message>
+    <message>
+        <source>Execute command when the best block changes and its size is over (%s in cmd is replaced by block hash, %d with the block size)</source>
+        <translation>Voer het commando uit als het beste blok verandert en de grootte ervan voorbij is (%s in cmd wordt vervangen door blokhash, %d met de blokgrootte)</translation>
+    </message>
+    <message>
+        <source>Failed to find coin set amongst held coins with less than maxNumber of Spends</source>
+        <translation>Het is niet gelukt om muntstukken te vinden onder de aangehouden munten met minder dan max. Aantal uitgaven</translation>
+    </message>
+    <message>
+        <source>In rare cases, a spend with 7 coins exceeds our maximum allowable transaction size, please retry spend using 6 or less coins</source>
+        <translation>In zeldzame gevallen overschrijdt een besteding met 7 munten uw maximaal toegestane transactiegrootte. Probeer het opnieuw met 6 of minder munten</translation>
+    </message>
+    <message>
+        <source>Preferred Denomination for automatically minted Zerocoin  (1/5/10/50/100/500/1000/5000), 0 for no preference. default: %u)</source>
+        <translation>Voorkeur denominatie voor automatisch minted Zerocoin (1/5/10/50/100/500/1000/5000), 0 voor geen voorkeur. standaard: %u)</translation>
+    </message>
+    <message>
+        <source>Specify custom backup path to add a copy of any automatic zREDUX backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Specificeer aangepast back-up pad om een kopie van elke automatische zREDUX back-up toe te voegen. Indien ingesteld als dir zal elke back-up een bestand genereren met een tijdstempel. Indien ingesteld als file zal elke back-up herschreven worden naar dat bestand. Indien backuppath ook is ingesteld zullen 4 back-ups gedaan worden.</translation>
+    </message>
+    <message>
+        <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
+        <translation>Specificeer aangepast back-up pad om een kopie van elke portemonnee back-up toe te voegen. Indien ingesteld als dir zal elke back-up een bestand genereren met een tijdstempel. Indien ingesteld als file zal elke back-up herschreven worden naar dat bestand.</translation>
+    </message>
+    <message>
+        <source>SwiftX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
+        <translation>SwiftTX vereist invoer van tenminste 6 bevestigingen, je dient wellicht een paar minuten te wachten en het opnieuw proberen.</translation>
+    </message>
+    <message>
         <source>&lt;category&gt; can be:</source>
         <translation>&lt;category&gt;kan zijn: </translation>
     </message>
     <message>
         <source>Attempt to force blockchain corruption recovery</source>
         <translation>Poging om blockchain corruptie herstel te forceren</translation>
+    </message>
+    <message>
+        <source>CoinSpend: Accumulator witness does not verify</source>
+        <translation>CoinSpend: Accumulator witness controleert niet</translation>
     </message>
     <message>
         <source>Display the stake modifier calculations in the debug.log file.</source>
@@ -5186,20 +5714,12 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Activeer publicatie hash blok in &lt;address&gt;</translation>
     </message>
     <message>
-        <source>Enable publish hash transaction (locked via SwiftTX) in &lt;address&gt;</source>
-        <translation>Activeer publicatie hash transactie (vergrendeld via SwiftTX) in &lt;address&gt;</translation>
-    </message>
-    <message>
         <source>Enable publish hash transaction in &lt;address&gt;</source>
         <translation>Activeer publicatie has transactie in &lt;address&gt;</translation>
     </message>
     <message>
         <source>Enable publish raw block in &lt;address&gt;</source>
         <translation>Activeer publicatie raw block in &lt;address&gt;</translation>
-    </message>
-    <message>
-        <source>Enable publish raw transaction (locked via SwiftTX) in &lt;address&gt;</source>
-        <translation>Activeer publicatie raw transactie (vergrendeld via SwiftTX) in &lt;address&gt;</translation>
     </message>
     <message>
         <source>Enable publish raw transaction in &lt;address&gt;</source>
@@ -5209,9 +5729,33 @@ Wees alsjeblieft geduldig...</translation>
         <source>Enable staking functionality (0-1, default: %u)</source>
         <translation>Activeer staking functionaliteit (0-1, standaard: %u)</translation>
     </message>
-	<message>
-        <source>Keep N REDUX anonymized (default: %u)</source>
-        <translation>Houd N REDUX geanonimiseerd (standaard: %u)</translation>
+    <message>
+        <source>Error: A fatal internal error occurred, see debug.log for details</source>
+        <translation>Fout: Er is een fatale interne fout opgetreden, zie debug.log voor meer informatie</translation>
+    </message>
+    <message>
+        <source>Error: No valid utxo!</source>
+        <translation>Fout: geen geldige utxo!</translation>
+    </message>
+    <message>
+        <source>Failed to create mint</source>
+        <translation>Het is niet gelukt om mint te maken</translation>
+    </message>
+    <message>
+        <source>Failed to find Zerocoins in wallet.dat</source>
+        <translation>Niet gelukt om Zerocoins in wallet.dat te vinden.</translation>
+    </message>
+    <message>
+        <source>Failed to select a zerocoin</source>
+        <translation>Het is niet gelukt om een zerocoin te selecteren</translation>
+    </message>
+    <message>
+        <source>Failed to wipe zerocoinDB</source>
+        <translation>Mislukt om zerocoinDB te legen.</translation>
+    </message>
+    <message>
+        <source>Failed to write coin serial number into wallet</source>
+        <translation>Het serienummer van het muntstuk kan niet in de portemonnee worden geschreven</translation>
     </message>
     <message>
         <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>
@@ -5247,7 +5791,7 @@ Wees alsjeblieft geduldig...</translation>
     </message>
     <message>
         <source>Loading block index...</source>
-        <translation>Block index laden...</translation>
+        <translation>Blockindex laden...</translation>
     </message>
     <message>
         <source>Loading budget cache...</source>
@@ -5262,6 +5806,10 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Masternode betalingscache laden...</translation>
     </message>
     <message>
+        <source>Loading sporks...</source>
+        <translation>Sporks laden...</translation>
+    </message>
+    <message>
         <source>Loading wallet... (%3.2f %%)</source>
         <translation>Portemonnee laden... (%3.2f %%)</translation>
     </message>
@@ -5270,12 +5818,20 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Portemonnee aan het laden...</translation>
     </message>
     <message>
+        <source>Location of the auth cookie (default: data dir)</source>
+        <translation>Locatie van de auth cookie (standaard: data dir)</translation>
+    </message>
+    <message>
         <source>Lock is already in place.</source>
         <translation>Vergrendeling is al uitgevoerd.</translation>
     </message>
     <message>
         <source>Lock masternodes from masternode configuration file (default: %u)</source>
         <translation>Masternodes vergrendelen van masternode configuratiebestand (standaard: %u)</translation>
+    </message>
+    <message>
+        <source>Lookup(): Invalid -proxy address or hostname: '%s'</source>
+        <translation>Lookup (): ongeldig -proxy-adres of hostnaam: '%s'</translation>
     </message>
     <message>
         <source>Maintain at most &lt;n&gt; connections to peers (default: %u)</source>
@@ -5302,12 +5858,20 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Maximaal per connectie verstuur buffer, &lt;n&gt;*1000 bytes (standaard: %u)</translation>
     </message>
     <message>
+        <source>Mint did not make it into blockchain</source>
+        <translation>Mint heeft de blockchain niet gehaald</translation>
+    </message>
+    <message>
         <source>Missing input transaction information.</source>
         <translation>Ontbrekende invoer transactie informatie ontbreekt.</translation>
     </message>
     <message>
         <source>Mixing in progress...</source>
         <translation>Bezig met mixen...</translation>
+    </message>
+    <message>
+        <source>Need address because change is not exact</source>
+        <translation>Noodzaak van adres omdat wijziging niet exact is</translation>
     </message>
     <message>
         <source>Need to specify a port with -whitebind: '%s'</source>
@@ -5354,12 +5918,12 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Aantal automatische portemonnee backups (standaard: 10)</translation>
     </message>
     <message>
+        <source>Number of custom location backups to retain (default: %d)</source>
+        <translation>Aantal aangepaste locatie back-ups om te behouden (standaard: %d)</translation>
+    </message>
+    <message>
         <source>Obfuscation is idle.</source>
         <translation>Verduistering is inactief.</translation>
-    </message>
-	<message>
-        <source>Obfuscation options:</source>
-        <translation>Verduisteringsopties:</translation>
     </message>
     <message>
         <source>Obfuscation request complete:</source>
@@ -5386,6 +5950,14 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Wachtwoord voor JSON-RPC connecties</translation>
     </message>
     <message>
+        <source>isValid(): Invalid -proxy address or hostname: '%s'</source>
+        <translation>isValid (): ongeldig -proxy-adres of hostnaam: '%s'</translation>
+    </message>
+    <message>
+        <source>Preparing for resync...</source>
+        <translation>Voorbereiden van hersynchronisatie...</translation>
+    </message>
+    <message>
         <source>Prepend debug output with timestamp (default: %u)</source>
         <translation>Voeg debug output met timestamp toe (standaard: %u)</translation>
     </message>
@@ -5394,16 +5966,8 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Print versie en verlaat</translation>
     </message>
     <message>
-        <source>RPC SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
-        <translation>RPC SSL opties: (zie de Bitcoin Wiki voor SSL setup instructies)</translation>
-    </message>
-    <message>
         <source>RPC server options:</source>
         <translation>RPC server opties:</translation>
-    </message>
-    <message>
-        <source>RPC support for HTTP persistent connections (default: %d)</source>
-        <translation>RPC ondersteuning voor HTTP aanhoudende verbindingen (standaard: %d)</translation>
     </message>
     <message>
         <source>Randomly drop 1 of every &lt;n&gt; network messages</source>
@@ -5422,6 +5986,10 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Ontvang en laat P2P netwerkmeldingen zien (standaard: %u)</translation>
     </message>
     <message>
+        <source>Reindex the accumulator database</source>
+        <translation>Herindexeer de verzameldatabase</translation>
+    </message>
+    <message>
         <source>Relay and mine data carrier transactions (default: %u)</source>
         <translation>Relay en mine data carrier transacties (standaard: %u)</translation>
     </message>
@@ -5438,6 +6006,14 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Opnieuw scannen...</translation>
     </message>
     <message>
+        <source>ResetMintZerocoin finished: </source>
+        <translation>ResetMintZerocoin voltooid: </translation>
+    </message>
+    <message>
+        <source>ResetSpentZerocoin finished: </source>
+        <translation>ResetSpentZerocoin voltooid: </translation>
+    </message>
+    <message>
         <source>Run a thread to flush wallet periodically (default: %u)</source>
         <translation>Voer regelmatig een thread om de portemonnee te spoelen uit (standaard: %u)</translation>
     </message>
@@ -5448,14 +6024,6 @@ Wees alsjeblieft geduldig...</translation>
     <message>
         <source>Send transactions as zero-fee transactions if possible (default: %u)</source>
         <translation>Zend transacties als zero fee transacties indien mogelijk (standaard: %u)</translation>
-    </message>
-    <message>
-        <source>Server certificate file (default: %s)</source>
-        <translation>Server certificaat bestand (standaard: %s)</translation>
-    </message>
-    <message>
-        <source>Server private key (default: %s)</source>
-        <translation>Server privé sleutel (default: %s)</translation>
     </message>
     <message>
         <source>Session not complete!</source>
@@ -5484,6 +6052,10 @@ Wees alsjeblieft geduldig...</translation>
     <message>
         <source>Set minimum block size in bytes (default: %u)</source>
         <translation>Stel minimale block grootte in bytes in (default: %u)</translation>
+    </message>
+    <message>
+        <source>Set the Maximum reorg depth (default: %u)</source>
+        <translation>Stel de Maximale reorg diepte in (standaard: %u)</translation>
     </message>
     <message>
         <source>Set the masternode private key</source>
@@ -5546,6 +6118,10 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Specificeer je eigen publieke addres</translation>
     </message>
     <message>
+        <source>Spend Valid</source>
+        <translation>Besteed geldig</translation>
+    </message>
+    <message>
         <source>Spend unconfirmed change when sending transactions (default: %u)</source>
         <translation>Onbevestigd wisselgeld besteden bij het verzenden van transacties (standaard: %u)</translation>
     </message>
@@ -5568,10 +6144,6 @@ Wees alsjeblieft geduldig...</translation>
     <message>
         <source>Submitted to masternode, waiting in queue %s</source>
         <translation>Ingediend naar masternode, wachten in de wachtrij %s</translation>
-    </message>
-    <message>
-        <source>SwiftTX options:</source>
-        <translation>SwiftTX opties:</translation>
     </message>
     <message>
         <source>Synchronization failed</source>
@@ -5602,6 +6174,18 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Synchroniseren sporks...</translation>
     </message>
     <message>
+        <source>Syncing zREDUX wallet...</source>
+        <translation>Synchroniseren zREDUX portemonnee...</translation>
+    </message>
+    <message>
+        <source>The coin spend has been used</source>
+        <translation>De muntuitgaven zijn gebruikt</translation>
+    </message>
+    <message>
+        <source>The transaction did not verify</source>
+        <translation>De transactie heeft niet geverifieerd</translation>
+    </message>
+    <message>
         <source>This help message</source>
         <translation>Dit help bericht</translation>
     </message>
@@ -5620,6 +6204,26 @@ Wees alsjeblieft geduldig...</translation>
     <message>
         <source>Threshold for disconnecting misbehaving peers (default: %u)</source>
         <translation>Drempel voor het verbreken van misdragende peers (standaard: %u)</translation>
+    </message>
+    <message>
+        <source>Too many spends needed</source>
+        <translation>Te veel uitgaven nodig</translation>
+    </message>
+    <message>
+        <source>Tor control port password (default: empty)</source>
+        <translation>Tor controle poort wachtwoord (standaard: leeg)</translation>
+    </message>
+    <message>
+        <source>Tor control port to use if onion listening enabled (default: %s)</source>
+        <translation>Tor controle poort om te gebruiken als onion listening geactiveerd is (standaard: %s)</translation>
+    </message>
+    <message>
+        <source>Transaction Created</source>
+        <translation>Transactie gemaakt</translation>
+    </message>
+    <message>
+        <source>Transaction Mint Started</source>
+        <translation>Transactie startte met Mint</translation>
     </message>
     <message>
         <source>Transaction amount too small</source>
@@ -5654,16 +6258,32 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Verzending van de definitieve transactie.</translation>
     </message>
     <message>
+        <source>Try to spend with a higher security level to include more coins</source>
+        <translation>Probeer te spenderen met een hoger beveiligingsniveau om meer munten op te nemen</translation>
+    </message>
+    <message>
+        <source>Trying to spend an already spent serial #, try again.</source>
+        <translation>Probeer een reeds bestaand serienummer nog een keer uit te geven, probeer het opnieuw.</translation>
+    </message>
+    <message>
         <source>Unable to bind to %s on this computer (bind returned error %s)</source>
         <translation>Niet mogelijk te binden aan %s op deze computer (bind stuurt fout %s terug)</translation>
+    </message>
+    <message>
+        <source>Unable to find transaction containing mint</source>
+        <translation>Kan transactie met mint niet vinden</translation>
     </message>
     <message>
         <source>Unable to sign spork message, wrong key?</source>
         <translation>Kan sporkbericht niet tekenen, verkeerde sleutel?</translation>
     </message>
     <message>
-        <source>Unknown network specified in -onlynet: &apos;%s&apos;</source>
-        <translation>Onbekend netwerk gespecificeerd in -onlynet: &apos;%s&apos;</translation>
+        <source>Unable to start HTTP server. See debug log for details.</source>
+        <translation>Kan HTTP-server niet starten. Zie foutopsporingslog voor details.</translation>
+    </message>
+    <message>
+        <source>Unknown network specified in -onlynet: '%s'</source>
+        <translation>Onbekend netwerk gespecificeerd in -onlynet: '%s'</translation>
     </message>
     <message>
         <source>Unknown state: id = %u</source>
@@ -5672,14 +6292,6 @@ Wees alsjeblieft geduldig...</translation>
     <message>
         <source>Upgrade wallet to latest format</source>
         <translation>Upgrade portemonnee naar nieuwste formaat</translation>
-    </message>
-	<message>
-        <source>Use N separate masternodes to anonymize funds  (2-8, default: %u)</source>
-        <translation>Gebruik N afzonderlijke masternodes om fondsen te anonimiseren (2-8, standaard: %u)</translation>
-    </message>
-    <message>
-        <source>Use OpenSSL (https) for JSON-RPC connections</source>
-        <translation>Gebruik OpenSSL (https) voor JSON-RPC verbindingen</translation>
     </message>
     <message>
         <source>Use UPnP to map the listening port (default: %u)</source>
@@ -5690,12 +6302,24 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Gebruik UPnP om de luisterpoort te mappen (standaard: 1 bij het luisteren)</translation>
     </message>
     <message>
+        <source>Use a custom max chain reorganization depth (default: %u)</source>
+        <translation>Gebruik een aangepaste max chain reorganisatie diepte (standaard: %u)</translation>
+    </message>
+    <message>
         <source>Use the test network</source>
         <translation>Gebruik het test netwerk</translation>
     </message>
     <message>
+        <source>User Agent comment (%s) contains unsafe characters.</source>
+        <translation>User Agent opmerking (%s) bevat onveilige karakters.</translation>
+    </message>
+    <message>
         <source>Username for JSON-RPC connections</source>
         <translation>Gebruikersnaam voor JSON-RPC verbindingen</translation>
+    </message>
+    <message>
+        <source>Value is below the smallest available denomination (= 1) of zREDUX</source>
+        <translation>Waarde is minder dan de kleinst beschikbare denominatie (=1) van zREDUX</translation>
     </message>
     <message>
         <source>Value more than Obfuscation pool maximum allows.</source>
@@ -5723,6 +6347,7 @@ Wees alsjeblieft geduldig...</translation>
     </message>
     <message>
         <source>Wallet options:</source>
+        <translation>Portemonnee opties:</translation>
     </message>
     <message>
         <source>Wallet window title</source>
@@ -5749,7 +6374,12 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Zal het opnieuw proberen...</translation>
     </message>
     <message>
+        <source>You don't have enough Zerocoins in your wallet</source>
+        <translation>Je hebt niet genoeg Zerocoins in je portemonnee</translation>
+    </message>
+    <message>
         <source>You need to rebuild the database using -reindex to change -txindex</source>
+        <translation>Je moet de database herbouwen met -reindex om -txindex te wijzigen</translation>
     </message>
     <message>
         <source>Your entries added successfully.</source>
@@ -5767,1024 +6397,17 @@ Wees alsjeblieft geduldig...</translation>
         <source>ZeroMQ notification options:</source>
         <translation>ZeroMQ notificatie opties:</translation>
     </message>
-	    <message>
+    <message>
+        <source>Zerocoin options:</source>
+        <translation>Zerocoin opties:</translation>
+    </message>
+    <message>
         <source>on startup</source>
         <translation>tijdens het opstarten</translation>
     </message>
     <message>
         <source>wallet.dat corrupt, salvage failed</source>
         <translation>wallet.dat corrupt, redding mislukt</translation>
-    </message>
-	    <message>
-        <source> mints updated, </source>
-        <translation>mints bijgewerkt,</translation>
-    </message>
-    <message>
-        <source> unconfirmed transactions removed
-</source>
-        <translation>onbevestigde transacties verwijderd
-</translation>
-    </message>
-	<message>
-        <source>Calculated accumulator checkpoint is not what is recorded by block index</source>
-        <translation>Het berekende accumulatie controlepunt is niet wat wordt geregistreerd door de blokindex</translation>
-    </message>
-	<message>
-        <source>Disable all Redux specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
-        <translation>Schakel alle Redux specifieke functionaliteit uit (Masternodes, Verduistering, SwiftTX, Budgeting) (0-1, standaard: %u)</translation>
-    </message>
-	<message>
-        <source>Enable automatic wallet backups triggered after each zPhr minting (0-1, default: %u)</source>
-        <translation>Schakel automatische portemonnee-backups in die geactiveerd worden na elke zREDUX-munting (0-1, standaard: %u)</translation>
-    </message>
-	<message>
-        <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
-        <translation>Schakel SwiftX in, toon bevestigingen voor vergrendelde transacties (bool, standaard: %s)</translation>
-    </message>
-	  <message>
-        <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>Fout: De transactie is afgewezen! Dit kan gebeuren als sommige munten in je portemonnee al waren uitgegeven, bijvoorbeeld als je een kopie van wallet.dat gebruikt en munten in de kopie waren besteed maar hier niet als zodanig gemarkeerd.</translation>
-    </message>
-    <message>
-        <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
-        <translation>Fout: Deze transactie vereist transactiekosten van ten minste %s vanwege de hoeveelheid, de complexiteit of het gebruik van recent ontvangen fondsen!</translation>
-    </message>
-    <message>
-        <source>Error: Unsupported argument -checklevel found. Checklevel must be level 4.</source>
-        <translation>Fout: Niet ondersteund argument -checklevel gevonden. Checklevel moet niveau 4 zijn.</translation>
-    </message>
-	    <message>
-        <source>Insufficient or insufficient confirmed funds, you might need to wait a few minutes and try again.</source>
-	<translation>Onvoldoende of onvoldoende bevestigde fondsen, u moet mogelijks een paar minuten wachten en het opnieuw proberen.</translation>
-    </message>
-	    <message>
-        <source>Preferred Denomination for automatically minted Zerocoin  (1/5/10/50/100/500/1000/5000), 0 for no preference. default: %u)</source>
-        <translation>Voorkeur denominatie voor automatisch minted Zerocoin (1/5/10/50/100/500/1000/5000), 0 voor geen voorkeur. standaard: %u)</translation>
-    </message>
-	<message>
-        <source>Randomize credentials for every proxy connection. This enables Tor stream isolation (default: %u)</source>
-        <translation>Willekeurige credentials voor elke proxy verbinding. Dit stelt Tor stream isolatie in staat (standaard: %u)</translation>
-    </message>
-	<message>
-        <source>SwiftX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
-        <translation>SwiftTX vereist invoeren moet minstens 6 bevestigingen, u moet mogelijks een paar minuten wachten en opnieuw proberen.</translation>
-    </message>
-	<message>
-        <source>To use reduxd, or the -server option to redux-qt, you must set an rpcpassword in the configuration file:
-%s
-It is recommended you use the following random password:
-rpcuser=reduxrpc
-rpcpassword=%s
-(you do not need to remember this password)
-The username and password MUST NOT be the same.
-If the file does not exist, create it with owner-readable-only file permissions.
-It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Redux Alert&quot; admin@foo.com
-</source>
-        <translation>Om reduxd of de -server optie om redux-qt te gebruiken, moet je een rpcpassword instellen in het configuratiebestand:
-%s
-Het is aan te raden het volgende willekeurige wachtwoord te gebruiken:
-rpcuser=reduxrpc
-rpcpassword=%s
-(je hoeft dit wachtwoord niet te onthouden)
-De gebruikersnaam en het wachtwoord MOETEN NIET hetzelfde zijn.
-Als het bestand niet bestaat, creëer het dan met owner-readable-only bestandsrechten.
-Het is ook aan te raden om alertnotify in te stellen, zodat je van problemen op de hoogte wordt gebracht;
-bijvoorbeeld: alertnotify = echo %%s | mail -s &quot;Redux Alert&quot; admin@foo.com
-</translation>
-    </message>
-	    <message>
-        <source>Automatically create Tor hidden service (default: %d)</source>
-        <translation>Creëer automatisch de Tor verborgen service (standaard: %d)</translation>
-    </message>
-		<message>
-        <source>Copyright (C) 2009-%i The Bitcoin Core Developers</source>
-        <translation>Copyright (C) 2009-%i The Bitcoin Kernontwikkelaars</translation>
-    </message>
-    <message>
-        <source>Copyright (C) 2014-%i The Dash Core Developers</source>
-        <translation>Copyright (C) 2014-%i The Dash Kernontwikkelaars</translation>
-    </message>
-    <message>
-        <source>Copyright (C) 2015-%i The Redux Developers</source>
-        <translation>Copyright (C) 2015-%i The Redux Kernontwikkelaars</translation>
-    </message>
-	   <message>
-        <source>Delete blockchain folders and resync from scratch</source>
-        <translation>ブロックチェーンデータを削除し、再同期を行う</translation>
-    </message>
-    <message>
-        <source>Disable OS notifications for incoming transactions (default: %u)</source>
-        <translation>入金トランザクションの際のOSの通知を無効化する( デフォルト: %u)</translation>
-    </message>
-    <message>
-        <source>Enable automatic Zerocoin minting (0-1, default: %u)</source>
-        <translation>Schakel automatische Zerocoin munting in (0-1, standaard: %u)</translation>
-    </message>
-    <message>
-        <source>Enable publish hash transaction (locked via SwiftX) in &lt;address&gt;</source>
-        <translation>Schakel publiceren van hash-transactie in (vergrendeld via SwiftX) in &lt;address&gt;</translation>
-    </message>
-    <message>
-        <source>Enable publish raw transaction (locked via SwiftX) in &lt;address&gt;</source>
-        <translation>Schakel publiceren van raw-transactie in (vergrendeld via SwiftX) in &lt;address&gt;</translation>
-    </message>
-    <message>
-        <source>Failed to read block index</source>
-        <translation>Het lezen van de blokindex is mislukt</translation>
-    </message>
-    <message>
-        <source>Failed to write block index</source>
-        <translation>Het schrijven van de blokindex is mislukt</translation>
-    </message>
-    <message>
-        <source>Insufficient funds</source>
-        <translation>Onvoldoende fondsen</translation>
-    </message>
-    <message>
-        <source>Invalid -onion address or hostname: &apos;%s&apos;</source>
-        <translation>Ongeldig -onion adres of hostnaam: &apos;%s&apos;</translation>
-    </message>
-    <message>
-        <source>Invalid -proxy address or hostname: &apos;%s&apos;</source>
-        <translation>Ongeldig -proxy adres of hostnaam: &apos;%s&apos;</translation>
-    </message>
-    <message>
-        <source>Invalid amount</source>
-        <translation>Ongeldige hoeveelheid</translation>
-    </message>
-    <message>
-        <source>Less than 3 mints added, unable to create spend</source>
-        <translation>Minder dan 3 mints toegevoegd, niet in staat om uitgave te creëren</translation>
-    </message>
-    <message>
-        <source>Loading sporks...</source>
-        <translation>Sporks laden...</translation>
-    </message>
-    <message>
-        <source>Percentage of automatically minted Zerocoin  (10-100, default: %u)</source>
-        <translation>Percentage automatisch geminte Zerocoin (10-100, standaard: %u)</translation>
-    </message>
-    <message>
-        <source>Preparing for resync...</source>
-        <translation>Voorbereiden voor hersynchronisatie...</translation>
-    </message>
-    <message>
-        <source>Recalculating coin supply may take 30-60 minutes...</source>
-        <translation>Herberekenen van de muntvoorraad kan 30-60 minuten duren...</translation>
-    </message>
-    <message>
-        <source>Recalculating supply statistics may take 30-60 minutes...</source>
-        <translation>Herberekenen van de voorraadsstatistieken kan 30-60 minuten duren...</translation>
-    </message>
-    <message>
-        <source>ResetMintZerocoin finished: </source>
-        <translation>ResetMintZerocoin voltooid: </translation>
-    </message>
-    <message>
-        <source>ResetSpentZerocoin finished: </source>
-        <translation>ResetSpentZerocoin voltooid: </translation>
-    </message>
-    <message>
-        <source>Set the Maximum reorg depth (default: %u)</source>
-        <translation>Stel de Maximale reorg diepte in (standaard: %u)</translation>
-    </message>
-    <message>
-        <source>SwiftX options:</source>
-        <translation>SwiftX opties:</translation>
-    </message>
-    <message>
-        <source>Tor control port password (default: empty)</source>
-        <translation>Tor controle poort wachtwoord (standaard: leeg)</translation>
-    </message>
-    <message>
-        <source>Tor control port to use if onion listening enabled (default: %s)</source>
-        <translation>Tor controle poort om te gebruiken als onion listening geactiveerd is (standaard: %s)</translation>
-    </message>
-    <message>
-        <source>Use a custom max chain reorganization depth (default: %u)</source>
-        <translation>Gebruik een aangepaste maximale chain reorganisatiediepte (standaard: %u)</translation>
-    </message>
-    <message>
-        <source>Zerocoin options:</source>
-        <translation>Zerocoin opties:</translation>
-    </message>
-    <message>
-        <source>failed to validate zerocoin</source>
-        <translation>mislukt om zerocoin te valideren</translation>
-    </message>
-</context>
-<context>
-    <name>zreduxcontroldialog</name>
-    <message>
-        <source>Select zPhr to Spend</source>
-        <translation>Selecteer zPhr om te spenderen</translation>
-    </message>
-    <message>
-        <source>Quantity</source>
-        <translation>Hoeveelheid</translation>
-    </message>
-	<message>
-        <source>Select/Deselect All</source>
-        <translation>Selecteer/Deselecteer Alles</translation>
-    </message>
-    <message>
-        <source>Is Spendable</source>
-        <translation>Is Uitgeefbaar</translation>
-    </message>
-</context>
-<context>
-    <name>PrivacyDialog</name>
-    <message>
-        <source>Privacy</source>
-        <translation>Privacy</translation>
-    </message>
-<message>
-        <source>zPhr Control</source>
-        <translation>zPhr controle</translation>
-    </message>
-    <message>
-        <source>zPhr Selected:</source>
-        <translation>zPhr geselecteerd:</translation>
-    </message>
-    <message>
-        <source>REDUX which were anonymized via Zerocin Protocol</source>
-        <translation>REDUX die via het Zerocoin Protocol geanonimiseerd werden</translation>
-    </message>
-    <message>
-        <source>Zerocoin REDUX (zREDUX)</source>
-        <translation>Zerocoin REDUX (zREDUX)</translation>
-    </message>
-    <message>
-        <source>Zerocoin Actions:</source>
-        <translation>Zerocoin Acties:</translation>
-    </message>
-    <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Redux network after a connection is established, but this process has not completed yet.</source>
-        <translation>De weergegeven informatie kan verouderd zijn. Je portemonnee synchroniseert automatisch met het Redux netwerk nadat een verbinding is opgezet, maar dit proces is nog niet afgerond.</translation>
-    </message>
-    <message>
-        <source>Enter an amount of Phr to convert to zPhr</source>
-        <translation>Vul de hoeveleheid in om Phr te converteren naar zPhr</translation>
-    </message>
-    <message>
-        <source>Mint Zerocoin</source>
-        <translation>Mint Zerocoin</translation>
-    </message>
-    <message>
-        <source>Available for minting are coins which are confirmed and not locked or Masternode collaterals.</source>
-        <translation>Beschikbaar voor munting zijn munten die bevestigd zijn en niet vergrendeld of dienen als Masternode onderpanden.</translation>
-    </message>
-    <message>
-        <source>Available for Minting:</source>
-        <translation>Beschikbaar voor munting:</translation>
-    </message>
-    <message>
-        <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
-        <translation>Zerocoin Wallet DB opnieuw instellen. Verwijdert transacties die het niet in de blockchain hebben gered.</translation>
-    </message>
-    <message>
-        <source>Reset</source>
-        <translation>Resetten</translation>
-    </message>
-    <message>
-        <source>Coin Control...</source>
-        <translation>Munt controle...</translation>
-    </message>
-    <message>
-        <source>Quantity:</source>
-        <translation>Kwantiteit:</translation>
-    </message>
-    <message>
-        <source>Amount:</source>
-        <translation>Hoeveelheid:</translation>
-    </message>
-    <message>
-        <source>Rescan the complete blockchain for  Zerocoin mints and their meta-data.</source>
-        <translation>Rescan de complete blockchain voor Zerocoin mints en hun meta-data.</translation>
-    </message>
-    <message>
-        <source>ReScan</source>
-        <translation>ReScan</translation>
-    </message>
-    <message>
-        <source>Status and/or Mesages from the last Mint Action.</source>
-        <translation>Status en/of Berichten van de laatste mint actie.</translation>
-    </message>
-    <message>
-        <source>zPhr Control</source>
-        <translation>zPhr controle</translation>
-    </message>
-    <message>
-        <source>Quantity Selected:</source>
-        <translation>Hoeveelheid geselecteerd:</translation>
-    </message>
-    <message>
-        <source>Spend Zerocoin. Without 'Pay To:' address creates payments to yourself.</source>
-        <translation>Zerocoin besteden. Zonder 'Betaal aan:' adres ontstaan betalingen aan jezelf.</translation>
-    </message>
-    <message>
-        <source>Spend Zerocoin</source>
-        <translation>Besteed Zerocoin</translation>
-    </message>
-    <message>
-        <source>Available (mature and spendable) zREDUX for spending</source>
-        <translation>Beschikbare (mature en besteedbare) zREDUX voor besteding</translation>
-    </message>
-    <message>
-        <source>Available Balance:</source>
-        <translation>Beschikbare saldo:</translation>
-    </message>
-    <message>
-        <source>Available (mature and spendable) zREDUX for spending
-
-zREDUX are mature when they have more than 20 confirmations AND more than 1 mint of the same denomination after them were minted</source>
-        <translation>Beschikbare (mature en besteedbare) zREDUX voor besteding
-		
-		zREDUX zijn matuur wanner zij meer dan 20 bevestigingen hebben EN meer dan 1 munting van dezelfde denonminatie nadat ze gemunt geweest zijn</translation>
-    </message>
-    <message>
-        <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
-        <translation>Beveiligingsniveau voor Zerocoin transacties. Meer is beter, maar heeft meer tijd en middelen nodig.</translation>
-    </message>
-    <message>
-        <source>Security Level:</source>
-        <translation>Beveiligings niveau:</translation>
-    </message>
-    <message>
-        <source>Security Level 1 - 100 (default: 42)</source>
-        <translation>Beveiligingsniveau 1 - 100 (standaard: 42)</translation>
-    </message>
-    <message>
-        <source>Pay &amp;To:</source>
-        <translation>Betaal &amp;Naar:</translation>
-    </message>
-    <message>
-        <source>The Redux address to send the payment to. Creates local payment to yourself when empty.</source>
-        <translation>Het Redux adres om de betaling naar te verzenden. Maakt lokale betaling aan jezelf als je leeg bent.</translation>
-    </message>
-    <message>
-        <source>Choose previously used address</source>
-        <translation>Kies een eerder gebruikt adres</translation>
-    </message>
-    <message>
-        <source>Enter a Redux address (e.g. PCYiHgGJJ6xGHqivmdZrYjRnhaYf6AJ2Mp)</source>
-        <translation>Voer een Redux adres in (bv.: PCYiHgGJJ6xGHqivmdZrYjRnhaYf6AJ2Mp)</translation>
-    </message>
-    <message>
-        <source>Paste address from clipboard</source>
-        <translation>Plak adres vanaf klembord</translation>
-    </message>
-    <message>
-        <source>&amp;Label:</source>
-        <translation>&amp;Label:</translation>
-    </message>
-    <message>
-        <source>Enter a label for this address to add it to the list of used addresses</source>
-        <translation>Vul een label in voor dit adres om deze toe te voegen aan de lijst met gebruikte adressen</translation>
-    </message>
-    <message>
-        <source>Enter a label for this address to add it to your address book</source>
-        <translation>Vul een label in voor dit adres om deze toe te voegen aan uw adresboek</translation>
-    </message>
-    <message>
-        <source>A&amp;mount:</source>
-        <translation>&amp;Hoeveelheid:</translation>
-    </message>
-    <message>
-        <source>Convert Change to Zerocoin (might cost additional fees)</source>
-        <translation>Zet wisselgeld om naar Zerocoin (mogelijk extra kosten)</translation>
-    </message>
-    <message>
-        <source>If checked, the wallet tries to minimize the returning change instead of minimizing the number of spent denominations.</source>
-        <translation>Indien aangevinkt, probeert de portemonnee het terugkerende wisselgeld te minimaliseren in plaats van het aantal uitgegeven denominaties te minimaliseren.</translation>
-    </message>
-    <message>
-        <source>Minimize Change</source>
-        <translation>Minimaliseer wisselgeld</translation>
-    </message>
-    <message>
-        <source>Global Supply:</source>
-        <translation>Globale voorraad:</translation>
-    </message>
-    <message>
-        <source>Zerocoin Stats:</source>
-        <translation>Zerocoin Statistieken:</translation>
-    </message>
-    <message>
-        <source>Information about the available Zerocoin funds.</source>
-        <translation>Informatie over de beschikbare Zerocoin fondsen.</translation>
-    </message>
-    <message>
-        <source>Total Balance including unconfirmed and immature zREDUX</source>
-        <translation>Totale Balans inclusief onbevestigde en immature zREDUX</translation>
-    </message>
-    <message>
-        <source>Total Zerocoin  Balance:</source>
-        <translation>Totale Zerocoin Saldo:</translation>
-    </message>
-    <message>
-        <source>Denominations with value 1:</source>
-        <translation>Denominaties met waarde 1:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 1:</source>
-        <translation>Denom. met waarde 1:</translation>
-    </message>
-    <message>
-        <source>Unconfirmed: less than 20 confirmations
-Immature: confirmed, but less than 2 mints of the same denomination after it was minted</source>
-        <translation>Onbevestigd: minder dan 20 bevestigingen
-        Immatuur: bevestigd, maar minder dan 2 muntingen van dezelfde denominatie nadat deze gemunt was</translation>
-    </message>
-   <message>
-        <source>Denominations with value 5:</source>
-        <translation>Denominaties met waarde 5:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 5:</source>
-        <translation>Denom. met waarde 5:</translation>
-    </message>
-    <message>
-        <source>Denominations with value 10:</source>
-        <translation>Denominaties met waarde 10:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 10:</source>
-        <translation>Denom. met waarde 10:</translation>
-    </message>
-    <message>
-        <source>Denominations with value 50:</source>
-        <translation>Denominaties met waarde 50:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 50:</source>
-        <translation>Denom. met waarde 50:</translation>
-    </message>
-    <message>
-        <source>Denominations with value 100:</source>
-        <translation>Denominaties met waarde 100:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 100:</source>
-        <translation>Denom. met waarde 100:</translation>
-    </message>
-    <message>
-        <source>Denominations with value 500:</source>
-        <translation>Denominaties met waarde 500:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 500:</source>
-        <translation>Denom. met waarde 500:</translation>
-    </message>
-    <message>
-        <source>Denominations with value 1000:</source>
-        <translation>Denominaties met waarde 1000:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 1000:</source>
-        <translation>Denom. met waarde 1000:</translation>
-    </message>
-    <message>
-        <source>Denominations with value 5000:</source>
-        <translation>Denominaties met waarde 5000:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 5000:</source>
-        <translation>Denom. met waarde 5000:</translation>
-    </message>
-    <message>
-        <source>Priority:</source>
-        <translation>Prioriteit:</translation>
-    </message>
-    <message>
-        <source>Fee:</source>
-        <translation>Kost:</translation>
-    </message>
-    <message>
-        <source>Dust:</source>
-        <translation>Dust:</translation>
-    </message>
-    <message>
-        <source>no</source>
-        <translation>nee</translation>
-    </message>
-    <message>
-        <source>Bytes:</source>
-        <translation>Bytes:</translation>
-    </message>
-    <message>
-        <source>Insufficient funds!</source>
-        <translation>Onvoldoende fondsen！</translation>
-    </message>
-    <message>
-        <source>Coins automatically selected</source>
-        <translation>Automatisch geselecteerde munten</translation>
-    </message>
-    <message>
-        <source>medium</source>
-        <translation>medium</translation>
-    </message>
-    <message>
-        <source>Coin Control Features</source>
-        <translation>Munt controle kenmerken</translation>
-    </message>
-    <message>
-        <source>If this is activated, but the change address is empty or invalid, change will be sent to a newly generated address.</source>
-        <translation>Als dit geactiveerd is, maar het wisselgeld adres is leeg of ongeldig, wordt het wisselgeld verzonden naar een nieuw gegenereerd adres.</translation>
-    </message>
-    <message>
-        <source>Custom change address</source>
-        <translation>Aangepast wisselgeld adres</translation>
-    </message>
-    <message>
-        <source>Amount After Fee:</source>
-        <translation>Bedrag na kosten:</translation>
-    </message>
-    <message>
-        <source>Change:</source>
-        <translation>Wisselgeld:</translation>
-    </message>
-    <message>
-        <source>Show the current status of automatic zREDUX minting.
-
-To change the status (restart required):
-- enable: add &apos;enablezeromint=1&apos; to redux.conf
-- disable: add &apos;enablezeromint=0&apos; to redux.conf
-
-To change the percentage (no restart required):
-- menu Settings-&gt;Options-&gt;Percentage of autominted zREDUX
-
-</source>
-        <translation>Toon de huidige status van automatische zREDUX munting.
-
-Om de status te wijzigen (opnieuw starten vereist):
-- inschakelen: voeg &apos;enablezeromint=1&apos; toe aan redux.conf
-- uitschakelen: voeg &apos;enablezeromint=0&apos; toe aan redux.conf
-
-Om het percentage te wijzigen (geen herstart vereist):
-- menu Instellingen-&gt;Opties-&gt;Percentage van automatische munting zREDUX
-</translation>
-    </message>
-	<message>
-        <source>out of sync</source>
-        <translation>niet gesynchroniseerd</translation>
-    </message>
-    <message>
-        <source>Mint Status: Okay</source>
-        <translation>Mint status: Oké</translation>
-    </message>
-    <message>
-        <source>Copy quantity</source>
-        <translation>Kopieer kwanititeit</translation>
-    </message>
-    <message>
-        <source>Copy amount</source>
-        <translation>Kopieer hoeveelheid</translation>
-    </message>
-    <message>
-        <source>AutoMint Status:</source>
-        <translation>AutoMunting Status:</translation>
-    </message>
-    <message>
-        <source>zREDUX is currently undergoing maintenance.</source>
-        <translation>zREDUX wordt momenteel onderhouden.</translation>
-    </message>
-    <message>
-        <source>Error: Your wallet is locked. Please enter the wallet passreduxase first.</source>
-        <translation>Fout: Je portemonnee is vergrendeld. Voer alsjeblieft de wachtwoord zin voor de portemonnee in.</translation>
-    </message>
-    <message>
-        <source>Message: Enter an amount > 0.</source>
-        <translation>Bericht: Voer een bedrag groter dan 0 in.</translation>
-    </message>
-    <message>
-        <source>Minting </source>
-        <translation>Munting </translation>
-    </message>
-    <message>
-        <source>Successfully minted </source>
-        <translation>Succesvol gemunt</translation>
-    </message>
-    <message>
-        <source> zREDUX in </source>
-        <translation> zREDUX in </translation>
-    </message>
-    <message>
-        <source> sec. Used denominations:
-</source>
-        <translation>sec. gebruikte denominaties:
-</translation>
-    </message>
-    <message>
-        <source>Starting ResetMintZerocoin: rescanning complete blockchain, this will need up to 30 minutes depending on your hardware. 
-Please be patient...</source>
-        <translation>Start ResetMintZerocoin: rescanning complete blockchain, dit zal tot 30 minuten nodig hebben, afhankelijk van uw hardware.
-Wees alsjeblieft geduldig...</translation>
-    </message>
-    <message>
-        <source>Duration: </source>
-        <translation>Duur:</translation>
-    </message>
-    <message>
-        <source> sec.\n</source>
-        <translation> sec.\n</translation>
-    </message>
-    <message>
-        <source>Starting ResetSpentZerocoin: </source>
-        <translation>ResetSpentZerocoin starten:</translation>
-    </message>
-    <message>
-        <source>No 'Pay To' address provided, creating local payment</source>
-        <translation>Geen 'Betaal aan' adres verstrekt, lokale betaling wordt gemaakt</translation>
-    </message>
-    <message>
-        <source>Invalid Redux Address</source>
-        <translation>Ongeldig Redux addres</translation>
-    </message>
-    <message>
-        <source>Invalid Send Amount</source>
-        <translation>Ongeldig verzend bedrag</translation>
-    </message>
-    <message>
-        <source>Confirm additional Fees</source>
-        <translation>Bevestig extra kosten</translation>
-    </message>
-    <message>
-        <source>Are you sure you want to send?&lt;br /&gt;&lt;br /&gt;</source>
-        <translation>Weet je zeker dat je wilt verzenden?&lt;br /&gt;&lt;br /&gt;</translation>
-    </message>
-    <message>
-        <source> to a newly generated (unused and therefor anonymous) local address &lt;br /&gt;</source>
-        <translation>naar een nieuw gegenereerd (ongebruikt en dus anoniem) lokaal adres&lt;br /&gt;</translation>
-    </message>
-    <message>
-        <source>with Security Level </source>
-        <translation>met beveiligingsniveau</translation>
-    </message>
-    <message>
-        <source>Confirm send coins</source>
-        <translation>Bevestig verzending coins</translation>
-    </message>
-    <message>
-        <source>Spending Zerocoin.\nComputationally expensive, might need several minutes depending on the selected Security Level and your hardware. \nPlease be patient...</source>
-        <translation>Zerocoin besteden.\nComputationeel duur, zou mogelijk enkele minuten nodig hebben, afhankelijk van het geselecteerde beveiligingsniveau en je hardware. .\nWees alsjeblieft geduldig...</translation>
-    </message>
-    <message>
-        <source>Version 1 zREDUX require a security level of 100 to successfully spend.</source>
-        <translation>Versie 1 zREDUX vereist een beveiligingsniveau van 100 om succesvol te besteden.</translation>
-    </message>
-    <message>
-        <source>Failed to spend zREDUX</source>
-        <translation>Besteden van zREDUX mislukt.</translation>
-    </message>
-    <message>
-        <source>Failed to fetch mint associated with serial hash</source>
-        <translation>Mislukt om de munting op te halen geassocieerd met serial hash</translation>
-    </message>
-    <message>
-        <source>Spend Zerocoin failed with status = </source>
-        <translation>Besteden van Zerocoin mislukt met status = </translation>
-    </message>
-    <message>
-        <source>Sending successful, return code: </source>
-        <translation>Succesvol verstuurd, teruggestuurde code: </translation>
-    </message>
-    <message>
-        <source>fee: </source>
-        <translation>kost: </translation>
-    </message>
-    <message>
-        <source>Enter an amount of REDUX to convert to zREDUX</source>
-        <translation>Voer de hoeveelheid van REDUX in die geconverteerd moet worden naar zREDUX</translation>
-    </message>
-    <message>
-        <source>\nEither mint higher denominations (so fewer inputs are needed) or reduce the amount to spend.</source>
-        <translation>\Munt ofwel hogere denominaties (dus minder invoer is nodig) of verminder de hoeveel om te spenderen.</translation>
-    </message>
-</context>
-<context>
-    <name>MultisigDialog</name>
-    <message>
-        <source>Multisignature Address Interactions</source>
-        <translation>Multisignatuur-adres Interacties</translation>
-    </message>
-    <message>
-        <source>Create MultiSignature &amp;Address</source>
-        <translation>Creëer Multisignatuur-adres</translation>
-    </message>
-    <message>
-        <source>How many people must sign to verify a transaction</source>
-        <translation>Hoeveel mensen moeten deze ondertekenen om de transactie te verifiëren</translation>
-    </message>
-    <message>
-        <source>Enter the minimum number of signatures required to sign transactions</source>
-        <translation>Voer de minimale hoeveelheid ondertekeningen vereist om transacties te ondertekenen</translation>
-    </message>
-    <message>
-        <source>Address Label:</source>
-        <translation>Adreslabel:</translation>
-    </message>
-    <message>
-        <source>Add another address that could sign to verify a transaction from the multisig address.</source>
-        <translation>Voeg een ander adres toe dat zou kunnen helpen om de transactie te verifiëren vanuit het multisig-adres.</translation>
-    </message>
-    <message>
-        <source>&amp;Add Address / Key</source>
-        <translation>&amp;Adres / Key Toevoegen</translation>
-    </message>
-    <message>
-        <source>Local addresses or public keys that can sign:</source>
-        <translation>Lokale adressen of publieke sleutels die kunnen ondertekenen:</translation>
-    </message>
-    <message>
-        <source>Create a new multisig address</source>
-        <translation>Creëer een nieuw multisig-adres</translation>
-    </message>
-    <message>
-        <source>C&amp;reate</source>
-        <translation>C&amp;reëer</translation>
-    </message>
-    <message>
-        <source>Status:</source>
-        <translation>Status:</translation>
-    </message>
-    <message>
-        <source>Use below to quickly import an address by its redeem. Don&apos;t forget to add a label before clicking import!
-Keep in mind, the wallet will rescan the blockchain to find transactions containing the new address.
-Please be patient after clicking import.</source>
-        <translation>Gebruik hieronder om een adres snel te importeren. Vergeet niet om een label toe te voegen voordat u op importeren klikt!
-Houd er rekening mee dat de portemonnee de blockchain opnieuw doorzoekt om transacties te vinden die het nieuwe adres bevatten. Even geduld aub nadat u op importeren geklikt heeft.</translation>
-    </message>
-    <message>
-        <source>&amp;Import Redeem</source>
-        <translation>&amp;Import Herstellen</translation>
-    </message>
-    <message>
-        <source>&amp;Create MultiSignature Tx</source>
-        <translation>&amp;Creëer Multisignatuur Tx</translation>
-    </message>
-    <message>
-        <source>Coin Control</source>
-        <translation>Munt Controle</translation>
-    </message>
-    <message>
-        <source>Inputs:</source>
-        <translation>Invoeren:</translation>
-    </message>
-    <message>
-        <source>Quantity Selected:</source>
-        <translation>Hoeveelheid geselecteerd:</translation>
-    </message>
-    <message>
-        <source>Amount:</source>
-        <translation>Hoeveelheid:</translation>
-    </message>
-    <message>
-        <source>Add an input to fund the outputs</source>
-        <translation>Invoer toevoegen om de outputs te financieren</translation>
-    </message>
-    <message>
-        <source>Add a Raw Input</source>
-        <translation>Voeg een Raw Invoer toe</translation>
-    </message>
-    <message>
-        <source>Address / Amount:</source>
-        <translation>Adres / Hoeveelheid:</translation>
-    </message>
-    <message>
-        <source>Add destinations to send REDUX to</source>
-        <translation>Voeg bestemmingen toe om REDUX naar te sturen</translation>
-    </message>
-    <message>
-        <source>Add &amp;Destination</source>
-        <translation>Bestemming &amp;toevoegen</translation>
-    </message>
-    <message>
-        <source>Create a transaction object using the given inputs to the given outputs</source>
-        <translation>Maak een transactie-object met behulp van de opgegeven invoeren voor de gegeven uitvoeren</translation>
-    </message>
-    <message>
-        <source>Cr&amp;eate</source>
-        <translation>C&amp;reëer</translation>
-    </message>
-    <message>
-        <source>&amp;Sign MultiSignature Tx</source>
-        <translation>&amp;Onderteken Multisignatuur Tx</translation>
-    </message>
-    <message>
-        <source>Transaction Hex:</source>
-        <translation>Transactie Hex:</translation>
-    </message>
-    <message>
-        <source>Sign the transaction from this wallet or from provided private keys</source>
-        <translation>Onderteken de transactie vanuit deze portemonnee of vanuit de voorziene privésleutels</translation>
-    </message>
-    <message>
-        <source>S&amp;ign</source>
-        <translation>O&amp;nderteken</translation>
-    </message>
-    <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;DISABLED until transaction has been signed enough times.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;UITGESCHAKELD totdat de transactie genoeg keer ondertekend is.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
-    </message>
-    <message>
-        <source>Co&amp;mmit</source>
-        <translation>B&amp;egaan</translation>
-    </message>
-    <message>
-        <source>Add private keys to sign the transaction with</source>
-        <translation>Voeg privésleutels toe om de transactie mee te ondertekenen</translation>
-    </message>
-    <message>
-        <source>Add Private &amp;Key</source>
-        <translation>&amp;Privésleutels toevoegen</translation>
-    </message>
-    <message>
-        <source>Sign with only private keys (Not Recommened)</source>
-        <translation>Onderteken enkel met privésleutels (Niet aanbevolen)</translation>
-    </message>
-</context>
-<context>
-    <name>ProposalList</name>
-    <message>
-        <source>Enter proposal name</source>
-        <translation>Naam voorstel invoeren</translation>
-    </message>
-    <message>
-        <source>Min amount</source>
-        <translation>Minimale bedrag</translation>
-    </message>
-    <message>
-        <source>Start Block</source>
-        <translation>Beginblock</translation>
-    </message>
-    <message>
-        <source>End Block</source>
-        <translation>Eindblock</translation>
-    </message>
-    <message>
-        <source>Min yes votes</source>
-        <translation>Minimale ja-stemmen</translation>
-    </message>
-    <message>
-        <source>Min no votes</source>
-        <translation>Minimale nee-stemmen</translation>
-    </message>
-    <message>
-        <source>Min abstain votes</source>
-        <translation>Minimale onthouden stemmen</translation>
-    </message>
-    <message>
-        <source>Min percentage</source>
-        <translation>Minimale percentage</translation>
-    </message>
-    <message>
-        <source>Min votes needed</source>
-        <translation>Minimum stemmen nodig</translation>
-    </message>
-    <message>
-        <source>Proposals</source>
-        <translation>Voorstellen</translation>
-    </message>
-    <message>
-        <source>Vote Yes</source>
-        <translation>Stem Voor</translation>
-    </message>
-    <message>
-        <source>Vote Yes on the selected proposal</source>
-        <translation>Stem voor op het geselecteerde voorstel</translation>
-    </message>
-    <message>
-        <source>Vote Abstain</source>
-        <translation>Stem Onthouden</translation>
-    </message>
-    <message>
-        <source>Vote Abstain on the selected proposal</source>
-        <translation>Stem onthouden op het geselecteerde voorstel</translation>
-    </message>
-    <message>
-        <source>Vote No</source>
-        <translation>Stem Tegen</translation>
-    </message>
-    <message>
-        <source>Vote No on the selected proposal</source>
-        <translation>Stem tegen het geselecteerde voorstel</translation>
-    </message>
-    <message>
-        <source>Vote yes</source>
-        <translation>Stem voor</translation>
-    </message>
-    <message>
-        <source>Vote abstain</source>
-        <translation>Stem onthouden</translation>
-    </message>
-    <message>
-        <source>Vote no</source>
-        <translation>Stem tegen</translation>
-    </message>
-    <message>
-        <source>Visit proposal website</source>
-        <translation>Bezoek website voorstel</translation>
-    </message>
-    <message>
-        <source>List will be updated in %1 %2</source>
-        <translation>Lijst wordt bijgewerkt in %1 %2</translation>
-    </message>
-    <message>
-        <source>List will be updated in 0 second(s)</source>
-        <translation>Lijst wordt bijgewerkt in 0 seconde(n)</translation>
-    </message>
-    <message>
-        <source>Confirm vote</source>
-        <translation>Stem bevestigen</translation>
-    </message>
-    <message>
-        <source>Are you sure you want to vote &lt;strong&gt;%1&lt;/strong&gt; on the proposal &lt;strong&gt;%2&lt;/strong&gt;?</source>
-        <translation>Weet u zeker dat u wilt stemmen &lt;strong&gt;%1&lt;/strong&gt; op het voorstel &lt;strong&gt;%2&lt;/strong&gt;?</translation>
-    </message>
-    <message>
-        <source>Voting</source>
-        <translation>Stemming</translation>
-    </message>
-    <message>
-        <source>You voted %1 %2 time(s) successfully and failed %3 time(s) on %4</source>
-        <translation>Je hebt % 1%2 maal succesvol gestemd en %3 maal gefaald op %4</translation>
-    </message>
-    <message>
-        <source>minute(s)</source>
-        <translation>minuten</translation>
-    </message>
-    <message>
-        <source>second(s)</source>
-        <translation>seconde(n)</translation>
-    </message>
-</context>
-<context>
-    <name>ProposalTableModel</name>
-    <message>
-        <source>Proposal</source>
-        <translation>Voorstel</translation>
-    </message>
-    <message>
-        <source>Amount</source>
-        <translation>Bedrag</translation>
-    </message>
-    <message>
-        <source>Start Block</source>
-        <translation>Beginblok</translation>
-    </message>
-    <message>
-        <source>End Block</source>
-        <translation>Eindblok</translation>
-    </message>
-    <message>
-        <source>Yes</source>
-        <translation>Ja</translation>
-    </message>
-    <message>
-        <source>No</source>
-        <translation>Nee</translation>
-    </message>
-    <message>
-        <source>Abstain</source>
-        <translation>Onthouden</translation>
-    </message>
-    <message>
-        <source>Votes Needed</source>
-        <translation>Stemmmen Nodig</translation>
-    </message>
-    <message>
-        <source>Proposal Name</source>
-        <translation>Naam voorstel</translation>
-    </message>
-       <message>
-        <source>Date and time that the proposal starts.</source>
-        <translation>Datum en tijd waarop het voorstel begint.</translation>
-    </message>
-    <message>
-        <source>Date and time that the proposal ends.</source>
-        <translation>Datum en tijd waarop het voorstel eindigt.</translation>
-    </message>
-    <message>
-        <source>Obtained yes votes.</source>
-        <translation>Verkregen ja-stemmen.</translation>
-    </message>
-    <message>
-        <source>Obtained no votes.</source>
-        <translation>Verkregen nee-stemmen.</translation>
-    </message>
-    <message>
-        <source>Obtained abstain votes.</source>
-        <translation>Verkregen onthouden stemmen.</translation>
-    </message>
-    <message>
-        <source>Proposed amount.</source>
-        <translation>Voorgesteld bedrag.</translation>
-    </message>
-    <message>
-        <source>Current vote needed to pass</source>
-        <translation>Huidige stemming nodig om te slagen</translation>
     </message>
 </context>
 </TS>

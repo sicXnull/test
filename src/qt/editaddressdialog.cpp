@@ -1,7 +1,6 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2019 The Redux Developers
+// Copyright (c) 2015-2017 The Redux developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -74,20 +73,20 @@ bool EditAddressDialog::saveCurrentRow()
         return false;
 
     switch (mode) {
-    case NewReceivingAddress:
-    case NewSendingAddress:
-        address = model->addRow(
-            mode == NewSendingAddress ? AddressTableModel::Send : AddressTableModel::Receive,
-            ui->labelEdit->text(),
-            ui->addressEdit->text(),
-            g_address_type);
-        break;
-    case EditReceivingAddress:
-    case EditSendingAddress:
-        if (mapper->submit()) {
-            address = ui->addressEdit->text();
-        }
-        break;
+        case NewReceivingAddress:
+        case NewSendingAddress:
+            address = model->addRow(
+                    mode == NewSendingAddress ? AddressTableModel::Send : AddressTableModel::Receive,
+                    ui->labelEdit->text(),
+                    ui->addressEdit->text(),
+                    g_address_type);
+            break;
+        case EditReceivingAddress:
+        case EditSendingAddress:
+            if (mapper->submit()) {
+                address = ui->addressEdit->text();
+            }
+            break;
     }
     return !address.isEmpty();
 }

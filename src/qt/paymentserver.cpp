@@ -1,7 +1,6 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2019 The Redux Developers
+// Copyright (c) 2015-2017 The Redux developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -19,7 +18,6 @@
 
 #include <cstdlib>
 
-#include <openssl/x509.h>
 #include <openssl/x509_vfy.h>
 
 #include <QApplication>
@@ -42,12 +40,7 @@
 #include <QSslSocket>
 #include <QStringList>
 #include <QTextDocument>
-
-#if QT_VERSION < 0x050000
-#include <QUrl>
-#else
 #include <QUrlQuery>
-#endif
 
 using namespace boost;
 using namespace std;
@@ -107,7 +100,7 @@ static QList<QString> savedPaymentRequests;
 
 static void ReportInvalidCertificate(const QSslCertificate& cert)
 {
-    qDebug() << "ReportInvalidCertificate : Payment server found an invalid certificate: " << cert.subjectInfo(QSslCertificate::CommonName);
+    qDebug() << QString("%1: Payment server found an invalid certificate: ").arg(__func__) << cert.serialNumber() << cert.subjectInfo(QSslCertificate::CommonName) << cert.subjectInfo(QSslCertificate::DistinguishedNameQualifier) << cert.subjectInfo(QSslCertificate::OrganizationalUnitName);
 }
 
 //
@@ -147,12 +140,12 @@ void PaymentServer::LoadRootCAs(X509_STORE* _store)
             ReportInvalidCertificate(cert);
             continue;
         }
-#if QT_VERSION >= 0x050000
+
+        // Blacklisted certificate
         if (cert.isBlacklisted()) {
             ReportInvalidCertificate(cert);
             continue;
         }
-#endif
         QByteArray certData = cert.toDer();
         const unsigned char* data = (const unsigned char*)certData.data();
 
@@ -205,6 +198,8 @@ void PaymentServer::ipcParseCommandLine(int argc, char* argv[])
             SendCoinsRecipient r;
             if (GUIUtil::parseBitcoinURI(arg, &r) && !r.address.isEmpty()) {
                 if (IsValidDestinationString(r.address.toStdString(), Params(CBaseChainParams::MAIN))) {
+
+                //if (address.IsValid(Params(CBaseChainParams::MAIN))) {
                     SelectParams(CBaseChainParams::MAIN);
                 } else if (IsValidDestinationString(r.address.toStdString(), Params(CBaseChainParams::TESTNET))) {
                     SelectParams(CBaseChainParams::TESTNET);
@@ -373,11 +368,7 @@ void PaymentServer::handleURIOrFile(const QString& s)
 
     if (s.startsWith(BITCOIN_IPC_PREFIX, Qt::CaseInsensitive)) // redux: URI
     {
-#if QT_VERSION < 0x050000
-        QUrl uri(s);
-#else
         QUrlQuery uri((QUrl(s)));
-#endif
         if (uri.hasQueryItem("r")) // payment request URI
         {
             QByteArray temp;
@@ -400,7 +391,6 @@ void PaymentServer::handleURIOrFile(const QString& s)
         {
             SendCoinsRecipient recipient;
             if (GUIUtil::parseBitcoinURI(s, &recipient)) {
-
                 if (!IsValidDestinationString(recipient.address.toStdString())) {
 
                     emit message(tr("URI handling"), tr("Invalid payment address %1").arg(recipient.address),
@@ -586,24 +576,25 @@ void PaymentServer::fetchPaymentACK(CWallet* wallet, SendCoinsRecipient recipien
     // Create a new refund address, or re-use:
     QString account = tr("Refund from %1").arg(recipient.authenticatedMerchant);
     std::string strAccount = account.toStdString();
-    CPubKey newKey;
-    if (wallet->GetKeyFromPool(newKey)) {
-        // BIP70 requests encode the scriptPubKey directly, so we are not restricted to address
-        // types supported by the receiver. As a result, we choose the address format we also
-        // use for change. Despite an actual payment and not change, this is a close match:
-        // it's the output type we use subject to privacy issues, but not restricted by what
-        // other software supports.
-        wallet->LearnRelatedScripts(newKey, g_change_type);
-        CTxDestination dest = GetDestinationForKey(newKey, g_change_type);
-        wallet->SetAddressBook(dest, strAccount, "refund");
-
-        CScript s = GetScriptForDestination(dest);
+    set<CTxDestination> refundAddresses = wallet->GetAccountAddresses(strAccount);
+    if (!refundAddresses.empty()) {
+        CScript s = GetScriptForDestination(*refundAddresses.begin());
         payments::Output* refund_to = payment.add_refund_to();
         refund_to->set_script(&s[0], s.size());
     } else {
-        // This should never happen, because sending coins should have
-        // just unlocked the wallet and refilled the keypool.
-        qWarning() << "PaymentServer::fetchPaymentACK: Error getting refund key, refund_to not set";
+        CPubKey newKey;
+        if (wallet->GetKeyFromPool(newKey)) {
+            CKeyID keyID = newKey.GetID();
+            wallet->SetAddressBook(keyID, strAccount, "refund");
+
+            CScript s = GetScriptForDestination(keyID);
+            payments::Output* refund_to = payment.add_refund_to();
+            refund_to->set_script(&s[0], s.size());
+        } else {
+            // This should never happen, because sending coins should have
+            // just unlocked the wallet and refilled the keypool.
+            qWarning() << "PaymentServer::fetchPaymentACK : Error getting refund key, refund_to not set";
+        }
     }
 
     int length = payment.ByteSize();

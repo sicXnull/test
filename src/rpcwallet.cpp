@@ -37,15 +37,15 @@ using namespace boost::assign;
 int64_t nWalletUnlockTime;
 static CCriticalSection cs_nWalletUnlockTime;
 
-std::string HelpRequiringPassreduxase()
+std::string HelpRequiringPassphrase()
 {
-    return pwalletMain && pwalletMain->IsCrypted() ? "\nRequires wallet passreduxase to be set with walletpassreduxase call." : "";
+    return pwalletMain && pwalletMain->IsCrypted() ? "\nRequires wallet passphrase to be set with walletpassphrase call." : "";
 }
 
 void EnsureWalletIsUnlocked(bool fAllowAnonOnly)
 {
     if (pwalletMain->IsLocked() || (!fAllowAnonOnly && pwalletMain->fWalletUnlockAnonymizeOnly))
-        throw JSONRPCError(RPC_WALLET_UNLOCK_NEEDED, "Error: Please enter the wallet passreduxase with walletpassreduxase first.");
+        throw JSONRPCError(RPC_WALLET_UNLOCK_NEEDED, "Error: Please enter the wallet passphrase with walletpassphrase first.");
 }
 
 void WalletTxToJSON(const CWalletTx& wtx, UniValue& entry)
@@ -365,7 +365,7 @@ UniValue sendtoaddress(const UniValue& params, bool fHelp)
         throw runtime_error(
             "sendtoaddress \"reduxaddress\" amount ( \"comment\" \"comment-to\" )\n"
             "\nSend an amount to a given address. The amount is a real and is rounded to the nearest 0.00000001\n" +
-            HelpRequiringPassreduxase() +
+            HelpRequiringPassphrase() +
             "\nArguments:\n"
             "1. \"reduxaddress\"  (string, required) The redux address to send to.\n"
             "2. \"amount\"      (numeric, required) The amount in redux to send. e.g. 0.1\n"
@@ -409,7 +409,7 @@ UniValue sendtoaddressix(const UniValue& params, bool fHelp)
         throw runtime_error(
             "sendtoaddressix \"reduxaddress\" amount ( \"comment\" \"comment-to\" )\n"
             "\nSend an amount to a given address. The amount is a real and is rounded to the nearest 0.00000001\n" +
-            HelpRequiringPassreduxase() +
+            HelpRequiringPassphrase() +
             "\nArguments:\n"
             "1. \"reduxaddress\"  (string, required) The redux address to send to.\n"
             "2. \"amount\"      (numeric, required) The  to send. e.g. 0.1\n"
@@ -497,7 +497,7 @@ UniValue signmessage(const UniValue& params, bool fHelp)
         throw runtime_error(
             "signmessage \"reduxaddress\" \"message\"\n"
             "\nSign a message with the private key of an address" +
-            HelpRequiringPassreduxase() + "\n"
+            HelpRequiringPassphrase() + "\n"
                                         "\nArguments:\n"
                                         "1. \"reduxaddress\"  (string, required) The redux address to use for the private key.\n"
                                         "2. \"message\"         (string, required) The message to create a signature of.\n"
@@ -505,7 +505,7 @@ UniValue signmessage(const UniValue& params, bool fHelp)
                                         "\"signature\"          (string) The signature of the message encoded in base 64\n"
                                         "\nExamples:\n"
                                         "\nUnlock the wallet for 30 seconds\n" +
-            HelpExampleCli("walletpassreduxase", "\"mypassreduxase\" 30") +
+            HelpExampleCli("walletpassphrase", "\"mypassphrase\" 30") +
             "\nCreate the signature\n" + HelpExampleCli("signmessage", "\"XwnLY9Tf7Zsef8gMGL2fhWA9ZmMjt4KPwg\" \"my message\"") +
             "\nVerify the signature\n" + HelpExampleCli("verifymessage", "\"XwnLY9Tf7Zsef8gMGL2fhWA9ZmMjt4KPwg\" \"signature\" \"my message\"") +
             "\nAs json rpc\n" + HelpExampleRpc("signmessage", "\"XwnLY9Tf7Zsef8gMGL2fhWA9ZmMjt4KPwg\", \"my message\""));
@@ -824,7 +824,7 @@ UniValue sendfrom(const UniValue& params, bool fHelp)
             "sendfrom \"fromaccount\" \"toreduxaddress\" amount ( minconf \"comment\" \"comment-to\" )\n"
             "\nSent an amount from an account to a redux address.\n"
             "The amount is a real and is rounded to the nearest 0.00000001." +
-            HelpRequiringPassreduxase() + "\n"
+            HelpRequiringPassphrase() + "\n"
                                         "\nArguments:\n"
                                         "1. \"fromaccount\"       (string, required) The name of the account to send funds from. May be the default account using \"\".\n"
                                         "2. \"toreduxaddress\"  (string, required) The redux address to send funds to.\n"
@@ -881,7 +881,7 @@ UniValue sendmany(const UniValue& params, bool fHelp)
         throw runtime_error(
             "sendmany \"fromaccount\" {\"address\":amount,...} ( minconf \"comment\" )\n"
             "\nSend multiple times. Amounts are double-precision floating point numbers." +
-            HelpRequiringPassreduxase() + "\n"
+            HelpRequiringPassphrase() + "\n"
                                         "\nArguments:\n"
                                         "1. \"fromaccount\"         (string, required) The account to send the funds from, can be \"\" for the default account\n"
                                         "2. \"amounts\"             (string, required) A json object with addresses and amounts\n"
@@ -1765,7 +1765,7 @@ UniValue keypoolrefill(const UniValue& params, bool fHelp)
         throw runtime_error(
             "keypoolrefill ( newsize )\n"
             "\nFills the keypool." +
-            HelpRequiringPassreduxase() + "\n"
+            HelpRequiringPassphrase() + "\n"
                                         "\nArguments\n"
                                         "1. newsize     (numeric, optional, default=100) The new keypool size\n"
                                         "\nExamples:\n" +
@@ -1799,35 +1799,35 @@ static void LockWallet(CWallet* pWallet)
     pWallet->Lock();
 }
 
-UniValue walletpassreduxase(const UniValue& params, bool fHelp)
+UniValue walletpassphrase(const UniValue& params, bool fHelp)
 {
     if (pwalletMain->IsCrypted() && (fHelp || params.size() < 2 || params.size() > 3))
         throw runtime_error(
-            "walletpassreduxase \"passreduxase\" timeout ( anonymizeonly )\n"
+            "walletpassphrase \"passphrase\" timeout ( anonymizeonly )\n"
             "\nStores the wallet decryption key in memory for 'timeout' seconds.\n"
             "This is needed prior to performing transactions related to private keys such as sending REDUXs\n"
             "\nArguments:\n"
-            "1. \"passreduxase\"     (string, required) The wallet passreduxase\n"
+            "1. \"passphrase\"     (string, required) The wallet passphrase\n"
             "2. timeout            (numeric, required) The time to keep the decryption key in seconds.\n"
             "3. anonymizeonly      (boolean, optional, default=flase) If is true sending functions are disabled."
             "\nNote:\n"
-            "Issuing the walletpassreduxase command while the wallet is already unlocked will set a new unlock\n"
+            "Issuing the walletpassphrase command while the wallet is already unlocked will set a new unlock\n"
             "time that overrides the old one. A timeout of \"0\" unlocks until the wallet is closed.\n"
             "\nExamples:\n"
             "\nUnlock the wallet for 60 seconds\n" +
-            HelpExampleCli("walletpassreduxase", "\"my pass reduxase\" 60") +
-            "\nUnlock the wallet for 60 seconds but allow anonymization, automint, and staking only\n" + HelpExampleCli("walletpassreduxase", "\"my pass reduxase\" 60 true") +
+            HelpExampleCli("walletpassphrase", "\"my pass reduxase\" 60") +
+            "\nUnlock the wallet for 60 seconds but allow anonymization, automint, and staking only\n" + HelpExampleCli("walletpassphrase", "\"my pass reduxase\" 60 true") +
             "\nLock the wallet again (before 60 seconds)\n" + HelpExampleCli("walletlock", "") +
-            "\nAs json rpc call\n" + HelpExampleRpc("walletpassreduxase", "\"my pass reduxase\", 60"));
+            "\nAs json rpc call\n" + HelpExampleRpc("walletpassphrase", "\"my pass reduxase\", 60"));
 
     LOCK2(cs_main, pwalletMain->cs_wallet);
 
     if (fHelp)
         return true;
     if (!pwalletMain->IsCrypted())
-        throw JSONRPCError(RPC_WALLET_WRONG_ENC_STATE, "Error: running with an unencrypted wallet, but walletpassreduxase was called.");
+        throw JSONRPCError(RPC_WALLET_WRONG_ENC_STATE, "Error: running with an unencrypted wallet, but walletpassphrase was called.");
 
-    // Note that the walletpassreduxase is stored in params[0] which is not mlock()ed
+    // Note that the walletpassphrase is stored in params[0] which is not mlock()ed
     SecureString strWalletPass;
     strWalletPass.reserve(100);
     // TODO: get rid of this .c_str() by implementing SecureString::operator=(std::string)
@@ -1842,7 +1842,7 @@ UniValue walletpassreduxase(const UniValue& params, bool fHelp)
         throw JSONRPCError(RPC_WALLET_ALREADY_UNLOCKED, "Error: Wallet is already unlocked.");
 
     if (!pwalletMain->Unlock(strWalletPass, anonymizeOnly))
-        throw JSONRPCError(RPC_WALLET_PASSREDUXASE_INCORRECT, "Error: The wallet passreduxase entered was incorrect.");
+        throw JSONRPCError(RPC_WALLET_PASSREDUXASE_INCORRECT, "Error: The wallet passphrase entered was incorrect.");
 
     pwalletMain->TopUpKeyPool();
 
@@ -1859,24 +1859,24 @@ UniValue walletpassreduxase(const UniValue& params, bool fHelp)
 }
 
 
-UniValue walletpassreduxasechange(const UniValue& params, bool fHelp)
+UniValue walletpassphrasechange(const UniValue& params, bool fHelp)
 {
     if (pwalletMain->IsCrypted() && (fHelp || params.size() != 2))
         throw runtime_error(
-            "walletpassreduxasechange \"oldpassreduxase\" \"newpassreduxase\"\n"
-            "\nChanges the wallet passreduxase from 'oldpassreduxase' to 'newpassreduxase'.\n"
+            "walletpassphrasechange \"oldpassphrase\" \"newpassphrase\"\n"
+            "\nChanges the wallet passphrase from 'oldpassphrase' to 'newpassphrase'.\n"
             "\nArguments:\n"
-            "1. \"oldpassreduxase\"      (string) The current passreduxase\n"
-            "2. \"newpassreduxase\"      (string) The new passreduxase\n"
+            "1. \"oldpassphrase\"      (string) The current passphrase\n"
+            "2. \"newpassphrase\"      (string) The new passphrase\n"
             "\nExamples:\n" +
-            HelpExampleCli("walletpassreduxasechange", "\"old one\" \"new one\"") + HelpExampleRpc("walletpassreduxasechange", "\"old one\", \"new one\""));
+            HelpExampleCli("walletpassphrasechange", "\"old one\" \"new one\"") + HelpExampleRpc("walletpassphrasechange", "\"old one\", \"new one\""));
 
     LOCK2(cs_main, pwalletMain->cs_wallet);
 
     if (fHelp)
         return true;
     if (!pwalletMain->IsCrypted())
-        throw JSONRPCError(RPC_WALLET_WRONG_ENC_STATE, "Error: running with an unencrypted wallet, but walletpassreduxasechange was called.");
+        throw JSONRPCError(RPC_WALLET_WRONG_ENC_STATE, "Error: running with an unencrypted wallet, but walletpassphrasechange was called.");
 
     // TODO: get rid of these .c_str() calls by implementing SecureString::operator=(std::string)
     // Alternately, find a way to make params[0] mlock()'d to begin with.
@@ -1890,11 +1890,11 @@ UniValue walletpassreduxasechange(const UniValue& params, bool fHelp)
 
     if (strOldWalletPass.length() < 1 || strNewWalletPass.length() < 1)
         throw runtime_error(
-            "walletpassreduxasechange <oldpassreduxase> <newpassreduxase>\n"
-            "Changes the wallet passreduxase from <oldpassreduxase> to <newpassreduxase>.");
+            "walletpassphrasechange <oldpassphrase> <newpassphrase>\n"
+            "Changes the wallet passphrase from <oldpassphrase> to <newpassphrase>.");
 
-    if (!pwalletMain->ChangeWalletPassreduxase(strOldWalletPass, strNewWalletPass))
-        throw JSONRPCError(RPC_WALLET_PASSREDUXASE_INCORRECT, "Error: The wallet passreduxase entered was incorrect.");
+    if (!pwalletMain->ChangeWalletPassphrase(strOldWalletPass, strNewWalletPass))
+        throw JSONRPCError(RPC_WALLET_PASSREDUXASE_INCORRECT, "Error: The wallet passphrase entered was incorrect.");
 
     return NullUniValue;
 }
@@ -1906,13 +1906,13 @@ UniValue walletlock(const UniValue& params, bool fHelp)
         throw runtime_error(
             "walletlock\n"
             "\nRemoves the wallet encryption key from memory, locking the wallet.\n"
-            "After calling this method, you will need to call walletpassreduxase again\n"
+            "After calling this method, you will need to call walletpassphrase again\n"
             "before being able to call any methods which require the wallet to be unlocked.\n"
             "\nExamples:\n"
-            "\nSet the passreduxase for 2 minutes to perform a transaction\n" +
-            HelpExampleCli("walletpassreduxase", "\"my pass reduxase\" 120") +
-            "\nPerform a send (requires passreduxase set)\n" + HelpExampleCli("sendtoaddress", "\"XwnLY9Tf7Zsef8gMGL2fhWA9ZmMjt4KPwg\" 1.0") +
-            "\nClear the passreduxase since we are done before 2 minutes is up\n" + HelpExampleCli("walletlock", "") +
+            "\nSet the passphrase for 2 minutes to perform a transaction\n" +
+            HelpExampleCli("walletpassphrase", "\"my pass reduxase\" 120") +
+            "\nPerform a send (requires passphrase set)\n" + HelpExampleCli("sendtoaddress", "\"XwnLY9Tf7Zsef8gMGL2fhWA9ZmMjt4KPwg\" 1.0") +
+            "\nClear the passphrase since we are done before 2 minutes is up\n" + HelpExampleCli("walletlock", "") +
             "\nAs json rpc call\n" + HelpExampleRpc("walletlock", ""));
 
     LOCK2(cs_main, pwalletMain->cs_wallet);
@@ -1936,21 +1936,21 @@ UniValue encryptwallet(const UniValue& params, bool fHelp)
 {
     if (!pwalletMain->IsCrypted() && (fHelp || params.size() != 1))
         throw runtime_error(
-            "encryptwallet \"passreduxase\"\n"
-            "\nEncrypts the wallet with 'passreduxase'. This is for first time encryption.\n"
+            "encryptwallet \"passphrase\"\n"
+            "\nEncrypts the wallet with 'passphrase'. This is for first time encryption.\n"
             "After this, any calls that interact with private keys such as sending or signing \n"
-            "will require the passreduxase to be set prior the making these calls.\n"
-            "Use the walletpassreduxase call for this, and then walletlock call.\n"
-            "If the wallet is already encrypted, use the walletpassreduxasechange call.\n"
+            "will require the passphrase to be set prior the making these calls.\n"
+            "Use the walletpassphrase call for this, and then walletlock call.\n"
+            "If the wallet is already encrypted, use the walletpassphrasechange call.\n"
             "Note that this will shutdown the server.\n"
             "\nArguments:\n"
-            "1. \"passreduxase\"    (string) The pass reduxase to encrypt the wallet with. It must be at least 1 character, but should be long.\n"
+            "1. \"passphrase\"    (string) The pass reduxase to encrypt the wallet with. It must be at least 1 character, but should be long.\n"
             "\nExamples:\n"
             "\nEncrypt you wallet\n" +
             HelpExampleCli("encryptwallet", "\"my pass reduxase\"") +
-            "\nNow set the passreduxase to use the wallet, such as for signing or sending REDUXs\n" + HelpExampleCli("walletpassreduxase", "\"my pass reduxase\"") +
+            "\nNow set the passphrase to use the wallet, such as for signing or sending REDUXs\n" + HelpExampleCli("walletpassphrase", "\"my pass reduxase\"") +
             "\nNow we can so something like sign\n" + HelpExampleCli("signmessage", "\"reduxaddress\" \"test message\"") +
-            "\nNow lock the wallet again by removing the passreduxase\n" + HelpExampleCli("walletlock", "") +
+            "\nNow lock the wallet again by removing the passphrase\n" + HelpExampleCli("walletlock", "") +
             "\nAs a json rpc call\n" + HelpExampleRpc("encryptwallet", "\"my pass reduxase\""));
 
     LOCK2(cs_main, pwalletMain->cs_wallet);
@@ -1968,8 +1968,8 @@ UniValue encryptwallet(const UniValue& params, bool fHelp)
 
     if (strWalletPass.length() < 1)
         throw runtime_error(
-            "encryptwallet <passreduxase>\n"
-            "Encrypts the wallet with <passreduxase>.");
+            "encryptwallet <passphrase>\n"
+            "Encrypts the wallet with <passphrase>.");
 
     if (!pwalletMain->EncryptWallet(strWalletPass))
         throw JSONRPCError(RPC_WALLET_ENCRYPTION_FAILED, "Error: Failed to encrypt the wallet.");
@@ -2492,7 +2492,7 @@ UniValue multisend(const UniValue& params, bool fHelp)
     if (boost::lexical_cast<int>(params[1].get_str()) < 0)
         throw JSONRPCError(RPC_INVALID_PARAMETER, "Invalid parameter, expected valid percentage");
     if (pwalletMain->IsLocked())
-        throw JSONRPCError(RPC_WALLET_UNLOCK_NEEDED, "Error: Please enter the wallet passreduxase with walletpassreduxase first.");
+        throw JSONRPCError(RPC_WALLET_UNLOCK_NEEDED, "Error: Please enter the wallet passphrase with walletpassphrase first.");
     unsigned int nPercent = boost::lexical_cast<unsigned int>(params[1].get_str());
 
     LOCK(pwalletMain->cs_wallet);
@@ -2533,7 +2533,7 @@ UniValue getzerocoinbalance(const UniValue& params, bool fHelp)
         throw runtime_error(
             "getzerocoinbalance\n"
             "\nReturn the wallet's total zREDUX balance.\n" +
-            HelpRequiringPassreduxase() + "\n"
+            HelpRequiringPassphrase() + "\n"
 
             "\nResult:\n"
             "amount         (numeric) Total zREDUX balance.\n"
@@ -2544,7 +2544,7 @@ UniValue getzerocoinbalance(const UniValue& params, bool fHelp)
     LOCK2(cs_main, pwalletMain->cs_wallet);
 
     if (pwalletMain->IsLocked())
-        throw JSONRPCError(RPC_WALLET_UNLOCK_NEEDED, "Error: Please enter the wallet passreduxase with walletpassreduxase first.");
+        throw JSONRPCError(RPC_WALLET_UNLOCK_NEEDED, "Error: Please enter the wallet passphrase with walletpassphrase first.");
 
     return ValueFromAmount(pwalletMain->GetZerocoinBalance(true));
 
@@ -2556,7 +2556,7 @@ UniValue listmintedzerocoins(const UniValue& params, bool fHelp)
         throw runtime_error(
             "listmintedzerocoins\n"
             "\nList all zREDUX mints in the wallet.\n" +
-            HelpRequiringPassreduxase() + "\n"
+            HelpRequiringPassphrase() + "\n"
 
             "\nResult:\n"
             "[\n"
@@ -2570,7 +2570,7 @@ UniValue listmintedzerocoins(const UniValue& params, bool fHelp)
     LOCK2(cs_main, pwalletMain->cs_wallet);
 
     if (pwalletMain->IsLocked())
-        throw JSONRPCError(RPC_WALLET_UNLOCK_NEEDED, "Error: Please enter the wallet passreduxase with walletpassreduxase first.");
+        throw JSONRPCError(RPC_WALLET_UNLOCK_NEEDED, "Error: Please enter the wallet passphrase with walletpassphrase first.");
 
     CWalletDB walletdb(pwalletMain->strWalletFile);
     set<CMintMeta> setMints = pwalletMain->zreduxTracker->ListMints(true, true, true);
@@ -2590,7 +2590,7 @@ UniValue listzerocoinamounts(const UniValue& params, bool fHelp)
         throw runtime_error(
             "listzerocoinamounts\n"
             "\nGet information about your zerocoin amounts.\n" +
-            HelpRequiringPassreduxase() + "\n"
+            HelpRequiringPassphrase() + "\n"
 
             "\nResult:\n"
             "[\n"
@@ -2634,7 +2634,7 @@ UniValue listspentzerocoins(const UniValue& params, bool fHelp)
         throw runtime_error(
             "listspentzerocoins\n"
             "\nList all the spent zREDUX mints in the wallet.\n" +
-            HelpRequiringPassreduxase() + "\n"
+            HelpRequiringPassphrase() + "\n"
 
             "\nResult:\n"
             "[\n"
@@ -2666,7 +2666,7 @@ UniValue mintzerocoin(const UniValue& params, bool fHelp)
         throw runtime_error(
             "mintzerocoin amount ( utxos )\n"
             "\nMint the specified zREDUX amount\n" +
-            HelpRequiringPassreduxase() + "\n"
+            HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
             "1. amount      (numeric, required) Enter an amount of REDUX to convert to zREDUX\n"
@@ -2777,7 +2777,7 @@ UniValue spendzerocoin(const UniValue& params, bool fHelp)
         throw runtime_error(
             "spendzerocoin amount mintchange minimizechange securitylevel ( \"address\" )\n"
             "\nSpend zREDUX to a REDUX address.\n" +
-            HelpRequiringPassreduxase() + "\n"
+            HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
             "1. amount          (numeric, required) Amount to spend.\n"
@@ -2904,7 +2904,7 @@ UniValue resetmintzerocoin(const UniValue& params, bool fHelp)
             "resetmintzerocoin ( fullscan )\n"
             "\nScan the blockchain for all of the zerocoins that are held in the wallet.dat.\n"
             "Update any meta-data that is incorrect. Archive any mints that are not able to be found.\n" +
-            HelpRequiringPassreduxase() + "\n"
+            HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
             "1. fullscan          (boolean, optional) Rescan each block of the blockchain.\n"
@@ -3025,7 +3025,7 @@ UniValue getarchivedzerocoin(const UniValue& params, bool fHelp)
             "getarchivedzerocoin\n"
             "\nDisplay zerocoins that were archived because they were believed to be orphans.\n"
             "Provides enough information to recover mint if it was incorrectly archived.\n" +
-            HelpRequiringPassreduxase() + "\n"
+            HelpRequiringPassphrase() + "\n"
 
             "\nResult:\n"
             "[\n"
@@ -3082,7 +3082,7 @@ UniValue exportzerocoins(const UniValue& params, bool fHelp)
         throw runtime_error(
             "exportzerocoins include_spent ( denomination )\n"
             "\nExports zerocoin mints that are held by this wallet.dat\n" +
-            HelpRequiringPassreduxase() + "\n"
+            HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
             "1. \"include_spent\"        (bool, required) Include mints that have already been spent\n"
@@ -3157,7 +3157,7 @@ UniValue importzerocoins(const UniValue& params, bool fHelp)
             "\nImport zerocoin mints.\n"
             "Adds raw zerocoin mints to the wallet.dat\n"
             "Note it is recommended to use the json export created from the exportzerocoins RPC call\n" +
-            HelpRequiringPassreduxase() + "\n"
+            HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
             "1. \"importdata\"    (string, required) A json array of json objects containing zerocoin mints\n"
@@ -3245,7 +3245,7 @@ UniValue reconsiderzerocoins(const UniValue& params, bool fHelp)
         throw runtime_error(
             "reconsiderzerocoins\n"
             "\nCheck archived zREDUX list to see if any mints were added to the blockchain.\n" +
-            HelpRequiringPassreduxase() + "\n"
+            HelpRequiringPassphrase() + "\n"
 
             "\nResult:\n"
             "[\n"
@@ -3319,7 +3319,7 @@ UniValue setzreduxseed(const UniValue& params, bool fHelp)
         throw runtime_error(
             "setzreduxseed \"seed\"\n"
             "\nSet the wallet's deterministic zredux seed to a specific value.\n" +
-            HelpRequiringPassreduxase() + "\n"
+            HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
             "1. \"seed\"        (string, required) The deterministic zredux seed.\n"
@@ -3353,7 +3353,7 @@ UniValue getzreduxseed(const UniValue& params, bool fHelp)
         throw runtime_error(
             "getzreduxseed\n"
             "\nCheck archived zREDUX list to see if any mints were added to the blockchain.\n" +
-            HelpRequiringPassreduxase() + "\n"
+            HelpRequiringPassphrase() + "\n"
 
             "\nResult\n"
             "\"seed\" : s,  (string) The deterministic zREDUX seed.\n"
@@ -3378,7 +3378,7 @@ UniValue generatemintlist(const UniValue& params, bool fHelp)
         throw runtime_error(
             "generatemintlist\n"
             "\nShow mints that are derived from the deterministic zREDUX seed.\n" +
-            HelpRequiringPassreduxase() + "\n"
+            HelpRequiringPassphrase() + "\n"
 
             "\nArguments\n"
             "1. \"count\"  : n,  (numeric) Which sequential zREDUX to start with.\n"
@@ -3426,7 +3426,7 @@ UniValue dzreduxstate(const UniValue& params, bool fHelp) {
         throw runtime_error(
                 "dzreduxstate\n"
                         "\nThe current state of the mintpool of the deterministic zREDUX wallet.\n" +
-                HelpRequiringPassreduxase() + "\n"
+                HelpRequiringPassphrase() + "\n"
 
                         "\nExamples\n" +
                 HelpExampleCli("mintpoolstatus", "") + HelpExampleRpc("mintpoolstatus", ""));
@@ -3478,7 +3478,7 @@ UniValue searchdzredux(const UniValue& params, bool fHelp)
         throw runtime_error(
             "searchdzredux\n"
             "\nMake an extended search for deterministically generated zREDUX that have not yet been recognized by the wallet.\n" +
-            HelpRequiringPassreduxase() + "\n"
+            HelpRequiringPassphrase() + "\n"
 
             "\nArguments\n"
             "1. \"count\"       (numeric) Which sequential zREDUX to start with.\n"

@@ -15,7 +15,7 @@
     </message>
     <message>
         <source>Copy the currently selected address to the system clipboard</source>
-        <translation>Kopírovat vybranou adresu do mezipaměti</translation>
+        <translation>Kopírovat vybranou adresu do schránky</translation>
     </message>
     <message>
         <source>&amp;Copy</source>
@@ -114,21 +114,21 @@
     </message>
 </context>
 <context>
-    <name>AskPassreduxaseDialog</name>
+    <name>AskPassphraseDialog</name>
     <message>
-        <source>Passreduxase Dialog</source>
+        <source>Passphrase Dialog</source>
         <translation>Dialog frázového hesla</translation>
     </message>
     <message>
-        <source>Enter passreduxase</source>
+        <source>Enter passphrase</source>
         <translation>Zadejte frázové heslo</translation>
     </message>
     <message>
-        <source>New passreduxase</source>
+        <source>New passphrase</source>
         <translation>Nové frázové heslo</translation>
     </message>
     <message>
-        <source>Repeat new passreduxase</source>
+        <source>Repeat new passphrase</source>
         <translation>Zopakujte frázové heslo</translation>
     </message>
     <message>
@@ -136,11 +136,7 @@
         <translation>Slouží k neumožnění zaslání jednoduché platby, pokud je učet OS kompromitován. Neposkytuje tak reálné zabezpeční.</translation>
     </message>
     <message>
-        <source>For anonymization and staking only</source>
-        <translation>Pouze pro anonymizaci a sázení</translation>
-    </message>
-    <message>
-        <source>Enter the new passreduxase to the wallet.&lt;br/&gt;Please use a passreduxase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
+        <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
         <translation>Zadejte nové frázové heslo pro Vaši peněženku &lt;br/&gt; Prosím, použijte frázové heslo z &lt;b&gt; nebo více náhodných znaků &lt;/b&gt;, nebo&lt;b&gt;z osmi nebo více slov&lt;/b&gt;  .</translation>
     </message>
     <message>
@@ -148,7 +144,7 @@
         <translation>Šifrovat peněženku</translation>
     </message>
     <message>
-        <source>This operation needs your wallet passreduxase to unlock the wallet.</source>
+        <source>This operation needs your wallet passphrase to unlock the wallet.</source>
         <translation>Pro tuto operaci potřebujete frázové heslo k odemčení Vaší paněženky.</translation>
     </message>
     <message>
@@ -156,7 +152,7 @@
         <translation>Odemknout peněženku</translation>
     </message>
     <message>
-        <source>This operation needs your wallet passreduxase to decrypt the wallet.</source>
+        <source>This operation needs your wallet passphrase to decrypt the wallet.</source>
         <translation>Pro tuto operaci potřebujete frázové heslo pro odšifrování Vaší paněženky.</translation>
     </message>
     <message>
@@ -164,11 +160,11 @@
         <translation>Odšifrovat peněženku</translation>
     </message>
     <message>
-        <source>Change passreduxase</source>
+        <source>Change passphrase</source>
         <translation>Změnit frázové heslo</translation>
     </message>
     <message>
-        <source>Enter the old and new passreduxase to the wallet.</source>
+        <source>Enter the old and new passphrase to the wallet.</source>
         <translation>Zadajete staré a nové frázové heslo Vaší peněženky.</translation>
     </message>
     <message>
@@ -184,7 +180,7 @@
         <translation>Opravdu chcete zašifrovat Vaši peněženku?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passreduxase, you will &lt;b&gt;LOSE ALL OF YOUR REDUX&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR REDUX&lt;/b&gt;!</source>
         <translation>Varování: Pokud zašifrujete svou peněženku a ztratíte frázové heslo, tak &lt;b&gt;ZTRATÍTE VŠECHNY VAŠE REDUXy&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -204,7 +200,7 @@
         <translation>Šifrování peněženky selhalo kvůli vnitřní chybě aplikace. Vaše peněženka není zašifrovaná.</translation>
     </message>
     <message>
-        <source>The supplied passreduxases do not match.</source>
+        <source>The supplied passphrases do not match.</source>
         <translation>Zadaná frázová hesla se neshodují.</translation>
     </message>
     <message>
@@ -212,7 +208,7 @@
         <translation>Uzamčení pěněženky selhalo</translation>
     </message>
     <message>
-        <source>The passreduxase entered for the wallet decryption was incorrect.</source>
+        <source>The passphrase entered for the wallet decryption was incorrect.</source>
         <translation>Zadané frázové heslo pro dešifrování peněženky není správné.</translation>
     </message>
     <message>
@@ -220,7 +216,7 @@
         <translation>Odšifrování peněženky selhalo</translation>
     </message>
     <message>
-        <source>Wallet passreduxase was successfully changed.</source>
+        <source>Wallet passphrase was successfully changed.</source>
         <translation>Frázové heslo peněženky bylo úspěšně změněno.</translation>
     </message>
     <message>
@@ -228,6 +224,9 @@
         <translation>Vaarování: Cpas Lock je zapnutý!</translation>
     </message>
 </context>
+<context>
+    <name>BanTableModel</name>
+    </context>
 <context>
     <name>Bip38ToolDialog</name>
     <message>
@@ -239,16 +238,8 @@
         <translation>&amp;BIP 38 Šifrovat</translation>
     </message>
     <message>
-        <source>Enter a Redux Address that you would like to encrypt using BIP 38. Enter a passreduxase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Zadejte Redux adresu, kterou si přejete zašifrovat pomocí BIP38. Frázové heslo zadejte do prostředního boxu. Stiskněte šifrovat pro výpočet šifrovaného privátního klíče.</translation>
-    </message>
-    <message>
         <source>Address:</source>
         <translation>Adresa:</translation>
-    </message>
-    <message>
-        <source>The Redux address to sign the message with</source>
-        <translation>Redux adresa pro podepsání zprávy</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -267,7 +258,7 @@
         <translation>Alt+P</translation>
     </message>
     <message>
-        <source>Passreduxase: </source>
+        <source>Passphrase: </source>
         <translation>Frázové heslo:</translation>
     </message>
     <message>
@@ -279,16 +270,8 @@
         <translation>Kopírovat aktuální podpis do systémové mezipaměti</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Redux address</source>
-        <translation>Podepsat zprávu k prokázání, že vlastníte tuto Redux adresu</translation>
-    </message>
-    <message>
         <source>Encrypt &amp;Key</source>
         <translation>Šifrovat &amp;Klíč</translation>
-    </message>
-    <message>
-        <source>Reset all sign message fields</source>
-        <translation>Resetovat všechny položky podepsání zprávy</translation>
     </message>
     <message>
         <source>Clear &amp;All</source>
@@ -299,24 +282,12 @@
         <translation>&amp;BIP 38 Dešifrování</translation>
     </message>
     <message>
-        <source>Enter the BIP 38 encrypted private key. Enter the passreduxase in the middle box. Click Decrypt Key to compute the private key. After the key is decrypted, clicking 'Import Address' will add this private key to the wallet.</source>
+        <source>Enter the BIP 38 encrypted private key. Enter the passphrase in the middle box. Click Decrypt Key to compute the private key. After the key is decrypted, clicking 'Import Address' will add this private key to the wallet.</source>
         <translation>Vložte BIP 38 šifrovaný privítní klíc. Frázové heslo vložte do prostředního boxu. Kliknětě na Dešifrovat Klíč pro výpočet privátního klíče. Poté co bude klíč dešifrován, kliknutím na 'Importovat Adresu' přidáte privátní klíč do Vaší peněženky.</translation>
-    </message>
-    <message>
-        <source>The Redux address the message was signed with</source>
-        <translation>Redux adresa zprávy byla podpsána</translation>
-    </message>
-    <message>
-        <source>Verify the message to ensure it was signed with the specified Redux address</source>
-        <translation>Verifikujte zprávu pro ujištění, že byla podepsána zmíněnou Redux adresou</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
         <translation>Dešifrovat &amp;Klíč</translation>
-    </message>
-    <message>
-        <source>Reset all verify message fields</source>
-        <translation>Resetovat všechny položky pro ověření zprávy</translation>
     </message>
     <message>
         <source>Decrypted Key:</source>
@@ -331,7 +302,7 @@
         <translation>Kliněte na "Dešifrovat Klíč" pro výpočet klíče</translation>
     </message>
     <message>
-        <source>The entered passreduxase is invalid. </source>
+        <source>The entered passphrase is invalid. </source>
         <translation>Zadané frázové heslo není validní.</translation>
     </message>
     <message>
@@ -363,7 +334,7 @@
         <translation>Dešifrování selhalo.</translation>
     </message>
     <message>
-        <source>Please check the key and passreduxase and try again.</source>
+        <source>Please check the key and passphrase and try again.</source>
         <translation>Prosím, zkontrolujte klíč a frázové heslo a zkuste to znovu.</translation>
     </message>
     <message>
@@ -426,6 +397,10 @@
         <translation>Procházet historii transakcí</translation>
     </message>
     <message>
+        <source>Privacy Actions for zREDUX</source>
+        <translation>Řešení soukromí pro zREDUX</translation>
+    </message>
+    <message>
         <source>E&amp;xit</source>
         <translation>E&amp;xit</translation>
     </message>
@@ -470,11 +445,11 @@
         <translation>Zálohovat peněženku na jiné místo</translation>
     </message>
     <message>
-        <source>&amp;Change Passreduxase...</source>
+        <source>&amp;Change Passphrase...</source>
         <translation>&amp;Změnit frázové heslo...</translation>
     </message>
     <message>
-        <source>Change the passreduxase used for wallet encryption</source>
+        <source>Change the passphrase used for wallet encryption</source>
         <translation>Změnit frázové heslo pro šifrování peněženky</translation>
     </message>
     <message>
@@ -566,6 +541,30 @@
         <translation>Zobrazit seznam použitých adres  a popisků pro přijetí plateb</translation>
     </message>
     <message>
+        <source>&amp;Multisignature creation...</source>
+        <translation>&amp;Vytvoření multisignatury</translation>
+    </message>
+    <message>
+        <source>Create a new multisignature address and add it to this wallet</source>
+        <translation>Vytvořit novou multisignaturní adresu a přidat ji do této peněženky</translation>
+    </message>
+    <message>
+        <source>&amp;Multisignature spending...</source>
+        <translation>&amp;Multisignaturní výdaje...</translation>
+    </message>
+    <message>
+        <source>Spend from a multisignature address</source>
+        <translation>Uhradit z multisignaturní adresy</translation>
+    </message>
+    <message>
+        <source>&amp;Multisignature signing...</source>
+        <translation>&amp;Multisignaturní podepisování...</translation>
+    </message>
+    <message>
+        <source>Sign with a multisignature address</source>
+        <translation>Podepsat multisignaturní adresou</translation>
+    </message>
+    <message>
         <source>Open &amp;URI...</source>
         <translation>Otevřít &amp;URI...</translation>
     </message>
@@ -576,6 +575,10 @@
     <message>
         <source>Synchronizing additional data: %p%</source>
         <translation>Synchronizuji přídavná data: %p%</translation>
+    </message>
+    <message>
+        <source>%1 behind. Scanning block %2</source>
+        <translation>Zbývá %1 bloků. Skenuji blok %2</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -610,6 +613,10 @@
         <translation>Vyžádat platbu (generování QK kódu a redux: URIs)</translation>
     </message>
     <message>
+        <source>&amp;Privacy</source>
+        <translation>&amp;Soukromí</translation>
+    </message>
+    <message>
         <source>&amp;Masternodes</source>
         <translation>&amp;Masternody</translation>
     </message>
@@ -642,7 +649,7 @@
         <translation>&amp;BIP38 nástroj</translation>
     </message>
     <message>
-        <source>Encrypt and decrypt private keys using a passreduxase</source>
+        <source>Encrypt and decrypt private keys using a passphrase</source>
         <translation>Šifrovat a dešivraovat klíče s použitím frázového hesla</translation>
     </message>
     <message>
@@ -710,8 +717,8 @@
         <translation>%1 a %2</translation>
     </message>
     <message>
-        <source>%1 behind</source>
-        <translation>%1 za</translation>
+        <source>Catching up...</source>
+        <translation>Doháníme co se dá...</translation>
     </message>
     <message>
         <source>Last received block was generated %1 ago.</source>
@@ -782,19 +789,23 @@ MultiSend: %1</translation>
         <translation>Peněženka je &lt;b&gt;zašifrovaná&lt;/b&gt; a momentálně je &lt;b&gt;odemčená&lt;/b&gt;</translation>
     </message>
     <message>
-        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt; for anonimization and staking only</source>
-        <translation>Peněženka je &lt;b&gt;zašifrovaná&lt;/b&gt; a momentálně je &lt;b&gt;odemčená&lt;/b&gt; pouze pro anonimizace a sázení</translation>
-    </message>
-    <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>Peněženka je &lt;b&gt;zašifrovaná&lt;/b&gt; a momentálně je &lt;b&gt;zamčená&lt;/b&gt;</translation>
     </message>
-</context>
+    </context>
 <context>
     <name>BlockExplorer</name>
     <message>
         <source>Blockchain Explorer</source>
         <translation>Blockchainový průzkumník</translation>
+    </message>
+    <message>
+        <source>Back</source>
+        <translation>Zpět</translation>
+    </message>
+    <message>
+        <source>Forward</source>
+        <translation>Dále</translation>
     </message>
     <message>
         <source>Address / Block / Transaction</source>
@@ -815,6 +826,10 @@ MultiSend: %1</translation>
 </context>
 <context>
     <name>ClientModel</name>
+    <message>
+        <source>Total: %1 (IPv4: %2 / IPv6: %3 / Tor: %4 / Unknown: %5)</source>
+        <translation>Celkem: %1 (IPv4: %2 / IPv6: %3 / Tor: %4 / neznámé: %5)</translation>
+    </message>
     <message>
         <source>Network Alert</source>
         <translation>Upozornění sítě</translation>
@@ -1106,6 +1121,17 @@ MultiSend: %1</translation>
     </message>
 </context>
 <context>
+    <name>GovernancePage</name>
+    <message>
+        <source>Form</source>
+        <translation>Od</translation>
+    </message>
+    <message>
+        <source>0</source>
+        <translation>0</translation>
+    </message>
+    </context>
+<context>
     <name>HelpMessageDialog</name>
     <message>
         <source>version</source>
@@ -1198,10 +1224,6 @@ MultiSend: %1</translation>
         <translation>Od</translation>
     </message>
     <message>
-        <source>My Masternodes</source>
-        <translation>Moje Masternody</translation>
-    </message>
-    <message>
         <source>Alias</source>
         <translation>Alias</translation>
     </message>
@@ -1242,7 +1264,7 @@ MultiSend: %1</translation>
         <translation>&amp;Update stavu</translation>
     </message>
     <message>
-        <source>Update in (sec):</source>
+        <source>Status will be updated automatically in (sec):</source>
         <translation>Stav bude automaticky updateován za (sec):</translation>
     </message>
     <message>
@@ -1377,44 +1399,29 @@ MultiSend: %1</translation>
         <translation>Poslat pro odměny masternodů</translation>
     </message>
     <message>
-        <source>The entered address:
-</source>
-        <translation>Zadaná adresa:
-</translation>
-    </message>
-    <message>
-        <source> is invalid.
-Please check the address and try again.</source>
-        <translation>není validní.
-Prosím zkontrolujte adresu a zkuste to znovu.</translation>
-    </message>
-    <message>
-        <source>The total amount of your MultiSend vector is over 100% of your stake reward
-</source>
-        <translation>Celkovvá hodnota Vašeho MultiSend Vekktoru je přes 100% vaší odměny ze vsázení
-</translation>
+        <source>(no label)</source>
+        <translation>(bez popisku)</translation>
     </message>
     <message>
         <source>Please Enter 1 - 100 for percent.</source>
         <translation>Prosím, zadejte 1-100 procent.</translation>
     </message>
-    <message>
-        <source>MultiSend Vector
-</source>
-        <translation>MultiSend Vektor
-</translation>
-    </message>
-    <message>
-        <source>Removed </source>
-        <translation>Odstraněno</translation>
-    </message>
-    <message>
-        <source>Could not locate address
-</source>
-        <translation>Nemůžu najít adresu
-</translation>
-    </message>
 </context>
+<context>
+    <name>MultisigDialog</name>
+    <message>
+        <source>Status:</source>
+        <translation>Stav:</translation>
+    </message>
+    <message>
+        <source>0</source>
+        <translation>0</translation>
+    </message>
+    <message>
+        <source>Amount:</source>
+        <translation>Hodnota:</translation>
+    </message>
+    </context>
 <context>
     <name>ObfuscationConfig</name>
     <message>
@@ -1611,10 +1618,6 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
         <translation>Celkem:</translation>
     </message>
     <message>
-        <source>Your current total balance</source>
-        <translation>Vaše aktuální celková balance</translation>
-    </message>
-    <message>
         <source>Spendable:</source>
         <translation>Disponibilní:</translation>
     </message>
@@ -1684,6 +1687,10 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
         <translation>Priorita:</translation>
     </message>
     <message>
+        <source>TextLabel</source>
+        <translation>TextPopisku</translation>
+    </message>
+    <message>
         <source>Fee:</source>
         <translation>Poplatek:</translation>
     </message>
@@ -1717,6 +1724,9 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
     </message>
     </context>
 <context>
+    <name>ProposalFrame</name>
+    </context>
+<context>
     <name>QObject</name>
     <message>
         <source>Amount</source>
@@ -1741,6 +1751,10 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
     <message>
         <source>N/A</source>
         <translation>N/A</translation>
+    </message>
+    <message>
+        <source>Redux Core</source>
+        <translation>Redux Core</translation>
     </message>
     </context>
 <context>
@@ -1916,12 +1930,12 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
 <context>
     <name>ReceiveCoinsDialog</name>
     <message>
-        <source>&amp;Label:</source>
-        <translation>&amp;Popis</translation>
+        <source>A&amp;mount:</source>
+        <translation>H&amp;odnota:</translation>
     </message>
     <message>
-        <source>&amp;Amount:</source>
-        <translation>&amp;Hodnota</translation>
+        <source>&amp;Label:</source>
+        <translation>&amp;Popis</translation>
     </message>
     <message>
         <source>&amp;Request payment</source>
@@ -1950,6 +1964,10 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
     <message>
         <source>Copy amount</source>
         <translation>Kopírovat hodnotu</translation>
+    </message>
+    <message>
+        <source>Copy address</source>
+        <translation>Kopírovat adresu</translation>
     </message>
 </context>
 <context>
@@ -2004,6 +2022,10 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
     <message>
         <source>Message</source>
         <translation>Zpráva</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>Adresa</translation>
     </message>
     <message>
         <source>Amount</source>
@@ -2099,10 +2121,6 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
     <message>
         <source>Add &amp;Recipient</source>
         <translation>Přidat &amp;Příjemce</translation>
-    </message>
-    <message>
-        <source>SwiftTX</source>
-        <translation>SwiftTX</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -2369,7 +2387,7 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
     </message>
     </context>
 <context>
-    <name>ZPhrControlDialog</name>
+    <name>ZReduxControlDialog</name>
     <message>
         <source>0</source>
         <translation>0</translation>
@@ -2384,10 +2402,6 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
     <message>
         <source>Information</source>
         <translation>Informace</translation>
-    </message>
-    <message>
-        <source>SwiftTX options:</source>
-        <translation>SwiftTx možnosti:</translation>
     </message>
     <message>
         <source>Synchronization failed</source>

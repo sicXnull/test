@@ -114,22 +114,22 @@
     </message>
 </context>
 <context>
-    <name>AskPassreduxaseDialog</name>
+    <name>AskPassphraseDialog</name>
     <message>
-        <source>Passreduxase Dialog</source>
-        <translation>Passreduxase Dialog</translation>
+        <source>Passphrase Dialog</source>
+        <translation>Passphrase Dialog</translation>
     </message>
     <message>
-        <source>Enter passreduxase</source>
-        <translation>Enter passreduxase</translation>
+        <source>Enter passphrase</source>
+        <translation>Enter passphrase</translation>
     </message>
     <message>
-        <source>New passreduxase</source>
-        <translation>New passreduxase</translation>
+        <source>New passphrase</source>
+        <translation>New passphrase</translation>
     </message>
     <message>
-        <source>Repeat new passreduxase</source>
-        <translation>Repeat new passreduxase</translation>
+        <source>Repeat new passphrase</source>
+        <translation>Repeat new passphrase</translation>
     </message>
     <message>
         <source>Serves to disable the trivial sendmoney when OS account compromised. Provides no real security.</source>
@@ -140,36 +140,36 @@
         <translation>For anonymization and staking only</translation>
     </message>
     <message>
-        <source>Enter the new passreduxase to the wallet.&lt;br/&gt;Please use a passreduxase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
-        <translation>Enter the new passreduxase to the wallet.&lt;br/&gt;Please use a passreduxase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</translation>
+        <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
+        <translation>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</translation>
     </message>
     <message>
         <source>Encrypt wallet</source>
         <translation>Encrypt wallet</translation>
     </message>
     <message>
-        <source>This operation needs your wallet passreduxase to unlock the wallet.</source>
-        <translation>This operation needs your wallet passreduxase to unlock the wallet.</translation>
+        <source>This operation needs your wallet passphrase to unlock the wallet.</source>
+        <translation>This operation needs your wallet passphrase to unlock the wallet.</translation>
     </message>
     <message>
         <source>Unlock wallet</source>
         <translation>Unlock wallet</translation>
     </message>
     <message>
-        <source>This operation needs your wallet passreduxase to decrypt the wallet.</source>
-        <translation>This operation needs your wallet passreduxase to decrypt the wallet.</translation>
+        <source>This operation needs your wallet passphrase to decrypt the wallet.</source>
+        <translation>This operation needs your wallet passphrase to decrypt the wallet.</translation>
     </message>
     <message>
         <source>Decrypt wallet</source>
         <translation>Decrypt wallet</translation>
     </message>
     <message>
-        <source>Change passreduxase</source>
-        <translation>Change passreduxase</translation>
+        <source>Change passphrase</source>
+        <translation>Change passphrase</translation>
     </message>
     <message>
-        <source>Enter the old and new passreduxase to the wallet.</source>
-        <translation>Enter the old and new passreduxase to the wallet.</translation>
+        <source>Enter the old and new passphrase to the wallet.</source>
+        <translation>Enter the old and new passphrase to the wallet.</translation>
     </message>
     <message>
         <source>Confirm wallet encryption</source>
@@ -184,8 +184,8 @@
         <translation>Are you sure you wish to encrypt your wallet?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passreduxase, you will &lt;b&gt;LOSE ALL OF YOUR REDUX&lt;/b&gt;!</source>
-        <translation>Warning: If you encrypt your wallet and lose your passreduxase, you will &lt;b&gt;LOSE ALL OF YOUR REDUX&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR REDUX&lt;/b&gt;!</source>
+        <translation>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR REDUX&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -204,24 +204,24 @@
         <translation>Wallet encryption failed due to an internal error. Your wallet was not encrypted.</translation>
     </message>
     <message>
-        <source>The supplied passreduxases do not match.</source>
-        <translation>The supplied passreduxases do not match.</translation>
+        <source>The supplied passphrases do not match.</source>
+        <translation>The supplied passphrases do not match.</translation>
     </message>
     <message>
         <source>Wallet unlock failed</source>
         <translation>Wallet unlock failed</translation>
     </message>
     <message>
-        <source>The passreduxase entered for the wallet decryption was incorrect.</source>
-        <translation>The passreduxase entered for the wallet decryption was incorrect.</translation>
+        <source>The passphrase entered for the wallet decryption was incorrect.</source>
+        <translation>The passphrase entered for the wallet decryption was incorrect.</translation>
     </message>
     <message>
         <source>Wallet decryption failed</source>
         <translation>Wallet decryption failed</translation>
     </message>
     <message>
-        <source>Wallet passreduxase was successfully changed.</source>
-        <translation>Wallet passreduxase was successfully changed.</translation>
+        <source>Wallet passphrase was successfully changed.</source>
+        <translation>Wallet passphrase was successfully changed.</translation>
     </message>
     <message>
         <source>Warning: The Caps Lock key is on!</source>
@@ -239,8 +239,8 @@
         <translation>&amp;BIP 38 Encrypt</translation>
     </message>
     <message>
-        <source>Enter a Redux Address that you would like to encrypt using BIP 38. Enter a passreduxase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Enter a Redux Address that you would like to encrypt using BIP 38. Enter a passreduxase in the middle box. Press encrypt to compute the encrypted private key.</translation>
+        <source>Enter a Redux Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Enter a Redux Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</translation>
     </message>
     <message>
         <source>Address:</source>
@@ -267,8 +267,8 @@
         <translation>Alt+P</translation>
     </message>
     <message>
-        <source>Passreduxase: </source>
-        <translation>Passreduxase: </translation>
+        <source>Passphrase: </source>
+        <translation>Passphrase: </translation>
     </message>
     <message>
         <source>Encrypted Key:</source>
@@ -299,8 +299,8 @@
         <translation>&amp;BIP 38 Decrypt</translation>
     </message>
     <message>
-        <source>Enter the BIP 38 encrypted private key. Enter the passreduxase in the middle box. Click Decrypt Key to compute the private key. After the key is decrypted, clicking 'Import Address' will add this private key to the wallet.</source>
-        <translation>Enter the BIP 38 encrypted private key. Enter the passreduxase in the middle box. Click Decrypt Key to compute the private key. After the key is decrypted, clicking 'Import Address' will add this private key to the wallet.</translation>
+        <source>Enter the BIP 38 encrypted private key. Enter the passphrase in the middle box. Click Decrypt Key to compute the private key. After the key is decrypted, clicking 'Import Address' will add this private key to the wallet.</source>
+        <translation>Enter the BIP 38 encrypted private key. Enter the passphrase in the middle box. Click Decrypt Key to compute the private key. After the key is decrypted, clicking 'Import Address' will add this private key to the wallet.</translation>
     </message>
     <message>
         <source>The Redux address the message was signed with</source>
@@ -331,8 +331,8 @@
         <translation>Click "Decrypt Key" to compute key</translation>
     </message>
     <message>
-        <source>The entered passreduxase is invalid. </source>
-        <translation>The entered passreduxase is invalid. </translation>
+        <source>The entered passphrase is invalid. </source>
+        <translation>The entered passphrase is invalid. </translation>
     </message>
     <message>
         <source>Allowed: 0-9,a-z,A-Z,</source>
@@ -363,8 +363,8 @@
         <translation>Failed to decrypt.</translation>
     </message>
     <message>
-        <source>Please check the key and passreduxase and try again.</source>
-        <translation>Please check the key and passreduxase and try again.</translation>
+        <source>Please check the key and passphrase and try again.</source>
+        <translation>Please check the key and passphrase and try again.</translation>
     </message>
     <message>
         <source>Data Not Valid.</source>
@@ -470,12 +470,12 @@
         <translation>Backup wallet to another location</translation>
     </message>
     <message>
-        <source>&amp;Change Passreduxase...</source>
-        <translation>&amp;Change Passreduxase...</translation>
+        <source>&amp;Change Passphrase...</source>
+        <translation>&amp;Change Passphrase...</translation>
     </message>
     <message>
-        <source>Change the passreduxase used for wallet encryption</source>
-        <translation>Change the passreduxase used for wallet encryption</translation>
+        <source>Change the passphrase used for wallet encryption</source>
+        <translation>Change the passphrase used for wallet encryption</translation>
     </message>
     <message>
         <source>&amp;Unlock Wallet...</source>
@@ -646,8 +646,8 @@
         <translation>&amp;BIP38 tool</translation>
     </message>
     <message>
-        <source>Encrypt and decrypt private keys using a passreduxase</source>
-        <translation>Encrypt and decrypt private keys using a passreduxase</translation>
+        <source>Encrypt and decrypt private keys using a passphrase</source>
+        <translation>Encrypt and decrypt private keys using a passphrase</translation>
     </message>
     <message>
         <source>&amp;MultiSend</source>
@@ -1338,8 +1338,8 @@ Address: %4
         <translation>&amp;Update status</translation>
     </message>
     <message>
-        <source>Update in (sec):</source>
-        <translation>Update in (sec):</translation>
+        <source>Status will be updated automatically in (sec):</source>
+        <translation>Status will be updated automatically in (sec):</translation>
     </message>
     <message>
         <source>0</source>
@@ -4166,8 +4166,8 @@ for example: alertnotify=echo %%s | mail -s "Redux Alert" admin@foo.com
         <translation>You must specify a masternodeprivkey in the configuration. Please see documentation for help.</translation>
     </message>
     <message>
-        <source>(16610 could be used only on mainnet)</source>
-        <translation>(16610 could be used only on mainnet)</translation>
+        <source>(51472 could be used only on mainnet)</source>
+        <translation>(51472 could be used only on mainnet)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -4178,8 +4178,8 @@ for example: alertnotify=echo %%s | mail -s "Redux Alert" admin@foo.com
         <translation>(default: 1)</translation>
     </message>
     <message>
-        <source>(must be 16610 for mainnet)</source>
-        <translation>(must be 16610 for mainnet)</translation>
+        <source>(must be 51472 for mainnet)</source>
+        <translation>(must be 51472 for mainnet)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>
@@ -4282,8 +4282,8 @@ for example: alertnotify=echo %%s | mail -s "Redux Alert" admin@foo.com
         <translation>Copyright (C) 2014-%i The Dash Core Developers</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The Redux Developers</source>
-        <translation>Copyright (C) 2015-%i The Redux Developers</translation>
+        <source>Copyright (C) 2015-%i The Redux Core Developers</source>
+        <translation>Copyright (C) 2015-%i The Redux Core Developers</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>

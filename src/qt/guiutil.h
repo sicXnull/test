@@ -1,4 +1,5 @@
 // Copyright (c) 2011-2013 The Bitcoin developers
+// Copyright (c) 2017-2018 The Redux developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -42,13 +43,13 @@ QString dateTimeStr(qint64 nTime);
 QFont bitcoinAddressFont();
 
 // Set up widgets for address and amounts
-void setupAddressWidget(QValidatedLineEdit* widget, QWidget* parent);
-void setupAliasWidget(QValidatedLineEdit* widget, QWidget* parent);
-void setupIPWidget(QValidatedLineEdit* widget, QWidget* parent);
-void setupPrivKeyWidget(QValidatedLineEdit* widget, QWidget* parent);
-void setupTXIDWidget(QValidatedLineEdit* widget, QWidget* parent);
-void setupTXIDIndexWidget(QValidatedLineEdit* widget, QWidget* parent);
-void setupAmountWidget(QLineEdit* widget, QWidget* parent);
+    void setupAddressWidget(QValidatedLineEdit* widget, QWidget* parent);
+    void setupAliasWidget(QValidatedLineEdit* widget, QWidget* parent);
+    void setupIPWidget(QValidatedLineEdit* widget, QWidget* parent);
+    void setupPrivKeyWidget(QValidatedLineEdit* widget, QWidget* parent);
+    void setupTXIDWidget(QValidatedLineEdit* widget, QWidget* parent);
+    void setupTXIDIndexWidget(QValidatedLineEdit* widget, QWidget* parent);
+    void setupAmountWidget(QLineEdit* widget, QWidget* parent);
 
 // Parse "redux:" URI into recipient object, return true on successful parsing
 bool parseBitcoinURI(const QUrl& uri, SendCoinsRecipient* out);
@@ -232,19 +233,18 @@ QString formatPingTime(double dPingTime);
 /* Format a CNodeCombinedStats.nTimeOffset into a user-readable string. */
 QString formatTimeOffset(int64_t nTimeOffset);
 
-#if defined(Q_OS_MAC) && QT_VERSION >= 0x050000
-// workaround for Qt OSX Bug:
-// https://bugreports.qt-project.org/browse/QTBUG-15631
-// QProgressBar uses around 10% CPU even when app is in background
-class ProgressBar : public QProgressBar
-{
-    bool event(QEvent* e)
+#if defined(Q_OS_MAC)
+    // workaround for Qt OSX Bug:
+    // https://bugreports.qt-project.org/browse/QTBUG-15631
+    // QProgressBar uses around 10% CPU even when app is in background
+    class ProgressBar : public QProgressBar
     {
-        return (e->type() != QEvent::StyleAnimationUpdate) ? QProgressBar::event(e) : false;
-    }
-};
+        bool event(QEvent *e) {
+            return (e->type() != QEvent::StyleAnimationUpdate) ? QProgressBar::event(e) : false;
+        }
+    };
 #else
-typedef QProgressBar ProgressBar;
+    typedef QProgressBar ProgressBar;
 #endif
 
 } // namespace GUIUtil

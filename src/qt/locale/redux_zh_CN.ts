@@ -114,21 +114,21 @@
     </message>
 </context>
 <context>
-    <name>AskPassreduxaseDialog</name>
+    <name>AskPassphraseDialog</name>
     <message>
-        <source>Passreduxase Dialog</source>
+        <source>Passphrase Dialog</source>
         <translation>密码输入框</translation>
     </message>
     <message>
-        <source>Enter passreduxase</source>
+        <source>Enter passphrase</source>
         <translation>输入钱包密码</translation>
     </message>
     <message>
-        <source>New passreduxase</source>
+        <source>New passphrase</source>
         <translation>输入新密码</translation>
     </message>
     <message>
-        <source>Repeat new passreduxase</source>
+        <source>Repeat new passphrase</source>
         <translation>再次输入新密码</translation>
     </message>
     <message>
@@ -136,11 +136,7 @@
         <translation>用于在操作系统帐户遭到破坏时禁用琐碎的sendmoney。没有真正的安全性。</translation>
     </message>
     <message>
-        <source>For anonymization and staking only</source>
-        <translation>仅用于匿名化和加密</translation>
-    </message>
-    <message>
-        <source>Enter the new passreduxase to the wallet.&lt;br/&gt;Please use a passreduxase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
+        <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
         <translation>输入一个新的钱包密码&lt;br/&gt;钱包密码&lt;b&gt;建议使用10位以上的随机字符&lt;/b&gt;，或者&lt;b&gt; 3个以上的单词&lt;/b&gt;。并建议有序使用大小写字母。</translation>
     </message>
     <message>
@@ -148,7 +144,7 @@
         <translation>加密钱包</translation>
     </message>
     <message>
-        <source>This operation needs your wallet passreduxase to unlock the wallet.</source>
+        <source>This operation needs your wallet passphrase to unlock the wallet.</source>
         <translation>需要您输入钱包密码来进行解锁。</translation>
     </message>
     <message>
@@ -156,7 +152,7 @@
         <translation>解锁钱包</translation>
     </message>
     <message>
-        <source>This operation needs your wallet passreduxase to decrypt the wallet.</source>
+        <source>This operation needs your wallet passphrase to decrypt the wallet.</source>
         <translation>需要您输入钱包密码来进行解锁。</translation>
     </message>
     <message>
@@ -164,11 +160,11 @@
         <translation>解密钱包</translation>
     </message>
     <message>
-        <source>Change passreduxase</source>
+        <source>Change passphrase</source>
         <translation>修改密码</translation>
     </message>
     <message>
-        <source>Enter the old and new passreduxase to the wallet.</source>
+        <source>Enter the old and new passphrase to the wallet.</source>
         <translation>输入钱包信旧密码</translation>
     </message>
     <message>
@@ -184,7 +180,7 @@
         <translation>您确定加密您的钱包吗？</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passreduxase, you will &lt;b&gt;LOSE ALL OF YOUR REDUX&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR REDUX&lt;/b&gt;!</source>
         <translation>注意：请妥善保管好你的密码，因为在加密后，没有密码将无法打开钱包。这将会让您&lt;b&gt;损失钱包中所有的REDUX&lt;/b&gt;！</translation>
     </message>
     <message>
@@ -204,7 +200,7 @@
         <translation>由于内部错误，钱包加密失败，您的钱包本次加密没有成功。</translation>
     </message>
     <message>
-        <source>The supplied passreduxases do not match.</source>
+        <source>The supplied passphrases do not match.</source>
         <translation>输入的密码不正确</translation>
     </message>
     <message>
@@ -212,7 +208,7 @@
         <translation>钱包解锁失败</translation>
     </message>
     <message>
-        <source>The passreduxase entered for the wallet decryption was incorrect.</source>
+        <source>The passphrase entered for the wallet decryption was incorrect.</source>
         <translation>为钱包解密输入的密码不正确。</translation>
     </message>
     <message>
@@ -220,7 +216,7 @@
         <translation>钱包解密失败</translation>
     </message>
     <message>
-        <source>Wallet passreduxase was successfully changed.</source>
+        <source>Wallet passphrase was successfully changed.</source>
         <translation>钱包密码已经更换为新密码</translation>
     </message>
     <message>
@@ -228,6 +224,9 @@
         <translation>注意：键盘目前为大写锁定状态。</translation>
     </message>
 </context>
+<context>
+    <name>BanTableModel</name>
+    </context>
 <context>
     <name>Bip38ToolDialog</name>
     <message>
@@ -239,16 +238,8 @@
         <translation>&amp;BIP 38 加密</translation>
     </message>
     <message>
-        <source>Enter a Redux Address that you would like to encrypt using BIP 38. Enter a passreduxase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>输入您要使用BIP 38加密的Redux地址。在中间框中输入密码。按加密计算加密私钥。</translation>
-    </message>
-    <message>
         <source>Address:</source>
         <translation>地址：</translation>
-    </message>
-    <message>
-        <source>The Redux address to sign the message with</source>
-        <translation>该Redux地址签名的消息</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -267,7 +258,7 @@
         <translation>Alt+P</translation>
     </message>
     <message>
-        <source>Passreduxase: </source>
+        <source>Passphrase: </source>
         <translation>密码：</translation>
     </message>
     <message>
@@ -279,16 +270,8 @@
         <translation>将当前签名复制到系统剪贴板</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Redux address</source>
-        <translation>签署消息以证明您拥有此Redux地址</translation>
-    </message>
-    <message>
         <source>Encrypt &amp;Key</source>
         <translation>加密&amp;秘钥</translation>
-    </message>
-    <message>
-        <source>Reset all sign message fields</source>
-        <translation>重置所有签名信息</translation>
     </message>
     <message>
         <source>Clear &amp;All</source>
@@ -299,24 +282,12 @@
         <translation>&amp;BIP 38 解密</translation>
     </message>
     <message>
-        <source>Enter the BIP 38 encrypted private key. Enter the passreduxase in the middle box. Click Decrypt Key to compute the private key. After the key is decrypted, clicking 'Import Address' will add this private key to the wallet.</source>
+        <source>Enter the BIP 38 encrypted private key. Enter the passphrase in the middle box. Click Decrypt Key to compute the private key. After the key is decrypted, clicking 'Import Address' will add this private key to the wallet.</source>
         <translation>输入BIP 38加密私钥。 在中间框中输入密码。 单击解密密钥计算私钥。 密钥解密后，单击“导入地址”将将该私钥添加到钱包中。</translation>
-    </message>
-    <message>
-        <source>The Redux address the message was signed with</source>
-        <translation>由Redux地址签名的消息</translation>
-    </message>
-    <message>
-        <source>Verify the message to ensure it was signed with the specified Redux address</source>
-        <translation>验证消息确保它已使用指定的Redux地址进行签名</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
         <translation>解密&amp;秘钥</translation>
-    </message>
-    <message>
-        <source>Reset all verify message fields</source>
-        <translation>重置所有验证消息</translation>
     </message>
     <message>
         <source>Decrypted Key:</source>
@@ -331,7 +302,7 @@
         <translation>点击“解密密钥”完成密钥计算</translation>
     </message>
     <message>
-        <source>The entered passreduxase is invalid. </source>
+        <source>The entered passphrase is invalid. </source>
         <translation>输入的密码无效。</translation>
     </message>
     <message>
@@ -363,7 +334,7 @@
         <translation>解密失败。</translation>
     </message>
     <message>
-        <source>Please check the key and passreduxase and try again.</source>
+        <source>Please check the key and passphrase and try again.</source>
         <translation>请检查密钥和密码短语，然后再试一次。</translation>
     </message>
     <message>
@@ -470,11 +441,11 @@
         <translation>备份钱包至其他目录</translation>
     </message>
     <message>
-        <source>&amp;Change Passreduxase...</source>
+        <source>&amp;Change Passphrase...</source>
         <translation>&amp;C修改密码</translation>
     </message>
     <message>
-        <source>Change the passreduxase used for wallet encryption</source>
+        <source>Change the passphrase used for wallet encryption</source>
         <translation>修改用于钱包加密的密码</translation>
     </message>
     <message>
@@ -573,10 +544,6 @@
         <source>&amp;Command-line options</source>
         <translation>&amp;C命令行选项</translation>
     </message>
-    <message numerus="yes">
-        <source>Processed %n blocks of transaction history.</source>
-        <translation><numerusform>处理的 %n个交易记录块。</numerusform></translation>
-    </message>
     <message>
         <source>Synchronizing additional data: %p%</source>
         <translation>同步其他数据：%p%</translation>
@@ -618,10 +585,6 @@
         <translation>&amp;P隐私</translation>
     </message>
     <message>
-        <source>Privacy Action for zREDUX and Obfuscation</source>
-        <translation>zREDUX和混淆的隐私操作</translation>
-    </message>
-    <message>
         <source>&amp;Masternodes</source>
         <translation>&amp;M主节点</translation>
     </message>
@@ -654,7 +617,7 @@
         <translation>&amp;BIP38工具</translation>
     </message>
     <message>
-        <source>Encrypt and decrypt private keys using a passreduxase</source>
+        <source>Encrypt and decrypt private keys using a passphrase</source>
         <translation>使用密码加密和解密私钥</translation>
     </message>
     <message>
@@ -697,11 +660,6 @@
         <source>Redux Core client</source>
         <translation>Redux Core 客户端</translation>
     </message>
-    <message numerus="yes">
-        <source>%n active connection(s) to Redux network</source>
-        <translation><numerusform>%n 活动连接到Redux网络
-</numerusform></translation>
-    </message>
     <message>
         <source>Synchronizing with network...</source>
         <translation>与网络同步</translation>
@@ -721,26 +679,6 @@
     <message>
         <source>Up to date</source>
         <translation>最新</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n hour(s)</source>
-        <translation><numerusform>%n 小时</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n day(s)</source>
-        <translation><numerusform>%n 天</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n week(s)</source>
-        <translation><numerusform>%n 星期</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n year(s)</source>
-        <translation><numerusform>%n 年</numerusform></translation>
-    </message>
-    <message>
-        <source>%1 behind</source>
-        <translation>%1 落后</translation>
     </message>
     <message>
         <source>Catching up...</source>
@@ -863,6 +801,13 @@ Address: %4
     <name>FreespaceChecker</name>
     </context>
 <context>
+    <name>GovernancePage</name>
+    <message>
+        <source>Form</source>
+        <translation>来自</translation>
+    </message>
+    </context>
+<context>
     <name>HelpMessageDialog</name>
     <message>
         <source>Redux Core</source>
@@ -941,6 +886,17 @@ Address: %4
         <source>Address:</source>
         <translation>地址：</translation>
     </message>
+    <message>
+        <source>Enter a label for this address to add it to your address book</source>
+        <translation>输入此地址的标签，将其添加到您的地址列表中</translation>
+    </message>
+    <message>
+        <source>(no label)</source>
+        <translation>未设置标签</translation>
+    </message>
+    </context>
+<context>
+    <name>MultisigDialog</name>
     </context>
 <context>
     <name>ObfuscationConfig</name>
@@ -1102,7 +1058,7 @@ Address: %4
         <source>The supplied proxy address is invalid.</source>
         <translation>提供的代理地址无效。</translation>
     </message>
-</context>
+    </context>
 <context>
     <name>OverviewPage</name>
     <message>
@@ -1120,10 +1076,6 @@ Address: %4
     <message>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Redux network after a connection is established, but this process has not completed yet.</source>
         <translation>显示的信息可能已过期。建立连接后，您的钱包会自动与Redux网络同步，但此过程尚未完成。</translation>
-    </message>
-    <message>
-        <source>Your current total balance</source>
-        <translation>您当前的总余额</translation>
     </message>
     <message>
         <source>Your current balance in watch-only addresses</source>
@@ -1172,7 +1124,14 @@ Address: %4
     </message>
     </context>
 <context>
+    <name>ProposalFrame</name>
+    </context>
+<context>
     <name>QObject</name>
+    <message>
+        <source>Redux Core</source>
+        <translation>Redux Core</translation>
+    </message>
     </context>
 <context>
     <name>QRImageWidget</name>
@@ -1189,7 +1148,7 @@ Address: %4
     <name>RPCConsole</name>
     <message>
         <source>&amp;Information</source>
-        <translation>&amp;信息</translation>
+        <translation>&amp;I信息</translation>
     </message>
     <message>
         <source>&amp;Open</source>
@@ -1227,6 +1186,10 @@ Address: %4
         <translation>&amp;消息：</translation>
     </message>
     <message>
+        <source>A&amp;mount:</source>
+        <translation>A&amp;总计</translation>
+    </message>
+    <message>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Redux network.</source>
         <translation>附加到付款请求的可选消息，将在请求打开时显示。 注意：消息不会在付款时通过Redux网络发送。</translation>
     </message>
@@ -1239,10 +1202,6 @@ Address: %4
         <translation>&amp;标签</translation>
     </message>
     <message>
-        <source>&amp;Amount:</source>
-        <translation>&amp;总计</translation>
-    </message>
-    <message>
         <source>&amp;Request payment</source>
         <translation>&amp;请求支付</translation>
     </message>
@@ -1250,7 +1209,11 @@ Address: %4
         <source>Copy message</source>
         <translation>复制消息</translation>
     </message>
-    </context>
+    <message>
+        <source>Copy address</source>
+        <translation>复制地址</translation>
+    </message>
+</context>
 <context>
     <name>ReceiveRequestDialog</name>
     <message>
@@ -1291,6 +1254,10 @@ Address: %4
     <message>
         <source>Message</source>
         <translation>消息 </translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>地址</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1588,7 +1555,7 @@ Address: %4
     </message>
     </context>
 <context>
-    <name>ZPhrControlDialog</name>
+    <name>ZReduxControlDialog</name>
     </context>
 <context>
     <name>redux-core</name>

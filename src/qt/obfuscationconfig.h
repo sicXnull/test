@@ -1,3 +1,8 @@
+// Copyright (c) 2014-2016 The Dash Developers
+// Copyright (c) 2016-2017 The Redux developers
+// Distributed under the MIT software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
 #ifndef OBFUSCATIONCONFIG_H
 #define OBFUSCATIONCONFIG_H
 
@@ -9,7 +14,7 @@ class ObfuscationConfig;
 }
 class WalletModel;
 
-/** Multifunctional dialog to ask for passreduxases. Used for encryption, unlocking, and changing the passreduxase.
+/** Multifunctional dialog to ask for passphrases. Used for encryption, unlocking, and changing the passphrase.
  */
 class ObfuscationConfig : public QDialog
 {

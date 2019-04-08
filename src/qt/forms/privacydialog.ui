@@ -9,8 +9,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>962</width>
-    <height>695</height>
+    <width>991</width>
+    <height>766</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -47,15 +47,9 @@
          <number>0</number>
         </property>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_Header" stretch="0">
+         <layout class="QHBoxLayout" name="horizontalLayout_Header" stretch="1,0,1">
           <item>
            <widget class="QLabel" name="labelOverviewHeaderLeft">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
             <property name="minimumSize">
              <size>
               <width>464</width>
@@ -70,17 +64,53 @@
             </property>
             <property name="font">
              <font>
-              <family>Hind</family>
-              <pointsize>48</pointsize>
+              <pointsize>20</pointsize>
               <weight>75</weight>
               <bold>true</bold>
              </font>
             </property>
             <property name="text">
-             <string>Privacy</string>
+             <string>PRIVACY</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_1">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLabel" name="labelOverviewHeaderRight">
+            <property name="minimumSize">
+             <size>
+              <width>464</width>
+              <height>60</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>60</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string/>
             </property>
             <property name="alignment">
-             <set>Qt::AlignCenter</set>
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
             </property>
            </widget>
           </item>
@@ -128,7 +158,7 @@
               <number>2</number>
              </property>
              <item>
-              <layout class="QHBoxLayout" name="horizontalLayout_Content" stretch="1,0">
+              <layout class="QHBoxLayout" name="horizontalLayout_Content" stretch="0,0">
                <property name="spacing">
                 <number>6</number>
                </property>
@@ -145,9 +175,9 @@
                          <widget class="QLabel" name="labelzREDUXActions">
                           <property name="font">
                            <font>
-                            <pointsize>24</pointsize>
-                            <weight>50</weight>
-                            <bold>false</bold>
+                            <pointsize>12</pointsize>
+                            <weight>75</weight>
+                            <bold>true</bold>
                            </font>
                           </property>
                           <property name="text">
@@ -190,6 +220,154 @@
                        </layout>
                       </item>
                       <item>
+                       <widget class="Line" name="lineUpperLeft">
+                        <property name="minimumSize">
+                         <size>
+                          <width>0</width>
+                          <height>1</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>16777215</width>
+                          <height>1</height>
+                         </size>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Sunken</enum>
+                        </property>
+                        <property name="orientation">
+                         <enum>Qt::Horizontal</enum>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QFrame" name="balanceSupplyFrame">
+                        <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="0,0,0,1,0">
+                         <property name="rightMargin">
+                          <number>0</number>
+                         </property>
+                         <item>
+                          <layout class="QHBoxLayout" name="horizontalLayout_34">
+                           <item>
+                            <widget class="QLabel" name="labelzAvailableText_3">
+                             <property name="font">
+                              <font>
+                               <weight>75</weight>
+                               <bold>true</bold>
+                              </font>
+                             </property>
+                             <property name="toolTip">
+                              <string>Total Balance including unconfirmed and immature zREDUX</string>
+                             </property>
+                             <property name="text">
+                              <string>Total Zerocoin  Balance:</string>
+                             </property>
+                             <property name="alignment">
+                              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="labelzAvailableAmount_4">
+                             <property name="minimumSize">
+                              <size>
+                               <width>40</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="font">
+                              <font>
+                               <weight>75</weight>
+                               <bold>true</bold>
+                              </font>
+                             </property>
+                             <property name="toolTip">
+                              <string>Total Balance including unconfirmed and immature zREDUX</string>
+                             </property>
+                             <property name="text">
+                              <string>0 zREDUX</string>
+                             </property>
+                             <property name="alignment">
+                              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </item>
+                         <item>
+                          <spacer name="horizontalSpacer_32">
+                           <property name="orientation">
+                            <enum>Qt::Horizontal</enum>
+                           </property>
+                           <property name="sizeHint" stdset="0">
+                            <size>
+                             <width>40</width>
+                             <height>20</height>
+                            </size>
+                           </property>
+                          </spacer>
+                         </item>
+                         <item>
+                          <layout class="QHBoxLayout" name="horizontalLayout_35">
+                           <item>
+                            <widget class="QLabel" name="labelZsupplyText_2">
+                             <property name="font">
+                              <font>
+                               <weight>75</weight>
+                               <bold>true</bold>
+                              </font>
+                             </property>
+                             <property name="text">
+                              <string>Global Supply:</string>
+                             </property>
+                             <property name="alignment">
+                              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="labelZsupplyAmount_2">
+                             <property name="font">
+                              <font>
+                               <weight>75</weight>
+                               <bold>true</bold>
+                              </font>
+                             </property>
+                             <property name="text">
+                              <string>0 zREDUX</string>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </item>
+                         <item>
+                          <spacer name="horizontalSpacer_31">
+                           <property name="orientation">
+                            <enum>Qt::Horizontal</enum>
+                           </property>
+                           <property name="sizeHint" stdset="0">
+                            <size>
+                             <width>40</width>
+                             <height>20</height>
+                            </size>
+                           </property>
+                          </spacer>
+                         </item>
+                         <item>
+                          <widget class="QPushButton" name="pushButtonShowDenoms">
+                           <property name="toolTip">
+                            <string>Show zREDUX denominations list</string>
+                           </property>
+                           <property name="text">
+                            <string>Show Denominations</string>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                      <item>
                        <layout class="QHBoxLayout" name="horizontalLayout_4">
                         <item>
                          <widget class="QPushButton" name="pushButtonMintzREDUX">
@@ -200,7 +378,7 @@
                            </size>
                           </property>
                           <property name="toolTip">
-                           <string>Enter an amount of REDUX to convert to zREDUX</string>
+                           <string>Enter an amount of Redux to convert to zREDUX</string>
                           </property>
                           <property name="text">
                            <string>Mint Zerocoin</string>
@@ -252,7 +430,7 @@
                            </font>
                           </property>
                           <property name="toolTip">
-                           <string>Enter an amount of REDUX to convert to zREDUX</string>
+                           <string>Enter an amount of Redux to convert to zREDUX</string>
                           </property>
                           <property name="text">
                            <string>0.000 000 00 REDUX</string>
@@ -472,6 +650,19 @@
                        </layout>
                       </item>
                       <item>
+                       <spacer name="horizontalSpacer_18">
+                        <property name="orientation">
+                         <enum>Qt::Horizontal</enum>
+                        </property>
+                        <property name="sizeHint" stdset="0">
+                         <size>
+                          <width>40</width>
+                          <height>20</height>
+                         </size>
+                        </property>
+                       </spacer>
+                      </item>
+                      <item>
                        <widget class="QPlainTextEdit" name="TEMintStatus">
                         <property name="font">
                          <font>
@@ -494,7 +685,7 @@
                          <number>2</number>
                         </property>
                         <property name="verticalScrollBarPolicy">
-                         <enum>Qt::ScrollBarAsNeeded</enum>
+                         <enum>Qt::ScrollBarAlwaysOn</enum>
                         </property>
                         <property name="horizontalScrollBarPolicy">
                          <enum>Qt::ScrollBarAlwaysOff</enum>
@@ -538,21 +729,21 @@
                          <number>0</number>
                         </property>
                         <item>
-                         <widget class="QPushButton" name="pushButtonzREDUXControl">
+                         <widget class="QPushButton" name="pushButtonZReduxControl">
                           <property name="text">
                            <string>zREDUX Control</string>
                           </property>
                          </widget>
                         </item>
                         <item>
-                         <widget class="QLabel" name="labelzREDUXSelected">
+                         <widget class="QLabel" name="labelzReduxSelected">
                           <property name="text">
                            <string>zREDUX Selected:</string>
                           </property>
                          </widget>
                         </item>
                         <item>
-                         <widget class="QLabel" name="labelzREDUXSelected_int">
+                         <widget class="QLabel" name="labelzReduxSelected_int">
                           <property name="text">
                            <string>0</string>
                           </property>
@@ -645,7 +836,7 @@
                           <property name="toolTip">
                            <string>Available (mature and spendable) zREDUX for spending
 
-zREDUX are mature when they have more than 20 confirmations AND more than 1 mint of the same denomination after them were minted</string>
+zREDUX are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</string>
                           </property>
                           <property name="text">
                            <string>0 zREDUX</string>
@@ -668,66 +859,12 @@ zREDUX are mature when they have more than 20 confirmations AND more than 1 mint
                           </property>
                          </spacer>
                         </item>
-                        <item>
-                         <widget class="QLabel" name="labelSecurityLevel">
-                          <property name="toolTip">
-                           <string>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</string>
-                          </property>
-                          <property name="frameShape">
-                           <enum>QFrame::Box</enum>
-                          </property>
-                          <property name="text">
-                           <string>Security Level:</string>
-                          </property>
-                          <property name="alignment">
-                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                          </property>
-                         </widget>
-                        </item>
-                        <item>
-                         <layout class="QHBoxLayout" name="securityLevelLayout">
-                          <item>
-                           <widget class="QSpinBox" name="securityLevel">
-                            <property name="sizePolicy">
-                             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                              <horstretch>0</horstretch>
-                              <verstretch>0</verstretch>
-                             </sizepolicy>
-                            </property>
-                            <property name="toolTip">
-                             <string>Security Level 1 - 100 (default: 42)</string>
-                            </property>
-                            <property name="buttonSymbols">
-                             <enum>QAbstractSpinBox::PlusMinus</enum>
-                            </property>
-                            <property name="accelerated">
-                             <bool>true</bool>
-                            </property>
-                            <property name="correctionMode">
-                             <enum>QAbstractSpinBox::CorrectToNearestValue</enum>
-                            </property>
-                            <property name="minimum">
-                             <number>1</number>
-                            </property>
-                            <property name="maximum">
-                             <number>100</number>
-                            </property>
-                            <property name="value">
-                             <number>42</number>
-                            </property>
-                           </widget>
-                          </item>
-                         </layout>
-                        </item>
                        </layout>
                       </item>
                       <item>
                        <layout class="QGridLayout" name="gridLayout_7">
-                        <property name="horizontalSpacing">
+                        <property name="spacing">
                          <number>12</number>
-                        </property>
-                        <property name="verticalSpacing">
-                         <number>10</number>
                         </property>
                         <item row="0" column="0">
                          <widget class="QLabel" name="payToLabel">
@@ -766,9 +903,6 @@ zREDUX are mature when they have more than 20 confirmations AND more than 1 mint
                             </property>
                             <property name="toolTip">
                              <string>The Redux address to send the payment to. Creates local payment to yourself when empty.</string>
-                            </property>
-                            <property name="placeholderText">
-                             <string>Enter a Redux address (e.g. PCYiHgGJJ6xGHqivmdZrYjRnhaYf6AJ2Mp)</string>
                             </property>
                            </widget>
                           </item>
@@ -831,9 +965,6 @@ zREDUX are mature when they have more than 20 confirmations AND more than 1 mint
                          <widget class="QLineEdit" name="addAsLabel">
                           <property name="toolTip">
                            <string>Enter a label for this address to add it to the list of used addresses</string>
-                          </property>
-                          <property name="placeholderText">
-                           <string>Enter a label for this address to add it to your address book</string>
                           </property>
                          </widget>
                         </item>
@@ -954,18 +1085,15 @@ zREDUX are mature when they have more than 20 confirmations AND more than 1 mint
                    <layout class="QVBoxLayout" name="verticalLayout_9">
                     <item>
                      <layout class="QVBoxLayout" name="verticalLayout_Right">
-                      <property name="spacing">
-                       <number>4</number>
-                      </property>
                       <item>
                        <layout class="QHBoxLayout" name="horizontalLayout_21">
                         <item>
                          <widget class="QLabel" name="labelzREDUXStats">
                           <property name="font">
                            <font>
-                            <pointsize>24</pointsize>
-                            <weight>50</weight>
-                            <bold>false</bold>
+                            <pointsize>12</pointsize>
+                            <weight>75</weight>
+                            <bold>true</bold>
                            </font>
                           </property>
                           <property name="toolTip">
@@ -993,6 +1121,25 @@ zREDUX are mature when they have more than 20 confirmations AND more than 1 mint
                          </spacer>
                         </item>
                        </layout>
+                      </item>
+                      <item>
+                       <widget class="Line" name="line_1_right">
+                        <property name="minimumSize">
+                         <size>
+                          <width>0</width>
+                          <height>1</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>16777215</width>
+                          <height>1</height>
+                         </size>
+                        </property>
+                        <property name="orientation">
+                         <enum>Qt::Horizontal</enum>
+                        </property>
+                       </widget>
                       </item>
                       <item>
                        <spacer name="verticalSpacer">
@@ -1075,11 +1222,6 @@ zREDUX are mature when they have more than 20 confirmations AND more than 1 mint
                        <layout class="QHBoxLayout" name="horizontalLayout_13">
                         <item>
                          <widget class="QLabel" name="labelzDenom1Text">
-                          <property name="font">
-                           <font>
-                            <pointsize>11</pointsize>
-                           </font>
-                          </property>
                           <property name="toolTip">
                            <string>Denominations with value 1:</string>
                           </property>
@@ -1099,7 +1241,7 @@ zREDUX are mature when they have more than 20 confirmations AND more than 1 mint
                           <property name="sizeHint" stdset="0">
                            <size>
                             <width>40</width>
-                            <height>16</height>
+                            <height>20</height>
                            </size>
                           </property>
                          </spacer>
@@ -1112,14 +1254,9 @@ zREDUX are mature when they have more than 20 confirmations AND more than 1 mint
                             <height>0</height>
                            </size>
                           </property>
-                          <property name="font">
-                           <font>
-                            <pointsize>11</pointsize>
-                           </font>
-                          </property>
                           <property name="toolTip">
                            <string>Unconfirmed: less than 20 confirmations
-Immature: confirmed, but less than 2 mints of the same denomination after it was minted</string>
+Immature: confirmed, but less than 1 mint of the same denomination after it was minted</string>
                           </property>
                           <property name="text">
                            <string>0 x</string>
@@ -1138,11 +1275,6 @@ Immature: confirmed, but less than 2 mints of the same denomination after it was
                        <layout class="QHBoxLayout" name="horizontalLayout_14">
                         <item>
                          <widget class="QLabel" name="labelzDenom2Text">
-                          <property name="font">
-                           <font>
-                            <pointsize>11</pointsize>
-                           </font>
-                          </property>
                           <property name="toolTip">
                            <string>Denominations with value 5:</string>
                           </property>
@@ -1162,7 +1294,7 @@ Immature: confirmed, but less than 2 mints of the same denomination after it was
                           <property name="sizeHint" stdset="0">
                            <size>
                             <width>40</width>
-                            <height>16</height>
+                            <height>20</height>
                            </size>
                           </property>
                          </spacer>
@@ -1175,14 +1307,9 @@ Immature: confirmed, but less than 2 mints of the same denomination after it was
                             <height>0</height>
                            </size>
                           </property>
-                          <property name="font">
-                           <font>
-                            <pointsize>11</pointsize>
-                           </font>
-                          </property>
                           <property name="toolTip">
                            <string>Unconfirmed: less than 20 confirmations
-Immature: confirmed, but less than 2 mints of the same denomination after it was minted</string>
+Immature: confirmed, but less than 1 mint of the same denomination after it was minted</string>
                           </property>
                           <property name="text">
                            <string>0 x</string>
@@ -1201,11 +1328,6 @@ Immature: confirmed, but less than 2 mints of the same denomination after it was
                        <layout class="QHBoxLayout" name="horizontalLayout_15">
                         <item>
                          <widget class="QLabel" name="labelzDenom3Text">
-                          <property name="font">
-                           <font>
-                            <pointsize>11</pointsize>
-                           </font>
-                          </property>
                           <property name="toolTip">
                            <string>Denominations with value 10:</string>
                           </property>
@@ -1225,7 +1347,7 @@ Immature: confirmed, but less than 2 mints of the same denomination after it was
                           <property name="sizeHint" stdset="0">
                            <size>
                             <width>40</width>
-                            <height>16</height>
+                            <height>20</height>
                            </size>
                           </property>
                          </spacer>
@@ -1238,14 +1360,9 @@ Immature: confirmed, but less than 2 mints of the same denomination after it was
                             <height>0</height>
                            </size>
                           </property>
-                          <property name="font">
-                           <font>
-                            <pointsize>11</pointsize>
-                           </font>
-                          </property>
                           <property name="toolTip">
                            <string>Unconfirmed: less than 20 confirmations
-Immature: confirmed, but less than 2 mints of the same denomination after it was minted</string>
+Immature: confirmed, but less than 1 mint of the same denomination after it was minted</string>
                           </property>
                           <property name="text">
                            <string>0 x</string>
@@ -1264,11 +1381,6 @@ Immature: confirmed, but less than 2 mints of the same denomination after it was
                        <layout class="QHBoxLayout" name="horizontalLayout_16">
                         <item>
                          <widget class="QLabel" name="labelzDenom4Text">
-                          <property name="font">
-                           <font>
-                            <pointsize>11</pointsize>
-                           </font>
-                          </property>
                           <property name="toolTip">
                            <string>Denominations with value 50:</string>
                           </property>
@@ -1288,7 +1400,7 @@ Immature: confirmed, but less than 2 mints of the same denomination after it was
                           <property name="sizeHint" stdset="0">
                            <size>
                             <width>40</width>
-                            <height>16</height>
+                            <height>20</height>
                            </size>
                           </property>
                          </spacer>
@@ -1301,14 +1413,9 @@ Immature: confirmed, but less than 2 mints of the same denomination after it was
                             <height>0</height>
                            </size>
                           </property>
-                          <property name="font">
-                           <font>
-                            <pointsize>11</pointsize>
-                           </font>
-                          </property>
                           <property name="toolTip">
                            <string>Unconfirmed: less than 20 confirmations
-Immature: confirmed, but less than 2 mints of the same denomination after it was minted</string>
+Immature: confirmed, but less than 1 mint of the same denomination after it was minted</string>
                           </property>
                           <property name="text">
                            <string>0 x</string>
@@ -1327,11 +1434,6 @@ Immature: confirmed, but less than 2 mints of the same denomination after it was
                        <layout class="QHBoxLayout" name="horizontalLayout_17">
                         <item>
                          <widget class="QLabel" name="labelzDenom5Text">
-                          <property name="font">
-                           <font>
-                            <pointsize>11</pointsize>
-                           </font>
-                          </property>
                           <property name="toolTip">
                            <string>Denominations with value 100:</string>
                           </property>
@@ -1351,7 +1453,7 @@ Immature: confirmed, but less than 2 mints of the same denomination after it was
                           <property name="sizeHint" stdset="0">
                            <size>
                             <width>40</width>
-                            <height>16</height>
+                            <height>20</height>
                            </size>
                           </property>
                          </spacer>
@@ -1364,14 +1466,9 @@ Immature: confirmed, but less than 2 mints of the same denomination after it was
                             <height>0</height>
                            </size>
                           </property>
-                          <property name="font">
-                           <font>
-                            <pointsize>11</pointsize>
-                           </font>
-                          </property>
                           <property name="toolTip">
                            <string>Unconfirmed: less than 20 confirmations
-Immature: confirmed, but less than 2 mints of the same denomination after it was minted</string>
+Immature: confirmed, but less than 1 mint of the same denomination after it was minted</string>
                           </property>
                           <property name="text">
                            <string>0 x</string>
@@ -1390,11 +1487,6 @@ Immature: confirmed, but less than 2 mints of the same denomination after it was
                        <layout class="QHBoxLayout" name="horizontalLayout_18">
                         <item>
                          <widget class="QLabel" name="labelzDenom6Text">
-                          <property name="font">
-                           <font>
-                            <pointsize>11</pointsize>
-                           </font>
-                          </property>
                           <property name="toolTip">
                            <string>Denominations with value 500:</string>
                           </property>
@@ -1414,7 +1506,7 @@ Immature: confirmed, but less than 2 mints of the same denomination after it was
                           <property name="sizeHint" stdset="0">
                            <size>
                             <width>40</width>
-                            <height>16</height>
+                            <height>20</height>
                            </size>
                           </property>
                          </spacer>
@@ -1427,14 +1519,9 @@ Immature: confirmed, but less than 2 mints of the same denomination after it was
                             <height>0</height>
                            </size>
                           </property>
-                          <property name="font">
-                           <font>
-                            <pointsize>11</pointsize>
-                           </font>
-                          </property>
                           <property name="toolTip">
                            <string>Unconfirmed: less than 20 confirmations
-Immature: confirmed, but less than 2 mints of the same denomination after it was minted</string>
+Immature: confirmed, but less than 1 mint of the same denomination after it was minted</string>
                           </property>
                           <property name="text">
                            <string>0 x</string>
@@ -1453,11 +1540,6 @@ Immature: confirmed, but less than 2 mints of the same denomination after it was
                        <layout class="QHBoxLayout" name="horizontalLayout_19">
                         <item>
                          <widget class="QLabel" name="labelzDenom7Text">
-                          <property name="font">
-                           <font>
-                            <pointsize>11</pointsize>
-                           </font>
-                          </property>
                           <property name="toolTip">
                            <string>Denominations with value 1000:</string>
                           </property>
@@ -1477,7 +1559,7 @@ Immature: confirmed, but less than 2 mints of the same denomination after it was
                           <property name="sizeHint" stdset="0">
                            <size>
                             <width>40</width>
-                            <height>16</height>
+                            <height>20</height>
                            </size>
                           </property>
                          </spacer>
@@ -1490,14 +1572,9 @@ Immature: confirmed, but less than 2 mints of the same denomination after it was
                             <height>0</height>
                            </size>
                           </property>
-                          <property name="font">
-                           <font>
-                            <pointsize>11</pointsize>
-                           </font>
-                          </property>
                           <property name="toolTip">
                            <string>Unconfirmed: less than 20 confirmations
-Immature: confirmed, but less than 2 mints of the same denomination after it was minted</string>
+Immature: confirmed, but less than 1 mint of the same denomination after it was minted</string>
                           </property>
                           <property name="text">
                            <string>0 x</string>
@@ -1516,11 +1593,6 @@ Immature: confirmed, but less than 2 mints of the same denomination after it was
                        <layout class="QHBoxLayout" name="horizontalLayout_20">
                         <item>
                          <widget class="QLabel" name="labelzDenom8Text">
-                          <property name="font">
-                           <font>
-                            <pointsize>11</pointsize>
-                           </font>
-                          </property>
                           <property name="toolTip">
                            <string>Denominations with value 5000:</string>
                           </property>
@@ -1540,7 +1612,7 @@ Immature: confirmed, but less than 2 mints of the same denomination after it was
                           <property name="sizeHint" stdset="0">
                            <size>
                             <width>40</width>
-                            <height>16</height>
+                            <height>20</height>
                            </size>
                           </property>
                          </spacer>
@@ -1553,14 +1625,9 @@ Immature: confirmed, but less than 2 mints of the same denomination after it was
                             <height>0</height>
                            </size>
                           </property>
-                          <property name="font">
-                           <font>
-                            <pointsize>11</pointsize>
-                           </font>
-                          </property>
                           <property name="toolTip">
                            <string>Unconfirmed: less than 20 confirmations
-Immature: confirmed, but less than 2 mints of the same denomination after it was minted</string>
+Immature: confirmed, but less than 1 mint of the same denomination after it was minted</string>
                           </property>
                           <property name="text">
                            <string>0 x</string>
@@ -1576,7 +1643,372 @@ Immature: confirmed, but less than 2 mints of the same denomination after it was
                        </layout>
                       </item>
                       <item>
-                       <spacer name="verticalSpacer_4">
+                       <widget class="Line" name="line_2_right">
+                        <property name="minimumSize">
+                         <size>
+                          <width>0</width>
+                          <height>1</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>16777215</width>
+                          <height>1</height>
+                         </size>
+                        </property>
+                        <property name="orientation">
+                         <enum>Qt::Horizontal</enum>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <layout class="QHBoxLayout" name="horizontalLayout_25">
+                        <item>
+                         <widget class="QLabel" name="label_AutoMintStatus">
+                          <property name="toolTip">
+                           <string>Show the current status of automatic zREDUX minting.
+
+To change the status (restart required):
+- enable: add 'enablezeromint=1' to redux.conf
+- disable: add 'enablezeromint=0' to redux.conf
+
+To change the percentage (no restart required):
+- menu Settings-&gt;Options-&gt;Percentage of autominted zREDUX
+
+</string>
+                          </property>
+                          <property name="text">
+                           <string>AutoMint Status</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <spacer name="horizontalSpacer_20">
+                          <property name="orientation">
+                           <enum>Qt::Horizontal</enum>
+                          </property>
+                          <property name="sizeHint" stdset="0">
+                           <size>
+                            <width>40</width>
+                            <height>20</height>
+                           </size>
+                          </property>
+                         </spacer>
+                        </item>
+                       </layout>
+                      </item>
+                      <item>
+                       <widget class="Line" name="line_3">
+                        <property name="minimumSize">
+                         <size>
+                          <width>0</width>
+                          <height>1</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>16777215</width>
+                          <height>1</height>
+                         </size>
+                        </property>
+                        <property name="orientation">
+                         <enum>Qt::Horizontal</enum>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <layout class="QHBoxLayout" name="horizontalLayout_23">
+                        <item>
+                         <widget class="QLabel" name="labelZsupplyText">
+                          <property name="font">
+                           <font>
+                            <weight>75</weight>
+                            <bold>true</bold>
+                           </font>
+                          </property>
+                          <property name="text">
+                           <string>Global Supply:</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <spacer name="horizontalSpacer_21">
+                          <property name="orientation">
+                           <enum>Qt::Horizontal</enum>
+                          </property>
+                          <property name="sizeHint" stdset="0">
+                           <size>
+                            <width>40</width>
+                            <height>20</height>
+                           </size>
+                          </property>
+                         </spacer>
+                        </item>
+                        <item>
+                         <widget class="QLabel" name="labelZsupplyAmount">
+                          <property name="font">
+                           <font>
+                            <weight>75</weight>
+                            <bold>true</bold>
+                           </font>
+                          </property>
+                          <property name="text">
+                           <string>0 zREDUX</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                      <item>
+                       <layout class="QHBoxLayout" name="horizontalLayout_26">
+                        <item>
+                         <widget class="QLabel" name="labelZsupplyText1">
+                          <property name="text">
+                           <string>Denom. 1:</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <spacer name="horizontalSpacer_22">
+                          <property name="orientation">
+                           <enum>Qt::Horizontal</enum>
+                          </property>
+                          <property name="sizeHint" stdset="0">
+                           <size>
+                            <width>40</width>
+                            <height>20</height>
+                           </size>
+                          </property>
+                         </spacer>
+                        </item>
+                        <item>
+                         <widget class="QLabel" name="labelZsupplyAmount1">
+                          <property name="text">
+                           <string>0 zREDUX</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                      <item>
+                       <layout class="QHBoxLayout" name="horizontalLayout_27">
+                        <item>
+                         <widget class="QLabel" name="labelZsupplyText5">
+                          <property name="text">
+                           <string>Denom. 5:</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <spacer name="horizontalSpacer_23">
+                          <property name="orientation">
+                           <enum>Qt::Horizontal</enum>
+                          </property>
+                          <property name="sizeHint" stdset="0">
+                           <size>
+                            <width>40</width>
+                            <height>20</height>
+                           </size>
+                          </property>
+                         </spacer>
+                        </item>
+                        <item>
+                         <widget class="QLabel" name="labelZsupplyAmount5">
+                          <property name="text">
+                           <string>0 zREDUX</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                      <item>
+                       <layout class="QHBoxLayout" name="horizontalLayout_28">
+                        <item>
+                         <widget class="QLabel" name="labelZsupplyText10">
+                          <property name="text">
+                           <string>Denom. 10:</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <spacer name="horizontalSpacer_24">
+                          <property name="orientation">
+                           <enum>Qt::Horizontal</enum>
+                          </property>
+                          <property name="sizeHint" stdset="0">
+                           <size>
+                            <width>40</width>
+                            <height>20</height>
+                           </size>
+                          </property>
+                         </spacer>
+                        </item>
+                        <item>
+                         <widget class="QLabel" name="labelZsupplyAmount10">
+                          <property name="text">
+                           <string>0 zREDUX</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                      <item>
+                       <layout class="QHBoxLayout" name="horizontalLayout_29">
+                        <item>
+                         <widget class="QLabel" name="labelZsupplyText50">
+                          <property name="text">
+                           <string>Denom. 50:</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <spacer name="horizontalSpacer_26">
+                          <property name="orientation">
+                           <enum>Qt::Horizontal</enum>
+                          </property>
+                          <property name="sizeHint" stdset="0">
+                           <size>
+                            <width>40</width>
+                            <height>20</height>
+                           </size>
+                          </property>
+                         </spacer>
+                        </item>
+                        <item>
+                         <widget class="QLabel" name="labelZsupplyAmount50">
+                          <property name="text">
+                           <string>0 zREDUX</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                      <item>
+                       <layout class="QHBoxLayout" name="horizontalLayout_30">
+                        <item>
+                         <widget class="QLabel" name="labelZsupplyText100">
+                          <property name="text">
+                           <string>Denom. 100:</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <spacer name="horizontalSpacer_25">
+                          <property name="orientation">
+                           <enum>Qt::Horizontal</enum>
+                          </property>
+                          <property name="sizeHint" stdset="0">
+                           <size>
+                            <width>40</width>
+                            <height>20</height>
+                           </size>
+                          </property>
+                         </spacer>
+                        </item>
+                        <item>
+                         <widget class="QLabel" name="labelZsupplyAmount100">
+                          <property name="text">
+                           <string>0 zREDUX</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                      <item>
+                       <layout class="QHBoxLayout" name="horizontalLayout_31">
+                        <item>
+                         <widget class="QLabel" name="labelZsupplyText500">
+                          <property name="text">
+                           <string>Denom. 500:</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <spacer name="horizontalSpacer_27">
+                          <property name="orientation">
+                           <enum>Qt::Horizontal</enum>
+                          </property>
+                          <property name="sizeHint" stdset="0">
+                           <size>
+                            <width>40</width>
+                            <height>20</height>
+                           </size>
+                          </property>
+                         </spacer>
+                        </item>
+                        <item>
+                         <widget class="QLabel" name="labelZsupplyAmount500">
+                          <property name="text">
+                           <string>0 zREDUX</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                      <item>
+                       <layout class="QHBoxLayout" name="horizontalLayout_32">
+                        <item>
+                         <widget class="QLabel" name="labelZsupplyText1000">
+                          <property name="text">
+                           <string>Denom. 1000:</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <spacer name="horizontalSpacer_28">
+                          <property name="orientation">
+                           <enum>Qt::Horizontal</enum>
+                          </property>
+                          <property name="sizeHint" stdset="0">
+                           <size>
+                            <width>40</width>
+                            <height>20</height>
+                           </size>
+                          </property>
+                         </spacer>
+                        </item>
+                        <item>
+                         <widget class="QLabel" name="labelZsupplyAmount1000">
+                          <property name="text">
+                           <string>0 zREDUX</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                      <item>
+                       <layout class="QHBoxLayout" name="horizontalLayout_33">
+                        <item>
+                         <widget class="QLabel" name="labelZsupplyText5000">
+                          <property name="text">
+                           <string>Denom. 5000:</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <spacer name="horizontalSpacer_29">
+                          <property name="orientation">
+                           <enum>Qt::Horizontal</enum>
+                          </property>
+                          <property name="sizeHint" stdset="0">
+                           <size>
+                            <width>40</width>
+                            <height>20</height>
+                           </size>
+                          </property>
+                         </spacer>
+                        </item>
+                        <item>
+                         <widget class="QLabel" name="labelZsupplyAmount5000">
+                          <property name="text">
+                           <string>0 zREDUX</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                      <item>
+                       <spacer name="verticalSpacer_2">
                         <property name="orientation">
                          <enum>Qt::Vertical</enum>
                         </property>
@@ -1584,6 +2016,43 @@ Immature: confirmed, but less than 2 mints of the same denomination after it was
                          <size>
                           <width>20</width>
                           <height>40</height>
+                         </size>
+                        </property>
+                       </spacer>
+                      </item>
+                     </layout>
+                    </item>
+                    <item>
+                     <layout class="QHBoxLayout" name="horizontalLayout_8">
+                      <item>
+                       <spacer name="horizontalSpacer_33">
+                        <property name="orientation">
+                         <enum>Qt::Horizontal</enum>
+                        </property>
+                        <property name="sizeHint" stdset="0">
+                         <size>
+                          <width>40</width>
+                          <height>20</height>
+                         </size>
+                        </property>
+                       </spacer>
+                      </item>
+                      <item>
+                       <widget class="QPushButton" name="pushButtonHideDenoms">
+                        <property name="text">
+                         <string>Hide Denominations</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <spacer name="horizontalSpacer_34">
+                        <property name="orientation">
+                         <enum>Qt::Horizontal</enum>
+                        </property>
+                        <property name="sizeHint" stdset="0">
+                         <size>
+                          <width>40</width>
+                          <height>20</height>
                          </size>
                         </property>
                        </spacer>
@@ -1615,7 +2084,7 @@ Immature: confirmed, but less than 2 mints of the same denomination after it was
      <property name="maximumSize">
       <size>
        <width>100</width>
-       <height>16</height>
+       <height>22</height>
       </size>
      </property>
      <layout class="QHBoxLayout" name="dummyHideLayout">

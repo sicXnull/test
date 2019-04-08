@@ -88,10 +88,10 @@ def unlock_wallet(reduxd):
     t = int(info['unlocked_until'])
     if t <= time.time():
         try:
-            passreduxase = getpass.getpass("Wallet is locked; enter passreduxase: ")
-            reduxd.walletpassreduxase(passreduxase, 5)
+            passphrase = getpass.getpass("Wallet is locked; enter passphrase: ")
+            reduxd.walletpassphrase(passphrase, 5)
         except:
-            sys.stderr.write("Wrong passreduxase\n")
+            sys.stderr.write("Wrong passphrase\n")
 
     info = reduxd.getinfo()
     return int(info['unlocked_until']) > time.time()
@@ -254,7 +254,7 @@ def main():
         fee = Decimal(options.fee)
         amount = Decimal(options.amount)
         while unlock_wallet(reduxd) == False:
-            pass # Keep asking for passreduxase until they get it right
+            pass # Keep asking for passphrase until they get it right
         txdata = create_tx(reduxd, options.fromaddresses.split(","), options.to, amount, fee)
         sanity_test_fee(reduxd, txdata, amount*Decimal("0.01"))
         if options.dry_run:

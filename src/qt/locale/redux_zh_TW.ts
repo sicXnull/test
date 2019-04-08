@@ -114,21 +114,21 @@
     </message>
 </context>
 <context>
-    <name>AskPassreduxaseDialog</name>
+    <name>AskPassphraseDialog</name>
     <message>
-        <source>Passreduxase Dialog</source>
+        <source>Passphrase Dialog</source>
         <translation>密碼輸入欄</translation>
     </message>
     <message>
-        <source>Enter passreduxase</source>
+        <source>Enter passphrase</source>
         <translation>輸入密碼</translation>
     </message>
     <message>
-        <source>New passreduxase</source>
+        <source>New passphrase</source>
         <translation>新的密碼</translation>
     </message>
     <message>
-        <source>Repeat new passreduxase</source>
+        <source>Repeat new passphrase</source>
         <translation>重複新密碼</translation>
     </message>
     <message>
@@ -136,7 +136,7 @@
         <translation>錢包加密</translation>
     </message>
     <message>
-        <source>This operation needs your wallet passreduxase to unlock the wallet.</source>
+        <source>This operation needs your wallet passphrase to unlock the wallet.</source>
         <translation>這項操作需要先用密碼解鎖你的錢包</translation>
     </message>
     <message>
@@ -144,7 +144,7 @@
         <translation>錢包解鎖</translation>
     </message>
     <message>
-        <source>This operation needs your wallet passreduxase to decrypt the wallet.</source>
+        <source>This operation needs your wallet passphrase to decrypt the wallet.</source>
         <translation>這項操作需要你的密碼來解密錢包</translation>
     </message>
     <message>
@@ -152,11 +152,11 @@
         <translation>錢包解密</translation>
     </message>
     <message>
-        <source>Change passreduxase</source>
+        <source>Change passphrase</source>
         <translation>修改密碼</translation>
     </message>
     <message>
-        <source>Enter the old and new passreduxase to the wallet.</source>
+        <source>Enter the old and new passphrase to the wallet.</source>
         <translation>請分別輸入錢包的舊密碼與新密碼</translation>
     </message>
     <message>
@@ -172,7 +172,7 @@
         <translation>確定要加密你的錢包?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passreduxase, you will &lt;b&gt;LOSE ALL OF YOUR REDUX&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR REDUX&lt;/b&gt;!</source>
         <translation>請注意: 如果你加密了你的錢包但是卻忘記你設定的密碼, &lt;b&gt;你將會失去錢包裡的錢(REDUX)&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -192,7 +192,7 @@
         <translation>錢包加密失敗因為程式上的錯誤, 你的錢包尚未被加密.</translation>
     </message>
     <message>
-        <source>The supplied passreduxases do not match.</source>
+        <source>The supplied passphrases do not match.</source>
         <translation>您輸入的密碼不符.</translation>
     </message>
     <message>
@@ -200,7 +200,7 @@
         <translation>錢包解鎖失敗</translation>
     </message>
     <message>
-        <source>The passreduxase entered for the wallet decryption was incorrect.</source>
+        <source>The passphrase entered for the wallet decryption was incorrect.</source>
         <translation>您輸入的密碼錯誤.</translation>
     </message>
     <message>
@@ -208,7 +208,7 @@
         <translation>錢包解密失敗</translation>
     </message>
     <message>
-        <source>Wallet passreduxase was successfully changed.</source>
+        <source>Wallet passphrase was successfully changed.</source>
         <translation>錢包密碼修改成功</translation>
     </message>
     <message>
@@ -216,6 +216,9 @@
         <translation>注意: Caps Lock(大寫鍵) 是開啟的.</translation>
     </message>
 </context>
+<context>
+    <name>BanTableModel</name>
+    </context>
 <context>
     <name>Bip38ToolDialog</name>
     <message>
@@ -227,16 +230,8 @@
         <translation>&amp;BIP 38 加密</translation>
     </message>
     <message>
-        <source>Enter a Redux Address that you would like to encrypt using BIP 38. Enter a passreduxase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>輸入你想 BIP 38 加密的 Redux 位址, 輸入密碼在中間欄, 按下加密按鈕來產生加密私鑰.</translation>
-    </message>
-    <message>
         <source>Address:</source>
         <translation>位址:</translation>
-    </message>
-    <message>
-        <source>The Redux address to sign the message with</source>
-        <translation>對訊息簽名的 Redux 位址</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -255,7 +250,7 @@
         <translation>Alt+P</translation>
     </message>
     <message>
-        <source>Passreduxase: </source>
+        <source>Passphrase: </source>
         <translation>密碼:</translation>
     </message>
     <message>
@@ -267,16 +262,8 @@
         <translation>拷貝目前的簽章到系統剪貼簿</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Redux address</source>
-        <translation>使用簽章來證明你是該  Redux 位址的擁有者,</translation>
-    </message>
-    <message>
         <source>Encrypt &amp;Key</source>
         <translation>加密 &amp;鑰匙</translation>
-    </message>
-    <message>
-        <source>Reset all sign message fields</source>
-        <translation>重設所有已簽章訊息</translation>
     </message>
     <message>
         <source>Clear &amp;All</source>
@@ -287,20 +274,8 @@
         <translation>&amp;BIP 38 解密</translation>
     </message>
     <message>
-        <source>The Redux address the message was signed with</source>
-        <translation>此訊息之 Redux 位址已簽章於</translation>
-    </message>
-    <message>
-        <source>Verify the message to ensure it was signed with the specified Redux address</source>
-        <translation>驗證訊息以確保該  Redux 位址已被簽章</translation>
-    </message>
-    <message>
         <source>Decrypt &amp;Key</source>
         <translation>解密 &amp;鑰匙</translation>
-    </message>
-    <message>
-        <source>Reset all verify message fields</source>
-        <translation>重設所有驗證訊息的欄位</translation>
     </message>
     <message>
         <source>Decrypted Key:</source>
@@ -315,7 +290,7 @@
         <translation>點 "解密鑰匙" 來產生</translation>
     </message>
     <message>
-        <source>The entered passreduxase is invalid. </source>
+        <source>The entered passphrase is invalid. </source>
         <translation>輸入的密碼不符合規定</translation>
     </message>
     <message>
@@ -347,7 +322,7 @@
         <translation>解密失敗</translation>
     </message>
     <message>
-        <source>Please check the key and passreduxase and try again.</source>
+        <source>Please check the key and passphrase and try again.</source>
         <translation>請確認錢包私鑰的密碼是正確的.</translation>
     </message>
     <message>
@@ -454,11 +429,11 @@
         <translation>備份錢包到另外的位置</translation>
     </message>
     <message>
-        <source>&amp;Change Passreduxase...</source>
+        <source>&amp;Change Passphrase...</source>
         <translation>&amp;更改密碼</translation>
     </message>
     <message>
-        <source>Change the passreduxase used for wallet encryption</source>
+        <source>Change the passphrase used for wallet encryption</source>
         <translation>更改使用中的錢包密碼</translation>
     </message>
     <message>
@@ -626,7 +601,7 @@
         <translation>&amp;BIP38 工具</translation>
     </message>
     <message>
-        <source>Encrypt and decrypt private keys using a passreduxase</source>
+        <source>Encrypt and decrypt private keys using a passphrase</source>
         <translation>使用密碼對私鑰加密解密</translation>
     </message>
     <message>
@@ -694,6 +669,9 @@
     <name>FreespaceChecker</name>
     </context>
 <context>
+    <name>GovernancePage</name>
+    </context>
+<context>
     <name>HelpMessageDialog</name>
     <message>
         <source>Redux Core</source>
@@ -724,6 +702,13 @@
         <source>Address:</source>
         <translation>位址:</translation>
     </message>
+    <message>
+        <source>(no label)</source>
+        <translation>(沒有標記)</translation>
+    </message>
+    </context>
+<context>
+    <name>MultisigDialog</name>
     </context>
 <context>
     <name>ObfuscationConfig</name>
@@ -761,9 +746,20 @@
         <source>Alt+P</source>
         <translation>Alt+P</translation>
     </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>文字標籤</translation>
+    </message>
+    </context>
+<context>
+    <name>ProposalFrame</name>
     </context>
 <context>
     <name>QObject</name>
+    <message>
+        <source>Redux Core</source>
+        <translation>Redux Core</translation>
+    </message>
     </context>
 <context>
     <name>QRImageWidget</name>
@@ -794,6 +790,10 @@
     <message>
         <source>Label</source>
         <translation>標記</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>位址</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -971,7 +971,7 @@
     </message>
     </context>
 <context>
-    <name>ZPhrControlDialog</name>
+    <name>ZReduxControlDialog</name>
     </context>
 <context>
     <name>redux-core</name>

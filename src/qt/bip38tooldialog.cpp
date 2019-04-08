@@ -33,17 +33,17 @@ Bip38ToolDialog::Bip38ToolDialog(QWidget* parent) : QDialog(parent),
 
     GUIUtil::setupAddressWidget(ui->addressIn_ENC, this);
     ui->addressIn_ENC->installEventFilter(this);
-    ui->passreduxaseIn_ENC->installEventFilter(this);
+    ui->passphraseIn_ENC->installEventFilter(this);
     ui->encryptedKeyOut_ENC->installEventFilter(this);
     ui->encryptedKeyIn_DEC->installEventFilter(this);
-    ui->passreduxaseIn_DEC->installEventFilter(this);
+    ui->passphraseIn_DEC->installEventFilter(this);
     ui->decryptedKeyOut_DEC->installEventFilter(this);
 
     ui->addressIn_ENC->setAttribute(Qt::WA_MacShowFocusRect, 0);
-    ui->passreduxaseIn_ENC->setAttribute(Qt::WA_MacShowFocusRect, 0);
+    ui->passphraseIn_ENC->setAttribute(Qt::WA_MacShowFocusRect, 0);
     ui->encryptedKeyOut_ENC->setAttribute(Qt::WA_MacShowFocusRect, 0);
     ui->encryptedKeyIn_DEC->setAttribute(Qt::WA_MacShowFocusRect, 0);
-    ui->passreduxaseIn_DEC->setAttribute(Qt::WA_MacShowFocusRect, 0);
+    ui->passphraseIn_DEC->setAttribute(Qt::WA_MacShowFocusRect, 0);
     ui->decryptedKeyOut_DEC->setAttribute(Qt::WA_MacShowFocusRect, 0);
 }
 
@@ -60,13 +60,13 @@ void Bip38ToolDialog::setModel(WalletModel* model)
 void Bip38ToolDialog::setAddress_ENC(const QString& address)
 {
     ui->addressIn_ENC->setText(address);
-    ui->passreduxaseIn_ENC->setFocus();
+    ui->passphraseIn_ENC->setFocus();
 }
 
 void Bip38ToolDialog::setAddress_DEC(const QString& address)
 {
     ui->encryptedKeyIn_DEC->setText(address);
-    ui->passreduxaseIn_DEC->setFocus();
+    ui->passphraseIn_DEC->setFocus();
 }
 
 void Bip38ToolDialog::showTab_ENC(bool fShow)
@@ -101,14 +101,14 @@ void Bip38ToolDialog::on_pasteButton_ENC_clicked()
 
 QString specialChar = "\"@!#$%&'()*+,-./:;<=>?`{|}~^_[]\\";
 QString validChar = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz" + specialChar;
-bool isValidPassreduxase(QString strPassreduxase, QString& strInvalid)
+bool isValidPassphrase(QString strPassphrase, QString& strInvalid)
 {
-    for (int i = 0; i < strPassreduxase.size(); i++) {
-        if (!validChar.contains(strPassreduxase[i], Qt::CaseSensitive)) {
-            if (QString("\"'").contains(strPassreduxase[i]))
+    for (int i = 0; i < strPassphrase.size(); i++) {
+        if (!validChar.contains(strPassphrase[i], Qt::CaseSensitive)) {
+            if (QString("\"'").contains(strPassphrase[i]))
                 continue;
 
-            strInvalid = strPassreduxase[i];
+            strInvalid = strPassphrase[i];
             return false;
         }
     }
@@ -121,11 +121,11 @@ void Bip38ToolDialog::on_encryptKeyButton_ENC_clicked()
     if (!model)
         return;
 
-    QString qstrPassreduxase = ui->passreduxaseIn_ENC->text();
+    QString qstrPassphrase = ui->passphraseIn_ENC->text();
     QString strInvalid;
-    if (!isValidPassreduxase(qstrPassreduxase, strInvalid)) {
+    if (!isValidPassphrase(qstrPassphrase, strInvalid)) {
         ui->statusLabel_ENC->setStyleSheet("QLabel { color: red; }");
-        ui->statusLabel_ENC->setText(tr("The entered passreduxase is invalid. ") + strInvalid + QString(" is not valid") + QString(" ") + tr("Allowed: 0-9,a-z,A-Z,") + specialChar);
+        ui->statusLabel_ENC->setText(tr("The entered passphrase is invalid. ") + strInvalid + QString(" is not valid") + QString(" ") + tr("Allowed: 0-9,a-z,A-Z,") + specialChar);
         return;
     }
 
@@ -145,7 +145,7 @@ void Bip38ToolDialog::on_encryptKeyButton_ENC_clicked()
         return;
     }
 
-    WalletModel::UnlockContext ctx(model->requestUnlock(true));
+    WalletModel::UnlockContext ctx(model->requestUnlock(AskPassphraseDialog::Context::BIP_38, true));
     if (!ctx.isValid()) {
         ui->statusLabel_ENC->setStyleSheet("QLabel { color: red; }");
         ui->statusLabel_ENC->setText(tr("Wallet unlock was cancelled."));
@@ -159,7 +159,7 @@ void Bip38ToolDialog::on_encryptKeyButton_ENC_clicked()
         return;
     }
 
-    std::string encryptedKey = BIP38_Encrypt(EncodeDestination(addr), qstrPassreduxase.toStdString(), key.GetPrivKey_256(), key.IsCompressed());
+    std::string encryptedKey = BIP38_Encrypt(EncodeDestination(addr), qstrPassphrase.toStdString(), key.GetPrivKey_256(), key.IsCompressed());
     ui->encryptedKeyOut_ENC->setText(QString::fromStdString(encryptedKey));
 }
 
@@ -171,7 +171,7 @@ void Bip38ToolDialog::on_copyKeyButton_ENC_clicked()
 void Bip38ToolDialog::on_clearButton_ENC_clicked()
 {
     ui->addressIn_ENC->clear();
-    ui->passreduxaseIn_ENC->clear();
+    ui->passphraseIn_ENC->clear();
     ui->encryptedKeyOut_ENC->clear();
     ui->statusLabel_ENC->clear();
 
@@ -187,14 +187,14 @@ void Bip38ToolDialog::on_pasteButton_DEC_clicked()
 
 void Bip38ToolDialog::on_decryptKeyButton_DEC_clicked()
 {
-    string strPassreduxase = ui->passreduxaseIn_DEC->text().toStdString();
+    string strPassphrase = ui->passphraseIn_DEC->text().toStdString();
     string strKey = ui->encryptedKeyIn_DEC->text().toStdString();
 
     uint256 privKey;
     bool fCompressed;
-    if (!BIP38_Decrypt(strPassreduxase, strKey, privKey, fCompressed)) {
+    if (!BIP38_Decrypt(strPassphrase, strKey, privKey, fCompressed)) {
         ui->statusLabel_DEC->setStyleSheet("QLabel { color: red; }");
-        ui->statusLabel_DEC->setText(tr("Failed to decrypt.") + QString(" ") + tr("Please check the key and passreduxase and try again."));
+        ui->statusLabel_DEC->setText(tr("Failed to decrypt.") + QString(" ") + tr("Please check the key and passphrase and try again."));
         return;
     }
 
@@ -208,7 +208,7 @@ void Bip38ToolDialog::on_decryptKeyButton_DEC_clicked()
 
 void Bip38ToolDialog::on_importAddressButton_DEC_clicked()
 {
-    WalletModel::UnlockContext ctx(model->requestUnlock(true));
+    WalletModel::UnlockContext ctx(model->requestUnlock(AskPassphraseDialog::Context::BIP_38, true));
     if (!ctx.isValid()) {
         ui->statusLabel_DEC->setStyleSheet("QLabel { color: red; }");
         ui->statusLabel_DEC->setText(tr("Wallet unlock was cancelled."));
@@ -262,7 +262,7 @@ void Bip38ToolDialog::on_clearButton_DEC_clicked()
 {
     ui->encryptedKeyIn_DEC->clear();
     ui->decryptedKeyOut_DEC->clear();
-    ui->passreduxaseIn_DEC->clear();
+    ui->passphraseIn_DEC->clear();
     ui->statusLabel_DEC->clear();
 
     ui->encryptedKeyIn_DEC->setFocus();
